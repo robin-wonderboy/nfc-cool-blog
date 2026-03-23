@@ -74,9 +74,9 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
 /* Header */
 .site-header { background: var(--header-bg); padding: 0; position: sticky; top: 0; z-index: 100; }
 .header-inner { max-width: 960px; margin: 0 auto; padding: 1rem 1.5rem; display: flex; align-items: center; justify-content: space-between; }
-.site-logo { color: var(--accent); font-weight: 800; font-size: 1.4rem; text-decoration: none; letter-spacing: -0.02em; }
+.site-logo { text-decoration: none; display: flex; align-items: center; gap: 0.4rem; }
 .site-logo:hover { color: var(--accent); text-decoration: none; }
-.site-logo span { color: var(--header-text); font-weight: 400; }
+.site-logo span { color: var(--header-text); font-weight: 300; font-size: 2.3rem; line-height: 1; }
 nav a { color: var(--header-text); margin-left: 1.5rem; font-size: 0.9rem; font-weight: 500; opacity: .85; transition: opacity .15s; }
 nav a:hover { opacity: 1; text-decoration: none; }
 
@@ -151,7 +151,7 @@ def page_html(title, body_html, active=""):
 <body>
 <header class="site-header">
   <div class="header-inner">
-    <a href="/" class="site-logo">NFC.cool <span>Blog</span></a>
+    <a href="/" class="site-logo"><img src="/assets/logo-white.png" alt="NFC.cool" style="height: 32px;"> <span>Blog</span></a>
     <nav>{nav}</nav>
   </div>
 </header>
