@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Articles — NFC.cool Blog</title>
+<style>
+:root {
+  --bg: #ffffff;
+  --text: #212529;
+  --header-bg: #212529;
+  --header-text: #ffffff;
+  --accent: #FFC700;
+  --link: #1170CF;
+  --link-hover: #0d5baa;
+  --muted: #6c757d;
+  --border: #dee2e6;
+  --card-bg: #f8f9fa;
+  --tag-bg: #e9ecef;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 17px; scroll-behavior: smooth; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; color: var(--text); line-height: 1.7; background: var(--bg); }
+a { color: var(--link); text-decoration: none; transition: color .15s; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+/* Header */
+.site-header { background: var(--header-bg); padding: 0; position: sticky; top: 0; z-index: 100; }
+.header-inner { max-width: 960px; margin: 0 auto; padding: 1rem 1.5rem; display: flex; align-items: center; justify-content: space-between; }
+.site-logo { color: var(--accent); font-weight: 800; font-size: 1.4rem; text-decoration: none; letter-spacing: -0.02em; }
+.site-logo:hover { color: var(--accent); text-decoration: none; }
+.site-logo span { color: var(--header-text); font-weight: 400; }
+nav a { color: var(--header-text); margin-left: 1.5rem; font-size: 0.9rem; font-weight: 500; opacity: .85; transition: opacity .15s; }
+nav a:hover { opacity: 1; text-decoration: none; }
+
+/* Main */
+.container { max-width: 960px; margin: 0 auto; padding: 2rem 1.5rem; }
+.page-title { font-size: 2rem; font-weight: 800; margin-bottom: 0.25rem; letter-spacing: -0.02em; }
+.page-subtitle { color: var(--muted); margin-bottom: 2rem; font-size: 1rem; }
+
+/* Category filters */
+.categories { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
+.cat-btn { display: inline-block; padding: 0.35rem 0.9rem; border-radius: 999px; font-size: 0.82rem; font-weight: 600; background: var(--tag-bg); color: var(--text); text-decoration: none; transition: all .15s; border: 2px solid transparent; }
+.cat-btn:hover, .cat-btn.active { background: var(--accent); color: var(--header-bg); text-decoration: none; border-color: var(--accent); }
+
+/* Article cards */
+.article-list { display: flex; flex-direction: column; gap: 1.25rem; }
+.article-card { background: var(--card-bg); border-radius: 10px; padding: 1.5rem; border: 1px solid var(--border); transition: transform .15s, box-shadow .15s; }
+.article-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,.08); }
+.article-card h2 { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.4rem; }
+.article-card h2 a { color: var(--text); }
+.article-card h2 a:hover { color: var(--link); text-decoration: none; }
+.article-meta { font-size: 0.82rem; color: var(--muted); margin-bottom: 0.5rem; }
+.article-meta .cat { background: var(--accent); color: var(--header-bg); padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 600; font-size: 0.75rem; margin-right: 0.5rem; }
+.article-card p { color: #495057; font-size: 0.95rem; }
+
+/* Article page */
+.article-header { margin-bottom: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 1.5rem; }
+.article-header h1 { font-size: 2.2rem; font-weight: 800; line-height: 1.2; letter-spacing: -0.02em; }
+.article-header .meta { color: var(--muted); margin-top: 0.75rem; font-size: 0.9rem; }
+.article-content h1 { font-size: 1.6rem; margin: 2rem 0 0.75rem; font-weight: 700; }
+.article-content h2 { font-size: 1.35rem; margin: 1.75rem 0 0.75rem; font-weight: 700; }
+.article-content h3 { font-size: 1.15rem; margin: 1.5rem 0 0.5rem; font-weight: 600; }
+.article-content p { margin-bottom: 1rem; }
+.article-content ul, .article-content ol { margin: 0.75rem 0 1rem 1.5rem; }
+.article-content li { margin-bottom: 0.35rem; }
+.article-content code { background: var(--tag-bg); padding: 0.15rem 0.4rem; border-radius: 4px; font-size: 0.88rem; }
+.article-content pre { background: var(--header-bg); color: #e9ecef; padding: 1.25rem; border-radius: 8px; overflow-x: auto; margin: 1rem 0; }
+.article-content pre code { background: none; padding: 0; color: inherit; }
+.article-content blockquote { border-left: 4px solid var(--accent); padding: 0.75rem 1rem; margin: 1rem 0; background: var(--card-bg); border-radius: 0 8px 8px 0; }
+.article-content table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+.article-content th, .article-content td { border: 1px solid var(--border); padding: 0.6rem 0.8rem; text-align: left; }
+.article-content th { background: var(--card-bg); font-weight: 600; }
+.back-link { display: inline-block; margin-bottom: 1.5rem; font-weight: 500; }
+
+/* Footer */
+.site-footer { border-top: 1px solid var(--border); margin-top: 3rem; padding: 2rem 1.5rem; text-align: center; color: var(--muted); font-size: 0.85rem; }
+.site-footer a { color: var(--link); }
+
+/* Responsive */
+@media (max-width: 600px) {
+  html { font-size: 16px; }
+  .header-inner { flex-direction: column; gap: 0.5rem; }
+  nav a { margin-left: 0; margin-right: 1rem; }
+  .page-title { font-size: 1.6rem; }
+  .article-header h1 { font-size: 1.7rem; }
+}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="site-logo">NFC.cool <span>Blog</span></a>
+    <nav><a href="/index.html" style="opacity:1;border-bottom:2px solid var(--accent);padding-bottom:2px">Articles</a><a href="/about.html" style="">About</a></nav>
+  </div>
+</header>
+
+<div class="container">
+  <h1 class="page-title">Articles</h1>
+  <p class="page-subtitle">NFC guides, digital business card comparisons, and industry insights.</p>
+  <div class="categories"><a href="#" class="cat-btn active" data-cat="all">All</a> <a href="#" class="cat-btn" data-cat="comparisons">Comparisons</a> <a href="#" class="cat-btn" data-cat="guides">Guides</a> <a href="#" class="cat-btn" data-cat="industry">Industry</a> <a href="#" class="cat-btn" data-cat="nfc-tech">NFC Tech</a></div>
+  <div class="article-list"><div class="article-card" data-category="comparisons">
+  <h2><a href="/posts/best-digital-business-card-apps-in-2026-an-honest-comparison.html">Best Digital Business Card Apps in 2026: An Honest Comparison</a></h2>
+  <div class="article-meta"><span class="cat">Comparisons</span> 2026-03-23</div>
+  <p>We tested the top digital business card apps of 2026 — from Wave Connect to Blinq to NFC.cool — and compared pricing, privacy, NFC support, and features. Here's what we found.</p>
+</div>
+<div class="article-card" data-category="industry">
+  <h2><a href="/posts/digital-business-cards-for-consultants-freelancers-why-theyre-your-best-networking-investment.html">Digital Business Cards for Consultants & Freelancers: Why They're Your Best Networking Investment</a></h2>
+  <div class="article-meta"><span class="cat">Industry</span> 2026-03-23</div>
+  <p>As a freelancer or independent consultant, your personal brand is your business. Here's how digital business cards solve the unique networking challenges of going solo — from juggling multiple roles to impressing clients on a budget.</p>
+</div>
+<div class="article-card" data-category="industry">
+  <h2><a href="/posts/digital-business-cards-for-real-estate-agents-the-complete-guide.html">Digital Business Cards for Real Estate Agents: The Complete Guide</a></h2>
+  <div class="article-meta"><span class="cat">Industry</span> 2026-03-23</div>
+  <p>Real estate agents lose leads every day to paper cards and outdated info. Here's how digital business cards solve the biggest networking pain points in real estate — from open houses to international clients.</p>
+</div>
+<div class="article-card" data-category="nfc-tech">
+  <h2><a href="/posts/eu-digital-product-passport-what-you-need-to-know-in-2026.html">EU Digital Product Passport: What You Need to Know in 2026</a></h2>
+  <div class="article-meta"><span class="cat">NFC Tech</span> 2026-03-23</div>
+  <p>The EU Digital Product Passport is here — batteries are already covered, textiles and electronics are next. Here's what DPP means for businesses, consumers, and why NFC technology is at the center of it all.</p>
+</div>
+<div class="article-card" data-category="comparisons">
+  <h2><a href="/posts/nfc-business-card-vs-qr-code-which-is-better-for-networking.html">NFC Business Card vs QR Code: Which Is Better for Networking?</a></h2>
+  <div class="article-meta"><span class="cat">Comparisons</span> 2026-03-23</div>
+  <p>NFC tap or QR code scan — which is the better way to share your contact info? We break down speed, compatibility, cost, and real-world use cases to help you decide.</p>
+</div>
+<div class="article-card" data-category="nfc-tech">
+  <h2><a href="/posts/nfc-tags-explained-a-complete-beginners-guide.html">NFC Tags Explained: A Complete Beginner's Guide</a></h2>
+  <div class="article-meta"><span class="cat">NFC Tech</span> 2026-03-23</div>
+  <p>NFC tags are tiny, unpowered chips that can trigger actions on your phone with a single tap. Here's everything you need to know — what they are, how they work, which types to buy, and 15+ practical ways to use them.</p>
+</div>
+<div class="article-card" data-category="guides">
+  <h2><a href="/posts/how-to-replace-paper-business-cards-at-your-next-conference.html">How to Replace Paper Business Cards at Your Next Conference</a></h2>
+  <div class="article-meta"><span class="cat">Guides</span> 2026-03-23</div>
+  <p>Conferences are where paper business cards fail the hardest. Here's a step-by-step plan to go fully digital — before, during, and after your next event — so you never scramble for a card again.</p>
+</div>
+<div class="article-card" data-category="guides">
+  <h2><a href="/posts/welcome-to-the-nfccool-blog.html">Welcome to the NFC.cool Blog</a></h2>
+  <div class="article-meta"><span class="cat">Guides</span> 2026-03-23</div>
+  <p>Introducing the NFC.cool Blog — your new resource for NFC guides, digital business card comparisons, and industry insights.</p>
+</div>
+<div class="article-card" data-category="guides">
+  <h2><a href="/posts/why-privacy-matters-for-your-digital-business-card.html">Why Privacy Matters for Your Digital Business Card</a></h2>
+  <div class="article-meta"><span class="cat">Guides</span> 2026-03-23</div>
+  <p>Your digital business card contains your name, email, phone number, and more — yet most people never think about where that data actually goes. Here's why privacy should be your #1 criterion.</p>
+</div>
+<div class="article-card" data-category="nfc-tech">
+  <h2><a href="/posts/how-to-write-nfc-tags-with-your-iphone.html">How to Write NFC Tags with Your iPhone</a></h2>
+  <div class="article-meta"><span class="cat">NFC Tech</span> 2026-03-23</div>
+  <p>Your iPhone can do more than read NFC tags — it can write them too. Here's a step-by-step guide to programming NFC tags with your iPhone, from choosing the right tags to writing URLs, Wi-Fi credentials, contact cards, and automations.</p>
+</div></div>
+</div>
+<script>
+document.querySelectorAll('.cat-btn').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const cat = btn.dataset.cat;
+    document.querySelectorAll('.article-card').forEach(card => {
+      card.style.display = (cat === 'all' || card.dataset.category === cat) ? '' : 'none';
+    });
+  });
+});
+</script>
+<footer class="site-footer">
+  <div class="container">
+    &copy; 2026 <a href="https://nfc.cool">NFC.cool</a> &middot; Built with ❤️ in Coimbra, Portugal
+  </div>
+</footer>
+</body>
+</html>
