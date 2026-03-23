@@ -1,9 +1,9 @@
-// swift-tools-version: 6.2
+// swift-tools-version: 6.0
 import PackageDescription
 
 let package = Package(
    name: "Site",
-   platforms: [.macOS(.v26)],
+   platforms: [.macOS(.v14)],
    dependencies: [
       .package(url: "https://github.com/FlineDev/SiteKit-Package.git", branch: "main"),
    ],
