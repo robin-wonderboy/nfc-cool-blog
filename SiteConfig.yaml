@@ -1,0 +1,44 @@
+name: "NFC.cool Blog"
+baseURL: "https://blog.nfc.cool"
+outputDirectory: "_Site"
+contentDirectory: "Content"
+defaultLanguage: "en"
+blogURLPrefix: "blog"
+
+author:
+  name: "NFC.cool"
+  email: "hello@nfc.cool"
+
+navigation:
+  items:
+    - title: "Guides"
+      url: "/blog/guides/"
+    - title: "Comparisons"
+      url: "/blog/comparisons/"
+    - title: "Industry"
+      url: "/blog/industry/"
+    - title: "NFC Tech"
+      url: "/blog/nfc-tech/"
+    - title: "About"
+      url: "/about/"
+
+sections:
+  - name: "Blog"
+    slug: "blog"
+    contentDirectory: "Blog"
+    urlPrefix: "blog"
+    rssTitle: "NFC.cool Blog"
+    rssDescription: "Guides, comparisons, and insights about NFC technology and digital business cards from NFC.cool"
+    categories:
+      - name: "Guides"
+        slug: "guides"
+      - name: "Comparisons"
+        slug: "comparisons"
+      - name: "Industry"
+        slug: "industry"
+      - name: "NFC Tech"
+        slug: "nfc-tech"
+
+footer:
+  copyrightName: "NFC.cool"
+  startYear: 2026
