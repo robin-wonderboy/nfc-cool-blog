@@ -41,7 +41,7 @@ With a digital card platform that supports multiple cards, you create a card for
 
 Here's a scenario every consultant knows: you're at an industry conference, the WiFi is crawling, and you've just had a great conversation with a potential client. You want to exchange contact info, but your LinkedIn page won't load and your website is timing out.
 
-NFC-enabled digital cards solve this completely. A tap works without any internet connection. The contact transfers directly between phones. Conference WiFi becomes irrelevant.
+NFC-enabled digital cards help here. A tap is nearly instant — the NFC tag contains a link to your digital profile, which loads quickly even on a spotty connection. It's far more reliable than waiting for a full website or app to load.
 
 ### Your budget is personal
 
@@ -75,7 +75,7 @@ With a digital card displayed on a slide or printed as a QR code on your handout
 
 Freelancers increasingly work across borders. You might be a consultant based in Berlin working with clients in São Paulo, Tokyo, and New York. Paper cards in one language feel limiting.
 
-Digital business cards that support multiple languages let you present your information in whatever language your client prefers. This is a subtle but powerful signal that you take the relationship seriously. Apps like [NFC.cool Business Card](https://apps.apple.com/app/id6446146119) support 35 languages — meaning your card adapts to virtually any international context.
+Digital business cards that support multiple languages let you present your information in whatever language your client prefers. This is a subtle but powerful signal that you take the relationship seriously. [NFC.cool Business Card](https://apps.apple.com/app/id6446146119) supports 35 languages in the app UI and App Clip — meaning your card adapts to virtually any international context on iOS. The Android sharing experience via the nfc.cool website is currently English only.
 
 ### 5. Email Signatures
 
@@ -125,9 +125,9 @@ Enterprise plans with SSO, team dashboards, and compliance features are irreleva
 
 As an independent professional, your reputation is everything. You can't afford to be associated with a platform that spams your contacts or records conversations without consent. Check how the platform handles recipient data.
 
-### Offline functionality
+### Reliable in low-connectivity environments
 
-Whether it's conference halls with spotty WiFi or client offices in rural areas, your card should work without an internet connection. NFC sharing works offline by default. Make sure your chosen platform supports this.
+Conference halls and client offices often have spotty WiFi. NFC tags transmit the card link instantly via a tap, so you only need a brief data connection to load the profile — much faster and more reliable than loading a full website or app. Keep in mind that most digital business cards (including NFC.cool) do require an internet connection to display the full profile.
 
 ---
 
@@ -138,19 +138,19 @@ Full disclosure: this is our blog, so we're obviously biased. But here's why we 
 **What we do well for freelancers:**
 
 - **Multiple cards included** — create different cards for each role or client type, no extra charge
-- **35 languages** — share your card in your client's language, whether that's Japanese, Portuguese, or Arabic
+- **35 languages** — the app UI and App Clip support 35 languages, so your card displays in your client's language on iOS. The Android sharing website is currently English only.
 - **NFC + QR code** — tap or scan, works in any situation
-- **No app for recipients** — your contact opens as a standard vCard, saveable on any phone
-- **Privacy-first** — we don't record conversations (yes, some competitors do), we don't solicit your contacts, and we don't sell data
+- **No app for recipients** — on iOS, an App Clip shows your card instantly. On Android, a website on the nfc.cool domain opens. Both have a "Save Contact" button — no app needed either way.
+- **Privacy-first** — no data monetization or advertising, no conversation recording, no recipient solicitation
 - **PIN-protected cards** — add a layer of security for cards with sensitive info
-- **Affordable** — designed for individuals, not priced for enterprises
-- **NFC hardware** — we sell NFC-enabled cards, stickers, and tags that work with the app, so you get physical+digital combined
+- **Affordable** — Personal plan at €20/year (1 card), Small Business at €50/year (10 cards), Business at €100/year (100 cards)
+- **Works with any NFC tag** — NFC.cool doesn't sell proprietary hardware. Any third-party NFC tag, sticker, or card works.
 
 **Where competitors might edge ahead:**
 
-- **CRM integrations** — if you use HubSpot or Salesforce heavily, platforms like Wave Connect or Blinq offer native integrations that sync contacts automatically. NFC.cool focuses on the contact-sharing experience rather than CRM pipelines.
+- **CRM integrations** — if you use HubSpot or Salesforce heavily, platforms like Wave Connect or Blinq offer native integrations that sync contacts automatically. NFC.cool currently offers CSV export on iOS for getting contacts out.
 - **Team management** — if you're a small consulting firm (not solo), platforms with admin dashboards like HiHello or Blinq give you centralized control. We're built for individuals and small teams.
-- **Analytics depth** — some platforms offer detailed view tracking and engagement metrics. We keep things simpler and more privacy-respecting.
+- **Analytics depth** — analytics (who tapped, when, how many) are currently iOS only, with Android support coming soon. Some competitors offer cross-platform analytics today.
 
 The honest truth: for most freelancers and independent consultants, the contact-sharing experience matters more than CRM pipelines. You need something that works fast, looks professional, and doesn't break the bank. That's what we built.
 
@@ -202,7 +202,7 @@ Drop your card link in the Zoom/Teams chat, add it to your virtual background, o
 
 ### Is my data safe with digital business card apps?
 
-It depends on the platform. Some record conversations at networking events (with questionable consent). Others sell contact data or market to your recipients. Read the privacy policy. Look for platforms that are transparent about data handling and don't monetize your contacts. NFC.cool, for example, stores data on-device and doesn't solicit recipients.
+It depends on the platform. Some record conversations at networking events (with questionable consent). Others sell contact data or market to your recipients. Read the privacy policy. Look for platforms that are transparent about data handling and don't monetize your contacts. NFC.cool, for example, stores your vCard and account data on its server but has no data monetization or advertising — and doesn't solicit recipients.
 
 ---
 
@@ -218,4 +218,4 @@ Whatever you choose, make the switch. Your future clients will thank you — and
 
 ---
 
-*NFC.cool Business Card is available on the [App Store](https://apps.apple.com/app/id6446146119) and [Google Play](https://play.google.com/store/apps/details?id=cool.nfc.businesscard). Create your first digital card in under two minutes.*
+*NFC.cool Business Card is available on the [App Store](https://apps.apple.com/app/id6446146119) and on [Android inside NFC.cool Tools](https://android.nfc.cool). Create your first digital card in under two minutes.*

@@ -190,15 +190,15 @@ Full disclosure: this is our blog, so of course we're going to mention our own s
 
 - **NFC tap** — Write your business card to any standard NFC tag (stickers, cards, keychains — your choice) and share with a tap. No proprietary hardware required.
 - **QR code** — Generate a scannable code directly in the app. Display it on your phone or print it.
-- **Apple Wallet** — Add your card as a Wallet pass for instant access.
+- **Apple Wallet (iOS)** — Add your card as a Wallet pass for instant lock-screen access.
 - **Link sharing** — Share via text, email, or social media.
 
 A few things that set it apart:
 
-- **35 languages** — Your card works for contacts worldwide, in their language
-- **Privacy-first** — No recipient solicitation, optional PIN protection, no data harvesting
-- **Open NFC** — Works with any standard NFC tag, not just our hardware
-- **Affordable** — No monthly subscription trap
+- **35 languages** — The app UI and App Clip support 35 languages, so your card displays in your contact's language on iOS. The Android sharing website is currently English only.
+- **Privacy-first** — No recipient solicitation, optional PIN protection, no data monetization or advertising
+- **Open NFC** — Works with any standard NFC tag — NFC.cool doesn't sell proprietary hardware
+- **Affordable** — Personal plan at €20/year, Small Business at €50/year (10 cards), Business at €100/year (100 cards)
 
 ➡️ **Try NFC.cool Business Card:** [App Store](https://apps.apple.com/app/nfc-cool-business-card/id6447094657) · [Google Play](https://play.google.com/store/apps/details?id=cool.nfc.businesscard)
 

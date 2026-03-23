@@ -58,12 +58,12 @@ The worst time to set up your digital business card is while you're standing in 
 If you don't have one yet, look for these conference-specific features:
 
 - **Multiple sharing methods** — You'll want NFC tap, QR code display, and a shareable link. Different situations call for different approaches at a conference.
-- **Offline capability** — Conference WiFi is notoriously unreliable. NFC works without any internet connection. QR codes that link to a locally cached card also help.
+- **Reliable in poor connectivity** — Conference WiFi is notoriously unreliable. NFC taps are instant (they transmit a link), and the card profile loads quickly even on a spotty connection — much more reliable than loading a full app or website.
 - **Multiple card profiles** — If you're attending as both a speaker and a vendor, or if you work across different brands, you need separate cards for separate contexts.
 - **No app required for recipients** — The person you're meeting shouldn't need to download anything. If your card requires the other person to install an app before they can see your info, you've already lost them.
 - **Multi-language support** — For international conferences, having your card available in the recipient's language is a real differentiator.
 
-[NFC.cool Business Card](https://apps.apple.com/app/nfc-cool-business-card/id6463106055) covers all of these — NFC + QR + link sharing, offline NFC tap, multiple card profiles, no app needed for recipients, and support for 35 languages. It's what we'd recommend, but whatever you choose, make sure it hits those criteria.
+[NFC.cool Business Card](https://apps.apple.com/app/nfc-cool-business-card/id6463106055) covers all of these — NFC + QR + link sharing, multiple card profiles, no app needed for recipients (App Clip on iOS, website on Android), and the app UI and App Clip support 35 languages. It's what we'd recommend, but whatever you choose, make sure it hits those criteria.
 
 #### Create an event-specific card (or update your existing one)
 
@@ -84,9 +84,9 @@ This is optional but makes a big impression:
 - **NFC card or sticker** — A physical NFC card that links to your digital profile gives you the best of both worlds. You physically hand someone something (the familiar ritual), but it instantly opens your digital card on their phone. No app install. No typing. Just a tap.
 - **Phone case with NFC sticker** — Even simpler. Stick an NFC tag on the back of your phone case that links to your card. When someone asks for your info, you just say "tap your phone on the back of mine."
 
-#### Add your card to Apple Wallet or Google Wallet
+#### Add your card to Apple Wallet (iOS)
 
-Most digital card platforms let you save your QR code to your phone's wallet. This is clutch at conferences because:
+On iOS, you can save your card to Apple Wallet for quick access. This is clutch at conferences because:
 
 - It's accessible from the lock screen (no unlocking, no finding the app)
 - It works even when your phone's battery is low
@@ -106,7 +106,7 @@ Three seconds. Your full contact info, links, photo, and whatever else you've in
 
 The wow factor is real. At conferences, people remember the person whose card appeared on their phone like magic. It's a conversation starter in itself.
 
-**Pro tip:** NFC works without WiFi or cellular data. In a crowded expo hall where 3,000 people are killing the WiFi, NFC still works perfectly because it's a direct phone-to-card communication.
+**Pro tip:** The NFC tap itself works without WiFi — it's a direct phone-to-tag communication that opens a link. The recipient's phone will need a brief data connection (cellular works fine) to load your card profile, but it's far faster and more reliable than loading a full website in a crowded expo hall.
 
 #### The QR code (universal fallback)
 
@@ -150,7 +150,7 @@ Because your digital card includes your photo, they'll actually remember who you
 
 #### Review your sharing analytics
 
-Most digital card platforms show you who opened your card and when. This tells you:
+Many digital card platforms show you who opened your card and when (NFC.cool offers this on iOS, with Android support coming soon). This tells you:
 
 - Who was interested enough to actually look at your profile (not just pocket your card politely)
 - When they looked — someone reviewing your card three days after the conference is a warm lead
@@ -181,7 +181,7 @@ Here's everything you need to do, in order:
 - [ ] **Download a digital business card app** (we recommend [NFC.cool Business Card](https://apps.apple.com/app/nfc-cool-business-card/id6463106055) — free on [iOS](https://apps.apple.com/app/nfc-cool-business-card/id6463106055) and [Android](https://play.google.com/store/apps/details?id=cool.nfc.businesscard))
 - [ ] **Create your card** with name, title, company, contact info, and links
 - [ ] **Add your photo** — it helps people remember you after the event
-- [ ] **Save your QR code to Apple/Google Wallet** for quick lock-screen access
+- [ ] **Save your QR code to Apple Wallet (iOS)** for quick lock-screen access
 - [ ] **Optional: Order an NFC card or sticker** for the physical tap experience
 - [ ] **Customize your card for the specific event** (talk details, special CTA)
 - [ ] **Practice the tap/QR flow** once before the event so it feels natural
@@ -197,7 +197,7 @@ No. When you share via NFC tap, QR code, or link, your card opens in their web b
 
 ### What if the conference WiFi is terrible?
 
-NFC works completely offline — it's a direct tap between the NFC card/tag and the phone. QR codes that link to a URL will need a brief data connection when scanned, but most phones can fall back to cellular data. For a fully offline backup, save your QR code as an image on your phone.
+The NFC tap itself works without WiFi — it transmits a link directly from the tag to the phone. Both NFC and QR codes will need a brief data connection to load the card profile, but most phones can fall back to cellular data. The profile is lightweight and loads quickly even on slow connections.
 
 ### Can I use different cards for different conferences?
 
@@ -213,7 +213,7 @@ A basic digital business card is free on most platforms (including NFC.cool). A 
 
 ### What about data privacy at conferences?
 
-This is worth asking about any platform you use. Some digital card providers track recipients, record conversations, or sell contact data. NFC.cool BC is privacy-first: no recipient solicitation, no conversation recording, PIN protection for sensitive cards, and full GDPR compliance with data export.
+This is worth asking about any platform you use. Some digital card providers track recipients, record conversations, or sell contact data. NFC.cool BC is privacy-first: no data monetization or advertising, no recipient solicitation, no conversation recording, PIN protection for sensitive cards, and full GDPR compliance with data export.
 
 ---
 
@@ -227,4 +227,4 @@ Your next conference is coming up. This time, leave the paper at home.
 
 ---
 
-*NFC.cool Business Card is available for free on [iOS](https://apps.apple.com/app/nfc-cool-business-card/id6463106055) and [Android](https://play.google.com/store/apps/details?id=cool.nfc.businesscard). Create your first card in under a minute.*
+*NFC.cool Business Card is available for free on [iOS](https://apps.apple.com/app/nfc-cool-business-card/id6463106055) and on [Android inside NFC.cool Tools](https://android.nfc.cool). Create your first card in under a minute.*

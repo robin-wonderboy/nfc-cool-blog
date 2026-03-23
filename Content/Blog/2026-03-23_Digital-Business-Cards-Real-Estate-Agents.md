@@ -107,9 +107,9 @@ Check the app's privacy policy before committing. If they contact your recipient
 
 If you work in a multilingual market — and increasingly, most agents do — your card app needs to support multiple languages. Not just the interface, but the card content itself.
 
-### Apple Wallet and Google Wallet
+### Apple Wallet Integration
 
-Wallet passes mean your card works even without internet. The prospect opens their wallet app, taps your card, and sees your info. This is especially useful at events with poor cell signal or for international travelers on limited data plans.
+On iOS, Apple Wallet passes give your prospect quick access to your card right from the lock screen. This is especially useful at events for fast sharing without needing to open an app.
 
 ### No Platform Branding on Free Plans
 
@@ -117,7 +117,7 @@ Some apps plaster their own logo on your card unless you pay for premium. As an 
 
 ### Analytics
 
-Knowing when and how often your card is viewed helps you time follow-ups. If a prospect viewed your card three times this week, that's a warm lead — reach out.
+Knowing when and how often your card is viewed helps you time follow-ups. If a prospect viewed your card three times this week, that's a warm lead — reach out. Note that analytics availability varies by platform — NFC.cool currently offers analytics on iOS only, with Android support coming soon.
 
 ---
 
@@ -125,19 +125,19 @@ Knowing when and how often your card is viewed helps you time follow-ups. If a p
 
 Full disclosure: this is the NFC.cool blog, so yes, we're going to talk about our own app. But here's why it genuinely makes sense for real estate agents:
 
-**35 languages.** NFC.cool Business Card supports 35 languages — more than any competitor we're aware of. If you're selling property in Miami to Brazilian investors, or in Vancouver to Chinese buyers, your card works in their language.
+**35 languages.** The NFC.cool Business Card app UI and App Clip support 35 languages — more than any competitor we're aware of. If you're selling property in Miami to Brazilian investors, or in Vancouver to Chinese buyers, your card works in their language on iOS. The Android sharing website is currently English only.
 
-**Privacy-first.** NFC.cool doesn't contact your recipients. Period. No solicitation emails, no data enrichment, no conversation recording. When you're handling sensitive property transactions and client financial information, this matters.
+**Privacy-first.** NFC.cool doesn't contact your recipients. Period. No solicitation emails, no data enrichment, no conversation recording, no data monetization or advertising. When you're handling sensitive property transactions and client financial information, this matters.
 
-**NFC hardware that isn't locked in.** NFC.cool works with any standard NFC tag or card. You're not forced to buy proprietary $30–$60 NFC cards from the app maker. Grab a $2 NFC sticker, write your card to it, and you're set.
+**NFC hardware that isn't locked in.** NFC.cool doesn't sell NFC tags — and you don't need to buy proprietary $30–$60 NFC cards from any app maker. Any third-party NFC tag or sticker works. Grab a $2 NFC sticker, write your card URL to it, and you're set.
 
 **QR codes built in.** Every NFC.cool Business Card comes with a QR code you can print, display, or share digitally. Perfect for open house setups.
 
 **PIN protection.** If your card contains sensitive information, you can lock it behind a PIN. Useful for agents who share cards broadly but want to control who sees certain details.
 
-**Apple Wallet and Google Wallet.** Your card lives in the prospect's wallet app — one tap away, no internet required.
+**Apple Wallet.** On iOS, your card lives in the prospect's Apple Wallet — one tap away for quick access.
 
-**Affordable.** No $197 premium NFC cards. No $10/month subscriptions just to remove platform branding. NFC.cool is built by an indie developer, not a VC-funded startup chasing enterprise contracts.
+**Affordable.** Plans start at €20/year for a Personal card, €50/year for Small Business (10 cards), and €100/year for Business (100 cards). No $197 premium NFC cards. NFC.cool is built by an indie developer, not a VC-funded startup chasing enterprise contracts.
 
 ---
 
@@ -145,12 +145,12 @@ Full disclosure: this is the NFC.cool blog, so yes, we're going to talk about ou
 
 Getting started takes about five minutes:
 
-1. **Download the app** — NFC.cool Business Card is available on [iOS](https://apps.apple.com/app/id6446299694) and [Android](https://play.google.com/store/apps/details?id=cool.nfc.businesscard)
+1. **Download the app** — NFC.cool Business Card is available on [iOS](https://apps.apple.com/app/id6446299694) and on [Android inside NFC.cool Tools](https://android.nfc.cool)
 2. **Create your card** — Add your name, title, brokerage, phone, email, website, and social links
 3. **Add your photo** — A professional headshot helps prospects remember you
 4. **Generate your QR code** — Print it for open house materials
 5. **Write to an NFC tag** (optional) — Tap an NFC sticker or card to program it with your info
-6. **Add to Apple/Google Wallet** — Share the wallet pass with prospects
+6. **Add to Apple Wallet (iOS)** — Share the wallet pass with prospects for quick lock-screen access
 
 **Pro tip:** Create a dedicated open house card that includes the property address and virtual tour link. Swap it back to your general card after the event.
 
@@ -193,23 +193,23 @@ A digital business card doesn't replace your hustle — but it removes the frict
 
 The technology is proven, the cost is minimal, and the upside is every lead you would have otherwise lost.
 
-Ready to try it? [Download NFC.cool Business Card for iOS](https://apps.apple.com/app/id6446299694) or [get it on Google Play](https://play.google.com/store/apps/details?id=cool.nfc.businesscard).
+Ready to try it? [Download NFC.cool Business Card for iOS](https://apps.apple.com/app/id6446299694) or [get it on Android inside NFC.cool Tools](https://android.nfc.cool).
 
 ---
 
 ## Frequently Asked Questions
 
 **Do prospects need to download an app to receive my card?**
-No. When someone scans your QR code or taps your NFC tag, your card opens in their phone's web browser. They can save your contact directly from there — no app required.
+No. When someone scans your QR code or taps your NFC tag, iOS users see a native App Clip experience and Android users open a website on the nfc.cool domain. Both show a "Save Contact" button — no app download required.
 
 **Can I have multiple cards for different purposes?**
 Yes. Many agents create separate cards for different contexts — one for open houses (with property details), one for general networking, and one for their team.
 
 **Will my card work internationally?**
-Absolutely. NFC and QR codes work on phones worldwide. NFC.cool Business Card supports 35 languages, making it ideal for agents working with international buyers and sellers.
+Absolutely. NFC and QR codes work on phones worldwide. NFC.cool Business Card supports 35 languages in the app UI and App Clip (iOS), making it ideal for agents working with international buyers and sellers. The Android sharing website is currently English only.
 
 **Can I track who viewed my card?**
-This depends on the app. NFC.cool focuses on privacy-first sharing — your recipients aren't tracked or solicited. Some apps offer view analytics; just be aware that heavy tracking often means the app is also collecting data on your prospects.
+This depends on the app. NFC.cool offers analytics on iOS (who tapped, when, how many), with Android analytics coming soon. Your recipients are never solicited or marketed to. Some other apps offer more aggressive tracking; just be aware that heavy tracking often means the app is also collecting data on your prospects.
 
 **What if I switch brokerages?**
 Update your digital card once, and everyone who saved it sees the new info. No reprinting, no redistribution. This alone can save agents hundreds of dollars and weeks of confusion during a transition.

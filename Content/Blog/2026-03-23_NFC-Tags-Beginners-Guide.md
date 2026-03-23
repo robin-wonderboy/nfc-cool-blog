@@ -219,7 +219,7 @@ Place a tag on a pill bottle. Scanning it logs a timestamp in a note or spreadsh
 ### At Work
 
 **6. Digital business cards**
-The most popular NFC use case in business. Instead of carrying paper cards, an NFC business card shares your contact details with a single tap. Services like [NFC.cool Business Card](https://apps.apple.com/app/nfc-cool-business-card/id6454576455) let you create a professional digital card and write it to an NFC tag or physical card.
+The most popular NFC use case in business. Instead of carrying paper cards, an NFC business card shares your contact details with a single tap. [NFC.cool Business Card](https://apps.apple.com/app/nfc-cool-business-card/id6454576455) lets you create a professional digital card and write its URL to any third-party NFC tag — iOS recipients see a native App Clip, Android recipients open a website on the nfc.cool domain, and both can save your contact with one tap.
 
 **7. Conference room check-in**
 Place a tag outside meeting rooms. Tapping it launches your calendar or logs attendance — simpler than any booking system.
@@ -328,4 +328,4 @@ Whether you want to automate your morning routine, share your business contact, 
 
 **Ready to start programming NFC tags?** Download [NFC.cool Tools](https://apps.apple.com/app/nfc-cool-tools/id1249686798) for iPhone or [Android](https://play.google.com/store/apps/details?id=cool.nfc.tools) — it's the easiest way to read, write, and manage NFC tags.
 
-**Want a digital business card powered by NFC?** Check out [NFC.cool Business Card](https://apps.apple.com/app/nfc-cool-business-card/id6454576455) — share your contact with a single tap, in 35 languages.
+**Want a digital business card powered by NFC?** Check out [NFC.cool Business Card](https://apps.apple.com/app/nfc-cool-business-card/id6454576455) — share your contact with a single tap. App UI and App Clip available in 35 languages.

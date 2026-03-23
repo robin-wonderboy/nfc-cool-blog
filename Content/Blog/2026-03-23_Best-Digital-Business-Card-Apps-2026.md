@@ -40,9 +40,9 @@ Here's an at-a-glance overview of all eight apps:
 
 **NFC.cool Business Card**
 - Free plan: Yes (with branding)
-- Starting price: Affordable individual plans
+- Starting price: €20/year (Personal, 1 card)
 - NFC support: Works with any NFC tag
-- Languages: 35
+- Languages: 35 (app UI + App Clip)
 - Privacy PIN: Yes
 - Recipient solicitation: No
 
@@ -108,25 +108,27 @@ Here's an at-a-glance overview of all eight apps:
 
 ### 1. NFC.cool Business Card — Best for Privacy & Multilingual Professionals
 
-**What it is:** A digital business card app from NFC.cool, the indie studio behind 13 NFC and utility apps with over 9 million downloads. Available on iOS and Android.
+**What it is:** A digital business card app from NFC.cool, the indie studio behind 13 NFC and utility apps with over 9 million downloads. Available as a standalone app on iOS and as part of [NFC.cool Tools](https://android.nfc.cool) on Android.
 
 **What we like:**
-- **35 languages** — by far the most multilingual digital business card on the market. If you work internationally, this matters.
-- **Privacy-first design** — PIN-protected profiles (4-digit PIN with rate limiting), public/private toggle, GDPR-compliant data export. No conversation recording, no recipient solicitation.
-- **Works with any NFC tag** — You're not locked into buying proprietary hardware. Write your card URL to any NFC tag, sticker, or card you already own.
+- **35 languages** — the app UI and App Clip are available in 35 languages, making it by far the most multilingual digital business card on the market. If you work internationally, this matters.
+- **Privacy-first design** — PIN-protected profiles (4-digit PIN with rate limiting), public/private toggle, GDPR-compliant data export. No data monetization or advertising, no conversation recording, no recipient solicitation.
+- **Works with any NFC tag** — NFC.cool doesn't sell NFC tags, and you're not locked into buying proprietary hardware. Write your card URL to any third-party NFC tag, sticker, or card you already own.
 - **Up to 100 cards** — Create different cards for different roles, events, or clients.
 - **Conference Mode** — An iOS Live Activity puts your QR code right on your lock screen. No fumbling with apps at events.
-- **AppClip support** — Recipients without the app can view your card instantly on iOS.
-- **Lead tracking** — Track connection statuses from New to Converted, with calendar and reminders integration for follow-ups.
+- **Beautifully designed** — The app and card-sharing experience are thoughtfully crafted with custom color theming, company logos, and a polished App Clip on iOS that looks and feels native.
+- **App Clip + web sharing** — On iOS, recipients see a native App Clip experience without needing the app. On Android, recipients open a website on the nfc.cool domain — no app needed either. Both show a "Save Contact" button for easy saving.
+- **Apple Wallet integration** — Add your card to Apple Wallet on iOS for instant lock-screen access.
+- **Lead capture** — Available on iOS (with options to trigger before saving, after saving, or turned off). Android support coming soon.
 
 **What could be better:**
-- Some advanced features (analytics, lead generation, Conference Mode, custom themes) are iOS-only for now.
-- No CRM integrations yet — though for most individuals and small teams, the built-in lead tracking is sufficient.
+- Some advanced features (analytics, lead capture, Conference Mode, custom themes) are iOS-only for now, with Android support coming soon.
+- No CRM integrations or webhooks yet — iOS offers CSV export for contacts. For most individuals and small teams, this is sufficient.
 - As a newer entrant, it doesn't have the enterprise sales team that Blinq or Popl have.
 
 **Best for:** Privacy-conscious professionals, international networkers, anyone who wants NFC flexibility without hardware lock-in, indie/small business users who appreciate transparent development.
 
-[Download NFC.cool Business Card on the App Store](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572) · [Get it on Google Play](https://play.google.com/store/apps/details?id=cool.nfc.businesscard)
+[Download NFC.cool Business Card on the App Store](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572) · [Get it on Android (inside NFC.cool Tools)](https://android.nfc.cool)
 
 ---
 
@@ -171,12 +173,12 @@ Here's an at-a-glance overview of all eight apps:
 
 ---
 
-### 4. HiHello — Best Design
+### 4. HiHello — Strong Customization
 
-**What it is:** A design-forward digital business card app with a clean interface and strong customization options.
+**What it is:** A digital business card app with customization options and enterprise features.
 
 **What we like:**
-- **Beautiful card designs** — HiHello consistently has the most visually polished cards.
+- **Good customization** — HiHello offers decent card design options, though NFC.cool Business Card's App Clip experience and custom color theming are equally polished.
 - **Good free tier** — 4 cards, email signature, QR sharing, and virtual backgrounds included free.
 - **Virtual backgrounds** — Ready-made backgrounds for Zoom/Teams calls with your card info. A clever touch.
 - **Strong enterprise directory sync** — Integrations with Workday, Okta, and Entra ID for large companies.
@@ -287,7 +289,7 @@ If privacy matters to you (and in 2026, it should), ask these questions before c
 
 Pricing changes frequently, so always check the latest on each app's website. Here's what we found as of March 2026:
 
-- **NFC.cool** — Free tier available; affordable paid plans for additional features
+- **NFC.cool** — Free tier available; Personal at €20/year (1 card), Small Business at €50/year (10 cards), Business at €100/year (100 cards)
 - **Wave Connect** — Free (generous); Pro at $7/month or $59/year; Teams at $60/user/year
 - **Blinq** — Free (with branding); Premium ~$9.99/month; Business $4.99/user/month (min 5)
 - **HiHello** — Free (4 cards); Professional $6–8/month; Business $5–6/user/month
@@ -322,7 +324,7 @@ Pricing changes frequently, so always check the latest on each app's website. He
 → **NFC.cool Business Card.** Write your card URL to any NFC tag you own.
 
 **"I want to look professional above everything"**
-→ **HiHello.** The best-designed cards in the space.
+→ **HiHello.** Good customization with enterprise features, though NFC.cool Business Card matches it on design quality.
 
 ---
 
@@ -340,4 +342,4 @@ Whatever you choose, ditch the paper cards. It's 2026 — your business card sho
 
 ---
 
-*Ready to try NFC.cool Business Card? Download it free on the [App Store](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572) or [Google Play](https://play.google.com/store/apps/details?id=cool.nfc.businesscard).*
+*Ready to try NFC.cool Business Card? Download it free on the [App Store](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572) or [get it on Android inside NFC.cool Tools](https://android.nfc.cool).*

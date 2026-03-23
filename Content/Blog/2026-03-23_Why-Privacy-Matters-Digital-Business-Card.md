@@ -148,13 +148,15 @@ When we built [NFC.cool Business Card](https://apps.apple.com/app/nfc-cool-busin
 
 **No Recipient Solicitation** — When someone views your card, they see your card. They don't get marketing emails from us. Your contacts are yours, not our leads.
 
-**GDPR Data Export** — Request a full export of your data anytime, delivered as a ZIP file. No support tickets, no waiting period.
+**No Data Monetization or Advertising** — Your vCard and account data are stored on our server to power the service, but nothing is used for advertising or third-party data processing.
 
-**NFC Hardware Freedom** — We work with any standard NFC tag. You're not locked into proprietary hardware that might have tracking capabilities you can't audit.
+**GDPR Data Export** — On iOS, export your contacts as CSV anytime. No support tickets, no waiting period.
+
+**NFC Hardware Freedom** — We work with any standard NFC tag. NFC.cool doesn't sell NFC hardware — you're free to use any third-party tag you choose, without proprietary tracking you can't audit.
 
 **European Indie Developer** — We're a small team based in Portugal. We don't have VC investors pushing us to monetize user data for growth metrics. Our incentive is building a product people trust, not maximizing data collection.
 
-We're not perfect. Some features — like detailed analytics and lead management — are currently iOS-only. We don't have CRM integrations yet, and our marketing budget is a fraction of the bigger players. But our privacy model is something we genuinely believe in, and we think it matters.
+We're not perfect. Analytics and lead capture are currently iOS-only (Android support coming soon). We don't have CRM integrations or webhooks yet — iOS offers CSV export for getting contacts out. Our marketing budget is a fraction of the bigger players. But our privacy model is something we genuinely believe in, and we think it matters.
 
 ---
 
@@ -187,4 +189,4 @@ Choose wisely.
 
 ---
 
-*Ready to try a privacy-first digital business card? [Download NFC.cool Business Card](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572) for iPhone or [get it on Google Play](https://play.google.com/store/apps/details?id=cool.nfc.businesscard). Available in 35 languages.*
+*Ready to try a privacy-first digital business card? [Download NFC.cool Business Card](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572) for iPhone or [get it on Android inside NFC.cool Tools](https://android.nfc.cool). App UI and App Clip available in 35 languages.*
