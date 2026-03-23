@@ -5,7 +5,7 @@ let package = Package(
    name: "Site",
    platforms: [.macOS(.v26)],
    dependencies: [
-      .package(url: "https://github.com/FlineDev/SiteKit-Package.git", from: "1.0.0"),
+      .package(url: "https://github.com/FlineDev/SiteKit-Package.git", branch: "main"),
    ],
    targets: [
       .executableTarget(
