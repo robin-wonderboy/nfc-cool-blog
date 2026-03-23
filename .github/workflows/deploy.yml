@@ -29,8 +29,19 @@ jobs:
         with:
           swift-version: "6.2"
 
+      - name: Debug file listing
+        run: |
+          echo "=== PWD ==="
+          pwd
+          echo "=== LS ==="
+          ls -la
+          echo "=== SiteConfig.yaml ==="
+          cat SiteConfig.yaml
+          echo "=== Content ==="
+          find Content -type f
+
       - name: Build site
-        run: swift run -c release Site build
+        run: swift run Site build 2>&1 || swift run -c release Site build
 
       - name: Add CNAME
         run: echo "blog.nfc.cool" > _Site/CNAME
