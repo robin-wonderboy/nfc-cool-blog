@@ -115,10 +115,10 @@ Here's an at-a-glance overview of all eight apps:
 - **Privacy-first design** — PIN-protected profiles (4-digit PIN with rate limiting), public/private toggle, GDPR-compliant data export. No data monetization or advertising, no conversation recording, no recipient solicitation.
 - **Works with any NFC tag** — NFC.cool doesn't sell NFC tags, and you're not locked into buying proprietary hardware. Write your card URL to any third-party NFC tag, sticker, or card you already own.
 - **Up to 100 cards** — Create different cards for different roles, events, or clients.
-- **Conference Mode** — An iOS Live Activity puts your QR code right on your lock screen. No fumbling with apps at events.
+- **Conference Mode (Live Activity)** — This is a standout feature. An iOS Live Activity puts your QR code directly on your lock screen — always visible, ready to scan, no unlocking or opening any app needed. This is actually more useful than Apple Wallet integration because the QR code linking to your business card is *right there* on the lock screen. At a conference, you just raise your phone and people scan. No fumbling with Wallet, no searching for the right pass.
 - **Beautifully designed** — The app and card-sharing experience are thoughtfully crafted with custom color theming, company logos, and a polished App Clip on iOS that looks and feels native.
 - **App Clip + web sharing** — On iOS, recipients see a native App Clip experience without needing the app. On Android, recipients open a website on the nfc.cool domain — no app needed either. Both show a "Save Contact" button for easy saving.
-- **Apple Wallet integration** — Add your card to Apple Wallet on iOS for instant lock-screen access.
+- **Apple Wallet integration** — Also available as an alternative for those who prefer Wallet-based access.
 - **Lead capture** — Available on iOS (with options to trigger before saving, after saving, or turned off). Android support coming soon.
 
 **What could be better:**

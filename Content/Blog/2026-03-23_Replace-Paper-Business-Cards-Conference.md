@@ -84,13 +84,15 @@ This is optional but makes a big impression:
 - **NFC card or sticker** — A physical NFC card that links to your digital profile gives you the best of both worlds. You physically hand someone something (the familiar ritual), but it instantly opens your digital card on their phone. No app install. No typing. Just a tap.
 - **Phone case with NFC sticker** — Even simpler. Stick an NFC tag on the back of your phone case that links to your card. When someone asks for your info, you just say "tap your phone on the back of mine."
 
-#### Add your card to Apple Wallet (iOS)
+#### Put your QR code on your lock screen (iOS)
 
-On iOS, you can save your card to Apple Wallet for quick access. This is clutch at conferences because:
+NFC.cool Business Card's Conference Mode uses an iOS Live Activity to put your card's QR code directly on your lock screen. This is the fastest sharing method at conferences:
 
-- It's accessible from the lock screen (no unlocking, no finding the app)
-- It works even when your phone's battery is low
-- It feels natural — you're just pulling up your "badge"
+- Your QR code is always visible — no unlocking, no opening any app
+- People just scan your screen while you're talking to them
+- It's even faster than Apple Wallet because you don't need to find the right pass
+
+Apple Wallet integration is also available as a backup option.
 
 ---
 

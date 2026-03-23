@@ -55,7 +55,7 @@ Every subscription needs to justify itself. Every $10/month is $120/year that co
 
 ### 1. The Coffee Meeting
 
-You know the scene. You're meeting a potential client at a café. The conversation goes well. At the end, instead of digging through your bag for a card that may or may not have your current info, you pull out your phone, show a QR code, and they scan it in two seconds.
+You know the scene. You're meeting a potential client at a café. The conversation goes well. At the end, instead of digging through your bag for a card that may or may not have your current info, you just raise your phone — with NFC.cool's Conference Mode on iOS, your QR code is already on your lock screen as a Live Activity. They scan it in two seconds. No unlocking, no opening an app.
 
 Your full contact info — phone, email, website, portfolio, LinkedIn, booking link — saves directly to their phone. No card to lose. No typos in their contacts. And you look like you have your act together.
 

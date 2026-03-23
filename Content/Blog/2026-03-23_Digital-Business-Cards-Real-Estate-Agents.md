@@ -107,9 +107,9 @@ Check the app's privacy policy before committing. If they contact your recipient
 
 If you work in a multilingual market — and increasingly, most agents do — your card app needs to support multiple languages. Not just the interface, but the card content itself.
 
-### Apple Wallet Integration
+### Lock Screen Access: Live Activity & Apple Wallet
 
-On iOS, Apple Wallet passes give your prospect quick access to your card right from the lock screen. This is especially useful at events for fast sharing without needing to open an app.
+NFC.cool Business Card on iOS offers a Live Activity that puts your QR code directly on your lock screen — always visible, ready to scan. At an open house or networking event, you just raise your phone. No unlocking, no opening an app, no digging through Apple Wallet. It's the fastest way to share your card in person. Apple Wallet integration is also available as an alternative.
 
 ### No Platform Branding on Free Plans
 
