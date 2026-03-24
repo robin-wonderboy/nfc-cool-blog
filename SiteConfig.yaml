@@ -13,6 +13,9 @@ author:
   email: "hello@nfc.cool"
 
 navigation:
+  logo:
+    image: "/assets/logo-white.png"
+    text: "Blog"
   items:
     - title: "Guides"
       url: "/blog/guides/"
