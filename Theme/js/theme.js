@@ -67,8 +67,20 @@ document.addEventListener('DOMContentLoaded', function () {
       tooltip.textContent = 'Search (' + shortcutLabel + ')';
       searchBtn.appendChild(tooltip);
 
+      // Detect base path from <base> tag or current page
+      var basePath = (function() {
+         var base = document.querySelector('base');
+         if (base) return base.getAttribute('href').replace(/\/$/, '');
+         // Fallback: detect from logo link
+         var logo = document.querySelector('.sk-site-logo');
+         if (logo && logo.getAttribute('href')) {
+            return logo.getAttribute('href').replace(/\/$/, '');
+         }
+         return '';
+      })();
+
       function tagURL(slug) {
-         return '/tags/' + slug + '/';
+         return basePath + '/tags/' + slug + '/';
       }
 
       function highlightMatch(text, query) {
@@ -266,7 +278,7 @@ document.addEventListener('DOMContentLoaded', function () {
          } else if (!fullTextLoading) {
             setLoading(true);
             fullTextLoading = true;
-            fetch('/assets/search-index.json')
+            fetch(basePath + '/assets/search-index.json')
                .then(function(res) { return res.json(); })
                .then(function(data) {
                   fullTextData = data;
@@ -283,7 +295,7 @@ document.addEventListener('DOMContentLoaded', function () {
       function ensureSearchData(callback) {
          if (searchData) { callback(); return; }
          setLoading(true);
-         fetch('/assets/nav-index.json')
+         fetch(basePath + '/assets/nav-index.json')
             .then(function(res) { return res.json(); })
             .then(function(data) {
                searchData = data;
