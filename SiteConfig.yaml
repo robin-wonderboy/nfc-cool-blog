@@ -13,9 +13,6 @@ author:
   email: "hello@nfc.cool"
 
 navigation:
-  logo:
-    image: "/assets/logo-white.png"
-    text: "Blog"
   items:
     - title: "Guides"
       url: "/blog/guides/"
@@ -44,6 +41,11 @@ sections:
         slug: "industry"
       - name: "NFC Tech"
         slug: "nfc-tech"
+
+homePage:
+  title: "NFC.cool Blog"
+  subtitle: "Guides, comparisons, and insights about NFC technology and digital business cards"
+  recentPostsCount: 10
 
 footer:
   copyrightName: "NFC.cool"

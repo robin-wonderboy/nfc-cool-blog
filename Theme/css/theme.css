@@ -198,6 +198,11 @@ strong { font-weight: 600; }
 /* ============================================================
    Logo in Header
    ============================================================ */
+/* Hide logo from nav bar — it goes in the hero instead */
+.sk-site-logo {
+   display: none;
+}
+
 .sk-site-logo img {
    height: 32px;
    width: auto;
@@ -205,10 +210,7 @@ strong { font-weight: 600; }
 }
 
 .sk-site-logo-text {
-   font-family: var(--font-heading);
-   font-size: 2rem;
-   font-weight: 300;
-   letter-spacing: -0.01em;
+   display: none;
 }
 
 /* ".cool" treatment in logo text */
@@ -284,21 +286,29 @@ strong { font-weight: 600; }
 .sk-nav-list {
    display: flex;
    list-style: none;
-   gap: 0.25rem;
+   gap: 0.125rem;
    flex: 1;
    justify-content: center;
+   overflow-x: auto;
+   -webkit-overflow-scrolling: touch;
+   scrollbar-width: none;
+}
+
+.sk-nav-list::-webkit-scrollbar {
+   display: none;
 }
 
 .sk-nav-item a {
    display: inline-flex;
    align-items: center;
    gap: 0.375rem;
-   padding: 0.5rem 1.25rem;
+   padding: 0.5rem 0.75rem;
    color: var(--color-text);
    font-weight: 600;
-   font-size: 1rem;
+   font-size: 0.875rem;
    border-radius: var(--radius);
    transition: all var(--transition);
+   white-space: nowrap;
 }
 
 .sk-nav-item a:hover,
@@ -373,7 +383,7 @@ strong { font-weight: 600; }
 
 .sk-home-hero {
    text-align: center;
-   padding: 4rem 1rem 3rem;
+   padding: 3rem 1rem 2.5rem;
    margin-bottom: 2rem;
    border-radius: var(--radius-lg);
    overflow: hidden;
@@ -381,15 +391,26 @@ strong { font-weight: 600; }
    color: #FFFFFF;
 }
 
+.sk-home-hero::before {
+   content: '';
+   display: block;
+   width: 180px;
+   height: 50px;
+   margin: 0 auto 1rem;
+   background: url('/assets/logo-white.png') no-repeat center / contain;
+}
+
 .sk-home-hero h1,
 .sk-home-hero p {
    color: #FFFFFF;
 }
 
+/* Hide the text title since we show the logo */
 .sk-home-title {
-   font-size: 2.75rem;
-   letter-spacing: -0.03em;
+   font-size: 1.5rem;
+   letter-spacing: -0.02em;
    margin-bottom: 0.5rem;
+   font-weight: 300;
 }
 
 .sk-home-subtitle {
