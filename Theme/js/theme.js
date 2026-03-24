@@ -4,6 +4,31 @@ document.addEventListener('DOMContentLoaded', function () {
       hljs.highlightAll();
    }
 
+   // Logo dark/light mode: ensure both images exist with correct classes
+   var logoContainer = document.querySelector('.sk-site-logo');
+   if (logoContainer) {
+      var imgs = logoContainer.querySelectorAll('img');
+      // If SiteKit only rendered one image, add the other
+      if (imgs.length === 1) {
+         var existing = imgs[0];
+         var src = existing.getAttribute('src') || '';
+         var isDark = src.indexOf('dark') !== -1;
+         existing.classList.add(isDark ? 'sk-logo-dark' : 'sk-logo-light');
+         var other = document.createElement('img');
+         other.src = isDark ? src.replace('dark', 'light') : src.replace('light', 'dark');
+         other.alt = existing.alt || 'NFC.cool';
+         other.classList.add(isDark ? 'sk-logo-light' : 'sk-logo-dark');
+         existing.parentNode.insertBefore(other, existing.nextSibling);
+      } else if (imgs.length >= 2) {
+         // Both rendered — add classes based on src
+         imgs.forEach(function(img) {
+            var s = img.getAttribute('src') || '';
+            if (s.indexOf('dark') !== -1) img.classList.add('sk-logo-dark');
+            else if (s.indexOf('light') !== -1) img.classList.add('sk-logo-light');
+         });
+      }
+   }
+
    // Theme toggle (dark/light)
    var toggle = document.querySelector('.sk-theme-toggle');
    if (toggle) {

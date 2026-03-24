@@ -2,8 +2,7 @@
 id: nfc-blog-001
 title: "Welcome to the NFC.cool Blog"
 date: 2026-03-23
-category: guides
-tags: [welcome, nfc, digital-business-cards]
+tags: [welcome]
 summary: "Introducing the NFC.cool Blog — your new resource for NFC guides, digital business card comparisons, and industry insights."
 ---
 

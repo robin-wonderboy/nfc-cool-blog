@@ -17,10 +17,10 @@ navigation:
     image: "/assets/logo-black.png"
     text: ""
   items:
-    - title: "All Posts"
-      url: "/blog/"
-    - title: "About"
-      url: "/about/"
+    - title: "NFC"
+      url: "/tags/nfc-tech/"
+    - title: "Business Cards"
+      url: "/tags/digital-business-cards/"
   showSearch: true
   showThemeToggle: true
 
@@ -31,15 +31,6 @@ sections:
     urlPrefix: "blog"
     rssTitle: "NFC.cool Blog"
     rssDescription: "Guides, comparisons, and insights about NFC technology and digital business cards from NFC.cool"
-    categories:
-      - name: "Guides"
-        slug: "guides"
-      - name: "Comparisons"
-        slug: "comparisons"
-      - name: "Industry"
-        slug: "industry"
-      - name: "NFC Tech"
-        slug: "nfc-tech"
 
 homePage:
   title: "NFC.cool Blog"
@@ -49,3 +40,8 @@ homePage:
 footer:
   copyrightName: "NFC.cool"
   startYear: 2026
+  links:
+    - title: "About"
+      url: "/about/"
+    - title: "nfc.cool"
+      url: "https://nfc.cool"

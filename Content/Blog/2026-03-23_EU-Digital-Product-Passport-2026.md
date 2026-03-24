@@ -2,8 +2,7 @@
 id: nfc-blog-008
 title: "EU Digital Product Passport: What You Need to Know in 2026"
 date: 2026-03-23
-category: nfc-tech
-tags: [digital-product-passport, dpp, espr, eu-regulation, nfc, sustainability, supply-chain, 2026]
+tags: [nfc-tech, eu-regulation, supply-chain]
 summary: "The EU Digital Product Passport is here — batteries are already covered, textiles and electronics are next. Here's what DPP means for businesses, consumers, and why NFC technology is at the center of it all."
 metaTitle: "EU Digital Product Passport 2026 — What It Is, Who's Affected & NFC's Role"
 metaDescription: "Everything you need to know about the EU Digital Product Passport (DPP) in 2026: mandatory timelines, data requirements, NFC and QR access, and how to prepare your business."

@@ -2,8 +2,7 @@
 id: nfc-blog-007
 title: "How to Replace Paper Business Cards at Your Next Conference"
 date: 2026-03-23
-category: guides
-tags: [digital-business-cards, conference, networking, trade-show, nfc, qr-code, paper-free, 2026]
+tags: [digital-business-cards, networking, conferences]
 summary: "Conferences are where paper business cards fail the hardest. Here's a step-by-step plan to go fully digital — before, during, and after your next event — so you never scramble for a card again."
 metaTitle: "How to Replace Paper Business Cards at Your Next Conference (2026)"
 metaDescription: "A step-by-step guide to ditching paper business cards at conferences. Learn how to set up, share, and follow up with digital business cards using NFC, QR codes, and shareable links."

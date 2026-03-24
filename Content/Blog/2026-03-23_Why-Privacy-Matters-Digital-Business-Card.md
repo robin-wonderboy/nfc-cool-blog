@@ -2,8 +2,7 @@
 id: nfc-blog-004
 title: "Why Privacy Matters for Your Digital Business Card"
 date: 2026-03-23
-category: guides
-tags: [privacy, digital-business-cards, gdpr, data-protection, security, nfc]
+tags: [digital-business-cards, privacy, gdpr]
 summary: "Your digital business card contains your name, email, phone number, and more — yet most people never think about where that data actually goes. Here's why privacy should be your #1 criterion."
 metaTitle: "Why Privacy Matters for Your Digital Business Card (2026 Guide)"
 metaDescription: "Digital business cards handle your most personal professional data. Learn what privacy risks to watch for, what questions to ask, and how to protect your contacts."
