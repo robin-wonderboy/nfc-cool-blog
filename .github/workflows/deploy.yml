@@ -43,8 +43,19 @@ jobs:
       - name: Build site
         run: swift run Site build 2>&1 || swift run -c release Site build
 
-      - name: Add CNAME
-        run: echo "blog.nfc.cool" > _Site/CNAME
+      - name: Fix asset paths for GitHub Pages project site
+        run: |
+          # SiteKit generates absolute paths from root (/assets/...) but GitHub Pages
+          # project sites serve from /nfc-cool-blog/. Rewrite all absolute paths.
+          # This hack can be removed once blog.nfc.cool DNS is configured.
+          find _Site -name '*.html' -exec sed -i \
+            -e 's|href="/assets/|href="/nfc-cool-blog/assets/|g' \
+            -e 's|src="/assets/|src="/nfc-cool-blog/assets/|g' \
+            -e 's|href="/blog/|href="/nfc-cool-blog/blog/|g' \
+            -e 's|href="/about/|href="/nfc-cool-blog/about/|g' \
+            -e 's|href="/tags/|href="/nfc-cool-blog/tags/|g' \
+            -e 's|href="/feed\.|href="/nfc-cool-blog/feed.|g' \
+            {} +
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
