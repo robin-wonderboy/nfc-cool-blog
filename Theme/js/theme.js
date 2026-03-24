@@ -114,6 +114,12 @@ document.addEventListener('DOMContentLoaded', function () {
          return text;
       }
 
+      function articleURL(url) {
+         // If URL already starts with basePath, return as-is
+         if (basePath && url.indexOf(basePath) === 0) return url;
+         return basePath + url;
+      }
+
       function renderArticle(a, query, useText) {
          var preview = '';
          if (useText) {
@@ -121,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
          } else {
             preview = truncateAround(a.summary || '', query, 100);
          }
-         return '<a class="sk-search-post" href="' + a.url + '">' +
+         return '<a class="sk-search-post" href="' + articleURL(a.url) + '">' +
             '<span class="sk-search-post-title">' + highlightMatch(a.title, query) + '</span>' +
             (preview ? '<span class="sk-search-post-summary">' + highlightMatch(preview, query) + '</span>' : '') +
             '</a>';
@@ -179,13 +185,30 @@ document.addEventListener('DOMContentLoaded', function () {
          return searchOverlay;
       }
 
+      // Build tags map from articles (SiteKit format: tags are inline in articles)
+      function buildTagsMap(articles) {
+         var tags = {};
+         (articles || []).forEach(function(a) {
+            (a.tags || []).forEach(function(tag) {
+               if (!tags[tag]) {
+                  tags[tag] = tag.replace(/-/g, ' ').replace(/\b\w/g, function(c) { return c.toUpperCase(); })
+                     .replace(/\bNfc\b/g, 'NFC').replace(/\bQr\b/g, 'QR').replace(/\bGdpr\b/g, 'GDPR')
+                     .replace(/\bEu\b/g, 'EU').replace(/\bIphone\b/g, 'iPhone');
+               }
+            });
+         });
+         return tags;
+      }
+
       function renderInstantResults(container, query) {
          var html = '';
          var lower = query.toLowerCase();
 
+         // Build tags from articles if not already present
+         var tags = searchData.tags || buildTagsMap(searchData.articles);
+
          // Match tags
          var matchedTags = [];
-         var tags = searchData.tags || {};
          for (var slug in tags) {
             if (slug.indexOf(lower) !== -1 || tags[slug].toLowerCase().indexOf(lower) !== -1) {
                matchedTags.push({ slug: slug, name: tags[slug] });
