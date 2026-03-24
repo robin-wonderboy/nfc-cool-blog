@@ -1,4 +1,4 @@
-name: "NFC.cool"
+name: "NFC.cool Blog"
 colorScheme: "custom"
 fontPairing: "custom"
 css:
@@ -9,3 +9,69 @@ headInlineScript: "(function(){var t=localStorage.getItem('theme')||(window.matc
 logo:
    image: "images/nfc-cool-logo-dark.svg"
    darkImage: "images/nfc-cool-logo-light.svg"
+tokens:
+   colorAccent:
+      any: "#1170CF"
+      dark: "#00AAFF"
+   colorAccentHover:
+      any: "#00AAFF"
+      dark: "#1170CF"
+   colorAccentLight:
+      any: "rgba(17, 112, 207, 0.08)"
+      dark: "rgba(0, 170, 255, 0.12)"
+   colorHighlight:
+      any: "#FFC700"
+      dark: "#FFC700"
+   colorHighlightHover:
+      any: "#E6B400"
+      dark: "#FFD633"
+   colorBg:
+      any: "#FFFFFF"
+      dark: "#0D1117"
+   colorBgAlt:
+      any: "#F2F2F2"
+      dark: "#161B22"
+   colorBgCard:
+      any: "#FFFFFF"
+      dark: "#161B22"
+   colorText:
+      any: "#212529"
+      dark: "#E6EDF3"
+   colorTextSecondary:
+      any: "#555B63"
+      dark: "#8B949E"
+   colorTextMuted:
+      any: "#8B919A"
+      dark: "#6E7681"
+   colorBorder:
+      any: "#DEE2E6"
+      dark: "#30363D"
+   colorBorderLight:
+      any: "#E9ECEF"
+      dark: "#21262D"
+   colorShadow:
+      any: "rgba(33, 37, 41, 0.08)"
+      dark: "rgba(0, 0, 0, 0.3)"
+   colorShadowLg:
+      any: "rgba(33, 37, 41, 0.15)"
+      dark: "rgba(0, 0, 0, 0.45)"
+   colorGradientStart:
+      any: "#1170CF"
+      dark: "#1170CF"
+   colorGradientEnd:
+      any: "#00AAFF"
+      dark: "#00AAFF"
+   fontHeading:
+      family: "Titillium Web"
+      weights: [400, 600, 700]
+   fontBody:
+      family: "Titillium Web"
+      weights: [400, 600, 700]
+   fontAccent:
+      family: "Caveat"
+      weights: [600]
+   maxWidth: "1200px"
+   contentWidth: "720px"
+   headerHeight: "64px"
+   radius: "8px"
+   radiusLg: "12px"
