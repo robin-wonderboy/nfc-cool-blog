@@ -2,7 +2,11 @@ name: "NFC.cool Blog"
 baseURL: "https://blog.nfc.cool"
 description: "Guides, comparisons, and insights about NFC technology and digital business cards"
 language: "en"
+contentDirectory: "Content"
+outputDirectory: "_Site"
+assetsDirectory: "Content/Assets"
 blogURLPrefix: "blog"
+categories: []
 
 author:
   name: "NFC.cool"
