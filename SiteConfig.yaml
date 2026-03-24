@@ -13,17 +13,16 @@ author:
   email: "hello@nfc.cool"
 
 navigation:
+  logo:
+    image: "/assets/logo-black.png"
+    text: ""
   items:
-    - title: "Guides"
-      url: "/blog/guides/"
-    - title: "Comparisons"
-      url: "/blog/comparisons/"
-    - title: "Industry"
-      url: "/blog/industry/"
-    - title: "NFC Tech"
-      url: "/blog/nfc-tech/"
+    - title: "All Posts"
+      url: "/blog/"
     - title: "About"
       url: "/about/"
+  showSearch: true
+  showThemeToggle: true
 
 sections:
   - name: "Blog"

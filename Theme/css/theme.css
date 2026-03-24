@@ -198,13 +198,15 @@ strong { font-weight: 600; }
 /* ============================================================
    Logo in Header
    ============================================================ */
-/* Hide logo from nav bar — it goes in the hero instead */
 .sk-site-logo {
-   display: none;
+   display: flex;
+   align-items: center;
+   flex-shrink: 0;
+   margin-right: 0.5rem;
 }
 
 .sk-site-logo img {
-   height: 32px;
+   height: 24px;
    width: auto;
    border-radius: 0;
 }
