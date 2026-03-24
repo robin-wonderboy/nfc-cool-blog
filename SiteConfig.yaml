@@ -1,5 +1,5 @@
 name: "NFC.cool Blog"
-baseURL: "https://blog.nfc.cool"
+baseURL: "https://robin-wonderboy.github.io/nfc-cool-blog"
 description: "Guides, comparisons, and insights about NFC technology and digital business cards"
 language: "en"
 contentDirectory: "Content"
