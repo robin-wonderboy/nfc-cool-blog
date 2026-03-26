@@ -65,10 +65,7 @@ jobs:
             # Fix logo link
             if 'sk-site-logo' in content and 'aria-label' not in content.split('sk-site-logo')[0][-50:]:
               content = content.replace('class="sk-site-logo"', 'class="sk-site-logo" aria-label="NFC.cool Blog Home"')
-            # Add favicon and apple-touch-icon
-            icon_tags = '<link rel="icon" type="image/png" href="/assets/favicon.png"/><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"/>'
-            if '<link rel="icon"' not in content and '<link rel="apple-touch-icon"' not in content:
-              content = content.replace('</head>', icon_tags + '</head>')
+
             if content != original:
               with open(f, "w") as fh:
                 fh.write(content)

@@ -6,6 +6,8 @@ css:
 js:
    - "js/theme.js"
 headInlineScript: "(function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})()"
+favicons:
+   - "images/nfc-cool-logo-dark.svg"
 logo:
    image: "images/nfc-cool-logo-dark.svg"
    darkImage: "images/nfc-cool-logo-light.svg"
