@@ -476,7 +476,12 @@ strong { font-weight: 600; }
 }
 
 .sk-post-card h3 {
-   margin-top: -0.15em;
+   margin-top: 0;
+   margin-bottom: 0.25rem;
+}
+
+.sk-post-card h2 {
+   margin-top: 0;
    margin-bottom: 0.25rem;
 }
 
