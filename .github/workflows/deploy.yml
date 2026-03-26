@@ -45,32 +45,30 @@ jobs:
 
       - name: SEO fix — add aria-labels to empty anchor tags
         run: |
-          python3 - <<'PYEOF'
-          import re, glob
+          python3 << 'PYEOF'
+          import re, glob, html as htmlmod
           for f in glob.glob("_Site/**/*.html", recursive=True):
-              with open(f, "r") as fh:
-                  html = fh.read()
-              changed = False
-              # Fix empty sk-post-link anchors: extract title from next h2 and add aria-label
-              def add_aria(m):
-                  tag = m.group(0)
-                  rest = html[m.end():m.end()+500]
-                  title_m = re.search(r'<h2[^>]*>(.*?)</h2>', rest, re.DOTALL)
-                  if title_m:
-                      title = re.sub(r'<[^>]+>', '', title_m.group(1)).strip()
-                      return tag.replace('<a ', f'<a aria-label="Read: {title}" ')
-                  return tag
-              new_html = re.sub(r'<a class="sk-post-link"[^>]*></a>', add_aria, html)
-              # Fix logo link if empty text
-              new_html = re.sub(
-                  r'(<a class="sk-site-logo"[^>]*>)',
-                  lambda m: m.group(0) if 'aria-label' in m.group(0) else m.group(0).replace('<a ', '<a aria-label="NFC.cool Blog Home" '),
-                  new_html
-              )
-              if new_html != html:
-                  with open(f, "w") as fh:
-                      fh.write(new_html)
-                  print(f"Fixed: {f}")
+            with open(f, "r") as fh:
+              content = fh.read()
+            original = content
+            # Fix empty sk-post-link anchors
+            def add_aria(m):
+              tag = m.group(0)
+              rest = content[m.end():m.end()+500]
+              title_m = re.search(r'<h2[^>]*>(.*?)</h2>', rest, re.DOTALL)
+              if title_m:
+                title = re.sub(r'<[^>]+>', '', title_m.group(1)).strip()
+                title = htmlmod.escape(title)
+                return tag.replace('class="sk-post-link"', f'class="sk-post-link" aria-label="Read: {title}"')
+              return tag
+            content = re.sub(r'<a class="sk-post-link" href="[^"]*"></a>', add_aria, content)
+            # Fix logo link
+            if 'sk-site-logo' in content and 'aria-label' not in content.split('sk-site-logo')[0][-50:]:
+              content = content.replace('class="sk-site-logo"', 'class="sk-site-logo" aria-label="NFC.cool Blog Home"')
+            if content != original:
+              with open(f, "w") as fh:
+                fh.write(content)
+              print(f"Fixed: {f}")
           PYEOF
 
       - name: Fix asset paths for GitHub Pages project site
