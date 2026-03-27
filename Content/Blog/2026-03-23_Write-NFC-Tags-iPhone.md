@@ -3,18 +3,18 @@ id: nfc-blog-010
 title: "How to Write NFC Tags with Your iPhone"
 date: 2026-03-23
 tags: [nfc-tech, iphone, automation]
-summary: "Your iPhone can do more than read NFC tags — it can write them too. Here's a step-by-step guide to programming NFC tags with your iPhone, from choosing the right tags to writing URLs, Wi-Fi credentials, contact cards, and automations."
+summary: "Your iPhone can do more than read NFC tags - it can write them too. Here's a step-by-step guide to programming NFC tags with your iPhone, from choosing the right tags to writing URLs, Wi-Fi credentials, contact cards, and automations."
 metaTitle: "How to Write NFC Tags with Your iPhone: Step-by-Step Guide (2026)"
 metaDescription: "Learn how to write NFC tags with your iPhone. Step-by-step instructions for programming URLs, Wi-Fi, contacts, and automations using NFC.cool Tools and iOS Shortcuts."
 ogTitle: "How to Write NFC Tags with Your iPhone"
-ogDescription: "Step-by-step guide to writing NFC tags with your iPhone — URLs, Wi-Fi, contacts, and automations. No special equipment needed."
+ogDescription: "Step-by-step guide to writing NFC tags with your iPhone - URLs, Wi-Fi, contacts, and automations. No special equipment needed."
 ---
 
 # How to Write NFC Tags with Your iPhone
 
-Most people know their iPhone can *read* NFC tags — tap to pay, scan a transit card, open a link. But what many don't realize is that your iPhone can also *write* to NFC tags, turning blank tags into smart triggers for just about anything.
+Most people know their iPhone can *read* NFC tags - tap to pay, scan a transit card, open a link. But what many don't realize is that your iPhone can also *write* to NFC tags, turning blank tags into smart triggers for just about anything.
 
-Want a tag on your nightstand that silences your phone and sets an alarm? A tag on your desk that opens your work playlist? A tag at your front door that shares your Wi-Fi password with guests? Your iPhone can program all of these — and it's easier than you think.
+Want a tag on your nightstand that silences your phone and sets an alarm? A tag on your desk that opens your work playlist? A tag at your front door that shares your Wi-Fi password with guests? Your iPhone can program all of these - and it's easier than you think.
 
 This guide walks you through everything: what you need, how to write different types of data, and practical projects you can set up in minutes.
 
@@ -44,11 +44,11 @@ You can buy blank NFC tags online for as little as **€0.30–€1.00 each**. T
 
 **Which chip should you buy?**
 
-For most projects, **NTAG215** is the sweet spot — 504 bytes of usable memory, widely compatible, and affordable. Here's the quick breakdown:
+For most projects, **NTAG215** is the sweet spot - 504 bytes of usable memory, widely compatible, and affordable. Here's the quick breakdown:
 
-- **NTAG213** (144 bytes) — Enough for URLs and simple text. Cheapest option.
-- **NTAG215** (504 bytes) — Best all-rounder. Enough for contact cards, Wi-Fi credentials, and multiple records.
-- **NTAG216** (888 bytes) — For longer content like detailed vCards or multiple data records.
+- **NTAG213** (144 bytes) - Enough for URLs and simple text. Cheapest option.
+- **NTAG215** (504 bytes) - Best all-rounder. Enough for contact cards, Wi-Fi credentials, and multiple records.
+- **NTAG216** (888 bytes) - For longer content like detailed vCards or multiple data records.
 
 If you're unsure, start with a mixed pack of NTAG215 stickers. They handle 90% of use cases.
 
@@ -56,7 +56,7 @@ If you're unsure, start with a mixed pack of NTAG215 stickers. They handle 90% o
 
 Your iPhone needs an app to write data to tags. Apple's built-in NFC support handles reading, but for writing, you need a dedicated app.
 
-**[NFC.cool Tools](https://apps.apple.com/app/id1249686798)** is purpose-built for this. It supports writing all standard NDEF record types — URLs, text, Wi-Fi configurations, contacts, and more — with a clean interface that shows exactly how much tag memory you're using. It also lets you lock tags, read technical details, and automate writing through iOS Shortcuts.
+**[NFC.cool Tools](https://apps.apple.com/app/id1249686798)** is purpose-built for this. It supports writing all standard NDEF record types - URLs, text, Wi-Fi configurations, contacts, and more - with a clean interface that shows exactly how much tag memory you're using. It also lets you lock tags, read technical details, and automate writing through iOS Shortcuts.
 
 Other options exist (like Apple's Shortcuts app for basic URL writing), but a dedicated NFC app gives you more control over what you write and how.
 
@@ -70,12 +70,12 @@ Let's start with the most common use case: writing a URL to a tag.
 
 1. **Open NFC.cool Tools** and tap the **Write** tab
 2. **Select "URL"** as the record type
-3. **Enter your URL** — for example, `https://nfc.cool`
+3. **Enter your URL** - for example, `https://nfc.cool`
 4. **Tap "Write to Tag"**
-5. **Hold your iPhone near the blank NFC tag** — the top edge of your iPhone (where the NFC antenna is) should be within 2-3 cm of the tag
-6. **Wait for the success confirmation** — you'll feel a haptic tap and see a checkmark
+5. **Hold your iPhone near the blank NFC tag** - the top edge of your iPhone (where the NFC antenna is) should be within 2-3 cm of the tag
+6. **Wait for the success confirmation** - you'll feel a haptic tap and see a checkmark
 
-That's it. Anyone who taps that tag with their phone will now be taken to your URL — no app needed, no QR code to scan. It just works.
+That's it. Anyone who taps that tag with their phone will now be taken to your URL - no app needed, no QR code to scan. It just works.
 
 **Pro tip:** The NFC antenna on iPhones is located at the **top edge** of the phone, near the camera. For the strongest connection, hold the top of your iPhone directly over the tag.
 
@@ -99,7 +99,7 @@ The most common use. Write any web address, and tapping the tag opens it in the 
 
 ### Wi-Fi Network Credentials
 
-Write your Wi-Fi network name (SSID) and password to a tag. Guests tap the tag and connect automatically — no typing long passwords.
+Write your Wi-Fi network name (SSID) and password to a tag. Guests tap the tag and connect automatically - no typing long passwords.
 
 **How to write Wi-Fi credentials:**
 
@@ -109,15 +109,15 @@ Write your Wi-Fi network name (SSID) and password to a tag. Guests tap the tag a
 4. Select the **security type** (WPA2 or WPA3 for most home networks)
 5. Write to the tag
 
-**Pro tip:** Place a Wi-Fi tag near your router, on a keychain by the door, or inside a guest room. Label it "Tap for Wi-Fi" — guests love this.
+**Pro tip:** Place a Wi-Fi tag near your router, on a keychain by the door, or inside a guest room. Label it "Tap for Wi-Fi" - guests love this.
 
 **Memory needed:** ~60-120 bytes depending on password length
 
 ### Contact Cards (vCard)
 
-Write a vCard contact to a tag. When someone taps it, your contact details pop up ready to save — name, phone, email, company, address.
+Write a vCard contact to a tag. When someone taps it, your contact details pop up ready to save - name, phone, email, company, address.
 
-This is essentially what a digital business card does, but baked directly into a physical tag. No app, no internet connection needed — the contact data lives on the tag itself.
+This is essentially what a digital business card does, but baked directly into a physical tag. No app, no internet connection needed - the contact data lives on the tag itself.
 
 **How to write a contact:**
 
@@ -127,7 +127,7 @@ This is essentially what a digital business card does, but baked directly into a
 
 **Memory needed:** ~100-400 bytes depending on how many fields you include. Use NTAG215 or NTAG216 for contacts with addresses and notes.
 
-**Note:** For a richer experience with photos, social links, and analytics, check out **[NFC.cool Business Card](https://apps.apple.com/app/id1527272145)** — it creates a hosted digital business card profile and can write the link to any NFC tag. When someone taps, iOS users see a native App Clip and Android users open a website on the nfc.cool domain — no app needed. Better than raw vCards for networking.
+**Note:** For a richer experience with photos, social links, and analytics, check out **[NFC.cool Business Card](https://apps.apple.com/app/id1527272145)** - it creates a hosted digital business card profile and can write the link to any NFC tag. When someone taps, iOS users see a native App Clip and Android users open a website on the nfc.cool domain - no app needed. Better than raw vCards for networking.
 
 ### Plain Text
 
@@ -173,9 +173,9 @@ This is useful for batch-writing multiple tags with the same data.
 
 NFC.cool Tools adds its own Shortcuts actions, giving you more options:
 
-- **Write Tag** — Write any supported record type programmatically
-- **Read Tag** — Scan and return tag data to your shortcut
-- **Scan History** — Access your recent scan results
+- **Write Tag** - Write any supported record type programmatically
+- **Read Tag** - Scan and return tag data to your shortcut
+- **Scan History** - Access your recent scan results
 
 This opens up automation possibilities. For example, you could create a shortcut that:
 1. Asks for a product name
@@ -193,20 +193,20 @@ Here are ready-to-build projects you can set up in minutes:
 
 ### 🏠 Smart Home Tags
 
-**Nightstand Tag — "Bedtime Mode"**
+**Nightstand Tag - "Bedtime Mode"**
 Write a URL that triggers an iOS Shortcut to:
 - Enable Do Not Disturb
 - Set tomorrow's alarm
 - Lower screen brightness
 - Start a sleep playlist
 
-**Desk Tag — "Work Mode"**
+**Desk Tag - "Work Mode"**
 - Open your task manager
 - Start a focus timer
 - Connect to your work VPN
 - Play a concentration playlist
 
-**Door Tag — "Leaving Home"**
+**Door Tag - "Leaving Home"**
 - Check weather forecast
 - Show commute time
 - Trigger smart home "away" scene
@@ -237,11 +237,11 @@ Write links to favorite recipes and stick tags on spice jars or cookbook pages.
 
 ## Locking NFC Tags
 
-Once you've written a tag and you're happy with its content, you can **lock** it. Locking makes the tag permanently read-only — nobody can overwrite your data.
+Once you've written a tag and you're happy with its content, you can **lock** it. Locking makes the tag permanently read-only - nobody can overwrite your data.
 
 **In NFC.cool Tools:**
 1. Tap the **Lock** option after writing
-2. Confirm — **this is irreversible**
+2. Confirm - **this is irreversible**
 
 **When to lock:**
 - Tags in public locations (prevent tampering)
@@ -251,7 +251,7 @@ Once you've written a tag and you're happy with its content, you can **lock** it
 
 **When NOT to lock:**
 - Tags you might want to update later (Wi-Fi password changes, seasonal URLs)
-- Experimentation/learning — leave them rewritable while you test
+- Experimentation/learning - leave them rewritable while you test
 
 ---
 
@@ -272,7 +272,7 @@ Once you've written a tag and you're happy with its content, you can **lock** it
 ### Tag Works on Android But Not iPhone
 
 - **Check the chip type.** iPhones work best with NTAG-series chips (NTAG213, 215, 216). Some other chip types may not be compatible with iOS.
-- **NDEF formatting.** The tag must be NDEF-formatted. Some bulk-purchased tags arrive unformatted — write to them with NFC.cool Tools to auto-format them.
+- **NDEF formatting.** The tag must be NDEF-formatted. Some bulk-purchased tags arrive unformatted - write to them with NFC.cool Tools to auto-format them.
 
 ---
 
@@ -288,7 +288,7 @@ Once you've written a tag and you're happy with its content, you can **lock** it
 
 5. **Waterproof options exist.** Epoxy-coated NFC tags are waterproof and more durable. Good for outdoor use, kitchens, or bathrooms.
 
-6. **Combine NFC tags with Shortcuts.** The real power of NFC tags on iPhone isn't just opening URLs — it's triggering complex automations. An NFC tag can launch any iOS Shortcut, which can control smart home devices, send messages, log data, and more.
+6. **Combine NFC tags with Shortcuts.** The real power of NFC tags on iPhone isn't just opening URLs - it's triggering complex automations. An NFC tag can launch any iOS Shortcut, which can control smart home devices, send messages, log data, and more.
 
 ---
 
@@ -296,7 +296,7 @@ Once you've written a tag and you're happy with its content, you can **lock** it
 
 ### Can I rewrite an NFC tag?
 
-Yes, as long as the tag hasn't been locked. Standard NFC tags can be rewritten **100,000+ times**. Just write new data over the old data — no need to "erase" first.
+Yes, as long as the tag hasn't been locked. Standard NFC tags can be rewritten **100,000+ times**. Just write new data over the old data - no need to "erase" first.
 
 ### How close does my iPhone need to be?
 
@@ -308,7 +308,7 @@ iOS Shortcuts has a built-in "Set NFC Tag" action for basic writes (URLs, text).
 
 ### Do NFC tags need batteries?
 
-No. NFC tags are **passive** — they have no battery and draw power from your phone's NFC reader when you tap them. Tags can last **10+ years** because there's nothing to run out.
+No. NFC tags are **passive** - they have no battery and draw power from your phone's NFC reader when you tap them. Tags can last **10+ years** because there's nothing to run out.
 
 ### Can I password-protect an NFC tag?
 
@@ -326,7 +326,7 @@ Unlimited. There's no restriction on how many tags you write. The limiting facto
 
 ## What's Next?
 
-Now that you know how to write NFC tags, the possibilities are wide open. Start with a simple project — a Wi-Fi tag for guests or a business card tag — and build from there.
+Now that you know how to write NFC tags, the possibilities are wide open. Start with a simple project - a Wi-Fi tag for guests or a business card tag - and build from there.
 
 If you're looking for a powerful, easy-to-use NFC writing app, **[NFC.cool Tools](https://apps.apple.com/app/id1249686798)** handles everything from basic URL writing to advanced tag management, with iOS Shortcuts integration for automation.
 
