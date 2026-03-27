@@ -8,8 +8,6 @@ css:
 js:
    - "js/theme.js"
 headInlineScript: "(function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)})()"
-favicons:
-   - "images/nfc-cool-logo-dark.svg"
 logo:
    image: "images/nfc-cool-logo-dark.svg"
    darkImage: "images/nfc-cool-logo-light.svg"
@@ -23,12 +21,6 @@ tokens:
    colorAccentLight:
       any: "rgba(17, 112, 207, 0.08)"
       dark: "rgba(0, 170, 255, 0.12)"
-   colorHighlight:
-      any: "#FFC700"
-      dark: "#FFC700"
-   colorHighlightHover:
-      any: "#E6B400"
-      dark: "#FFD633"
    colorBg:
       any: "#FFFFFF"
       dark: "#0D1117"
@@ -59,21 +51,12 @@ tokens:
    colorShadowLg:
       any: "rgba(33, 37, 41, 0.15)"
       dark: "rgba(0, 0, 0, 0.45)"
-   colorGradientStart:
-      any: "#1170CF"
-      dark: "#1170CF"
-   colorGradientEnd:
-      any: "#00AAFF"
-      dark: "#00AAFF"
    fontHeading:
       family: "Titillium Web"
       weights: [400, 600, 700]
    fontBody:
       family: "Titillium Web"
       weights: [400, 600, 700]
-   fontAccent:
-      family: "Caveat"
-      weights: [600]
    maxWidth: "1200px"
    contentWidth: "720px"
    headerHeight: "64px"
