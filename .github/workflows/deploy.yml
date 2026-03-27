@@ -29,16 +29,8 @@ jobs:
         with:
           swift-version: "6.2"
 
-      - name: Debug file listing
-        run: |
-          echo "=== PWD ==="
-          pwd
-          echo "=== LS ==="
-          ls -la
-          echo "=== SiteConfig.yaml ==="
-          cat SiteConfig.yaml
-          echo "=== Content ==="
-          find Content -type f
+      - name: Install rsvg-convert (for favicon generation)
+        run: sudo apt-get install -y librsvg2-bin
 
       - name: Build site
         run: swift run Site build 2>&1 || swift run -c release Site build
