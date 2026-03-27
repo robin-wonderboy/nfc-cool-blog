@@ -72,25 +72,6 @@ jobs:
               print(f"Fixed: {f}")
           PYEOF
 
-      - name: Fix asset paths for GitHub Pages project site
-        run: |
-          # SiteKit generates absolute paths from root (/assets/...) but GitHub Pages
-          # project sites serve from /nfc-cool-blog/. Rewrite all absolute paths.
-          # This hack can be removed once blog.nfc.cool DNS is configured.
-          # Rewrite ALL absolute paths starting with / to include the project prefix.
-          # This covers assets, pages, links, images, scripts, feeds, and JSON refs.
-          find _Site -name '*.html' -o -name '*.xml' -o -name '*.json' | xargs sed -i \
-            -e 's|href="/|href="/nfc-cool-blog/|g' \
-            -e 's|src="/|src="/nfc-cool-blog/|g' \
-            -e 's|url("/|url("/nfc-cool-blog/|g' \
-            -e 's|content="/|content="/nfc-cool-blog/|g'
-          # Fix double-prefixed external URLs (https:// got caught)
-          find _Site -name '*.html' -o -name '*.xml' -o -name '*.json' | xargs sed -i \
-            -e 's|href="https:/nfc-cool-blog/|href="https://|g' \
-            -e 's|src="https:/nfc-cool-blog/|src="https://|g' \
-            -e 's|content="https:/nfc-cool-blog/|content="https://|g' \
-            -e 's|href="http:/nfc-cool-blog/|href="http://|g'
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
