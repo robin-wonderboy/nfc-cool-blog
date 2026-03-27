@@ -34,11 +34,11 @@ tokens:
       any: "#212529"
       dark: "#E6EDF3"
    colorTextSecondary:
-      any: "#555B63"
+      any: "#4A5058"
       dark: "#8B949E"
    colorTextMuted:
-      any: "#8B919A"
-      dark: "#6E7681"
+      any: "#6D737B"
+      dark: "#7D8590"
    colorBorder:
       any: "#DEE2E6"
       dark: "#30363D"
