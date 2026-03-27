@@ -1,5 +1,6 @@
 ---
 id: nfc-blog-009
+slug: "nfc-tags-explained-a-complete-beginner-s-guide"
 title: "NFCタグ完全ガイド：初心者向けの基礎知識"
 date: 2026-03-23
 tags: [nfc-tech, nfc-tags, smart-home, automation]

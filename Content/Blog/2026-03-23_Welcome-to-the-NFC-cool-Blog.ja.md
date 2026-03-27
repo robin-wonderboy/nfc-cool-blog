@@ -1,5 +1,6 @@
 ---
 id: nfc-blog-001
+slug: "welcome-to-the-nfc-cool-blog"
 title: "NFC.coolブログへようこそ"
 date: 2026-03-23
 tags: [welcome]

@@ -1,5 +1,6 @@
 ---
 id: nfc-blog-005
+slug: "digital-business-cards-for-real-estate-agents-the-complete-guide"
 title: "不動産エージェントのためのデジタル名刺：完全ガイド"
 date: 2026-03-23
 tags: [digital-business-cards, real-estate, networking]

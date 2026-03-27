@@ -1,5 +1,6 @@
 ---
 id: nfc-blog-002
+slug: "best-digital-business-card-apps-in-2026-an-honest-comparison"
 title: "2026年版デジタル名刺アプリのベスト比較：正直なレビュー"
 date: 2026-03-23
 tags: [digital-business-cards, comparison, privacy]

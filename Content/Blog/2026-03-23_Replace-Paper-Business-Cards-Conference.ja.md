@@ -1,5 +1,6 @@
 ---
 id: nfc-blog-007
+slug: "how-to-replace-paper-business-cards-at-your-next-conference"
 title: "次のカンファレンスで紙の名刺を卒業する方法"
 date: 2026-03-23
 tags: [digital-business-cards, networking, conferences]

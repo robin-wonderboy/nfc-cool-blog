@@ -15,9 +15,9 @@ localization:
       navigation:
         items:
           - title: "NFC"
-            url: "/ja/tags/nfc-tech/"
+            url: "/tags/nfc-tech/"
           - title: "デジタル名刺"
-            url: "/ja/tags/digital-business-cards/"
+            url: "/tags/digital-business-cards/"
       homePage:
         title: "NFC.cool ブログ"
         subtitle: "NFCテクノロジーとデジタル名刺に関するガイド、比較、インサイト"
@@ -26,7 +26,7 @@ localization:
       footer:
         links:
           - title: "概要"
-            url: "/ja/about/"
+            url: "/about/"
           - title: "nfc.cool"
             url: "https://nfc.cool"
 contentDirectory: "Content"

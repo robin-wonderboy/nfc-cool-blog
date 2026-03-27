@@ -1,5 +1,6 @@
 ---
 id: nfc-blog-004
+slug: "why-privacy-matters-for-your-digital-business-card"
 title: "デジタル名刺にプライバシーが重要な理由"
 date: 2026-03-23
 tags: [digital-business-cards, privacy, gdpr]
