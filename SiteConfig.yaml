@@ -2,6 +2,32 @@ name: "NFC.cool Blog"
 baseURL: "https://blog.nfc.cool"
 description: "Guides, comparisons, and insights about NFC technology and digital business cards"
 language: "en"
+
+localization:
+  defaultLanguage: "en"
+  languages: ["ja"]
+  translationMode: "manual"
+  translationNotice:
+    enabled: true
+    verifiedLanguages: ["en"]
+  localeOverrides:
+    ja:
+      navigation:
+        items:
+          - title: "NFC"
+            url: "/ja/tags/nfc-tech/"
+          - title: "デジタル名刺"
+            url: "/ja/tags/digital-business-cards/"
+      homePage:
+        title: "NFC.cool ブログ"
+        subtitle: "NFCテクノロジーとデジタル名刺に関するガイド、比較、インサイト"
+      description: "NFCテクノロジーとデジタル名刺に関するガイド、比較、インサイト"
+      footer:
+        links:
+          - title: "概要"
+            url: "/ja/about/"
+          - title: "nfc.cool"
+            url: "https://nfc.cool"
 contentDirectory: "Content"
 outputDirectory: "_Site"
 assetsDirectory: "Content/Assets"
