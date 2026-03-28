@@ -35,6 +35,11 @@ jobs:
       - name: Build site
         run: swift run Site build 2>&1 || swift run -c release Site build
 
+      - name: Copy favicons to site root
+        run: |
+          cp Content/Assets/favicon-32x32.png _Site/favicon-32x32.png
+          cp Content/Assets/apple-touch-icon.png _Site/apple-touch-icon.png
+
       - name: SEO fix — add aria-labels to empty anchor tags
         run: |
           python3 << 'PYEOF'

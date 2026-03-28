@@ -1,8 +1,6 @@
 name: "NFC.cool Blog"
 colorScheme: "custom"
 fontPairing: "custom"
-favicons:
-   - "images/nfc-cool-logo-dark.svg"
 css:
    - "css/theme.css"
 js:

@@ -13,11 +13,7 @@ localization:
   localeOverrides:
     ja:
       navigation:
-        items:
-          - title: "NFC"
-            url: "/tags/nfc-tech/"
-          - title: "デジタル名刺"
-            url: "/tags/digital-business-cards/"
+        items: []
       homePage:
         title: "NFC.cool ブログ"
         subtitle: "NFCテクノロジーとデジタル名刺に関するガイド、比較、インサイト"
@@ -43,11 +39,7 @@ navigation:
   logo:
     image: "/assets/logo-black.png"
     text: ""
-  items:
-    - title: "NFC"
-      url: "/tags/nfc-tech/"
-    - title: "Business Cards"
-      url: "/tags/digital-business-cards/"
+  items: []
   showSearch: true
   showThemeToggle: true
 
