@@ -121,7 +121,7 @@ That said, QR codes remain essential as a **fallback and cost-effective option**
 
 If you're a manufacturer or brand implementing DPP via NFC, you'll need tools to **program NFC tags at scale** with the correct URLs pointing to your passport data infrastructure.
 
-This is exactly what apps like [NFC.cool Tools](https://apps.apple.com/app/nfc-tools/id1252962749) are built for. NFC.cool Tools lets you read, write, format, and lock NFC tags directly from your iPhone or Android device - no extra hardware required. For small-batch production, prototyping, or testing your DPP implementation, it's the fastest way to get tags programmed and verified.
+This is exactly what apps like [NFC.cool Tools](https://apps.apple.com/app/nfc-cool-tools/id1249686798) are built for. NFC.cool Tools lets you read, write, format, and lock NFC tags directly from your iPhone or Android device - no extra hardware required. For small-batch production, prototyping, or testing your DPP implementation, it's the fastest way to get tags programmed and verified.
 
 For enterprise-scale deployments, desktop NFC writers (compatible with NTAG, ICODE, and MIFARE chips) handle bulk programming, but the mobile app remains invaluable for **field verification** - scanning products on the shelf or warehouse floor to confirm the passport link works correctly.
 
@@ -195,4 +195,4 @@ Whether you're a brand preparing for compliance or a consumer curious about what
 
 ---
 
-*Need to read, write, or test NFC tags? [NFC.cool Tools](https://apps.apple.com/app/nfc-tools/id1252962749) is available for free on [iOS](https://apps.apple.com/app/nfc-tools/id1252962749) and [Android](https://play.google.com/store/apps/details?id=cool.nfc).*
+*Need to read, write, or test NFC tags? [NFC.cool Tools](https://apps.apple.com/app/nfc-cool-tools/id1249686798) is available for free on [iOS](https://apps.apple.com/app/nfc-cool-tools/id1249686798) and [Android](https://play.google.com/store/apps/details?id=cool.nfc).*

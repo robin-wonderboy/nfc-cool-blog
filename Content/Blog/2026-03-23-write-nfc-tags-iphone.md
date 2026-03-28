@@ -127,7 +127,7 @@ This is essentially what a digital business card does, but baked directly into a
 
 **Memory needed:** ~100-400 bytes depending on how many fields you include. Use NTAG215 or NTAG216 for contacts with addresses and notes.
 
-**Note:** For a richer experience with photos, social links, and analytics, check out **[NFC.cool Business Card](https://apps.apple.com/app/id1527272145)** - it creates a hosted digital business card profile and can write the link to any NFC tag. When someone taps, iOS users see a native App Clip and Android users open a website on the nfc.cool domain - no app needed. Better than raw vCards for networking.
+**Note:** For a richer experience with photos, social links, and analytics, check out **[NFC.cool Business Card](https://apps.apple.com/app/id6454576455)** - it creates a hosted digital business card profile and can write the link to any NFC tag. When someone taps, iOS users see a native App Clip and Android users open a website on the nfc.cool domain - no app needed. Better than raw vCards for networking.
 
 ### Plain Text
 
@@ -330,8 +330,8 @@ Now that you know how to write NFC tags, the possibilities are wide open. Start 
 
 If you're looking for a powerful, easy-to-use NFC writing app, **[NFC.cool Tools](https://apps.apple.com/app/id1249686798)** handles everything from basic URL writing to advanced tag management, with iOS Shortcuts integration for automation.
 
-And if you want to turn NFC tags into professional digital business cards, **[NFC.cool Business Card](https://apps.apple.com/app/id1527272145)** lets you create a beautiful card profile and write its URL to any NFC tag. The app UI and App Clip support 35 languages on iOS, and Android recipients see a website on the nfc.cool domain (currently English only).
+And if you want to turn NFC tags into professional digital business cards, **[NFC.cool Business Card](https://apps.apple.com/app/id6454576455)** lets you create a beautiful card profile and write its URL to any NFC tag. The app UI and App Clip support 35 languages on iOS, and Android recipients see a website on the nfc.cool domain (currently English only).
 
 **Download NFC.cool Tools:** [App Store](https://apps.apple.com/app/id1249686798) | [Google Play](https://play.google.com/store/apps/details?id=cool.nfc.tagwriter)
 
-**Download NFC.cool Business Card:** [App Store](https://apps.apple.com/app/id1527272145) | [Google Play](https://play.google.com/store/apps/details?id=cool.nfc.businesscard)
+**Download NFC.cool Business Card:** [App Store](https://apps.apple.com/app/id6454576455) | [Google Play](https://play.google.com/store/apps/details?id=cool.nfc.businesscard)
