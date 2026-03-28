@@ -128,7 +128,7 @@ ogDescription: "8つのデジタル名刺アプリを正直に徹底比較 - 料
 
 **おすすめ：** プライバシー重視のプロフェッショナル、国際的なネットワーキングをする方、ハードウェアに縛られずにNFCを柔軟に使いたい方、透明性のある開発を重視するインディー・中小企業ユーザー。
 
-[App StoreでNFC.cool Business Cardをダウンロード](https://apps.apple.com/app/nfc-cool-business-card/id6454576455) · [AndroidではNFC.cool Tools内で利用可能](https://android.nfc.cool)
+[App StoreでNFC.cool Business Cardをダウンロード](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572) · [AndroidではNFC.cool Tools内で利用可能](https://android.nfc.cool)
 
 ---
 
@@ -342,4 +342,4 @@ ogDescription: "8つのデジタル名刺アプリを正直に徹底比較 - 料
 
 ---
 
-*NFC.cool Business Cardを試してみませんか？[App Store](https://apps.apple.com/app/nfc-cool-business-card/id6454576455)で無料ダウンロード、または[AndroidではNFC.cool Tools内で利用可能](https://android.nfc.cool)。*
+*NFC.cool Business Cardを試してみませんか？[App Store](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572)で無料ダウンロード、または[AndroidではNFC.cool Tools内で利用可能](https://android.nfc.cool)。*

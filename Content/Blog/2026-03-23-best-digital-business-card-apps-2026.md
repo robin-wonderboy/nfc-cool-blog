@@ -127,7 +127,7 @@ Here's an at-a-glance overview of all eight apps:
 
 **Best for:** Privacy-conscious professionals, international networkers, anyone who wants NFC flexibility without hardware lock-in, indie/small business users who appreciate transparent development.
 
-[Download NFC.cool Business Card on the App Store](https://apps.apple.com/app/nfc-cool-business-card/id6454576455) · [Get it on Android (inside NFC.cool Tools)](https://android.nfc.cool)
+[Download NFC.cool Business Card on the App Store](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572) · [Get it on Android (inside NFC.cool Tools)](https://android.nfc.cool)
 
 ---
 
@@ -341,4 +341,4 @@ Whatever you choose, ditch the paper cards. It's 2026 - your business card shoul
 
 ---
 
-*Ready to try NFC.cool Business Card? Download it free on the [App Store](https://apps.apple.com/app/nfc-cool-business-card/id6454576455) or [get it on Android inside NFC.cool Tools](https://android.nfc.cool).*
+*Ready to try NFC.cool Business Card? Download it free on the [App Store](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572) or [get it on Android inside NFC.cool Tools](https://android.nfc.cool).*
