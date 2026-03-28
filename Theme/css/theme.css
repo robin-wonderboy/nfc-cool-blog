@@ -1226,7 +1226,7 @@ mark.sk-search-highlight {
    border-color: var(--color-accent);
 }
 
-/* Normalize all nav action buttons to identical size */
+/* Normalize all nav action buttons to identical size and spacing */
 .sk-search-btn,
 .sk-lang-btn,
 .sk-theme-toggle {
@@ -1235,6 +1235,7 @@ mark.sk-search-highlight {
    justify-content: center;
    font-size: 1rem;
    line-height: 1;
+   margin-left: 0.5rem;
 }
 
 .sk-search-btn i,
