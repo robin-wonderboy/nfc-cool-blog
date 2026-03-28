@@ -1226,10 +1226,13 @@ mark.sk-search-highlight {
    border-color: var(--color-accent);
 }
 
-/* Normalize all nav action buttons to the same size */
+/* Normalize all nav action buttons to identical size */
 .sk-search-btn,
 .sk-lang-btn,
 .sk-theme-toggle {
+   display: flex;
+   align-items: center;
+   justify-content: center;
    font-size: 1rem;
    line-height: 1;
 }
