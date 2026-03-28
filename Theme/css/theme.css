@@ -1212,17 +1212,19 @@ mark.sk-search-highlight {
 
 .sk-lang-btn {
    background: none;
-   border: none;
+   border: 1px solid var(--color-border);
+   border-radius: var(--radius);
+   padding: 0.375rem 0.625rem;
    color: var(--color-text-secondary);
    cursor: pointer;
-   padding: 0.5rem;
-   font-size: 1.1rem;
+   font-size: 1rem;
    line-height: 1;
-   transition: color 0.2s;
+   transition: color 0.2s, border-color 0.2s;
 }
 
 .sk-lang-btn:hover {
-   color: var(--color-text);
+   color: var(--color-accent);
+   border-color: var(--color-accent);
 }
 
 .sk-lang-current {
