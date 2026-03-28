@@ -1211,32 +1211,22 @@ mark.sk-search-highlight {
 }
 
 .sk-lang-btn {
-   display: flex;
-   align-items: center;
-   gap: 4px;
    background: none;
    border: none;
    color: var(--color-text-secondary);
    cursor: pointer;
-   padding: 6px 8px;
-   border-radius: var(--radius, 6px);
-   font-size: 0.85rem;
-   font-weight: 600;
-   transition: color 0.2s, background 0.2s;
+   padding: 0.5rem;
+   font-size: 1.1rem;
+   line-height: 1;
+   transition: color 0.2s;
 }
 
 .sk-lang-btn:hover {
    color: var(--color-text);
-   background: var(--color-bg-alt);
-}
-
-.sk-lang-btn i {
-   font-size: 1rem;
 }
 
 .sk-lang-current {
-   font-size: 0.75rem;
-   letter-spacing: 0.03em;
+   display: none;
 }
 
 .sk-lang-menu {
