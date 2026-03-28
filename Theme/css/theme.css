@@ -1204,3 +1204,74 @@ mark.sk-search-highlight {
       flex-direction: column;
    }
 }
+
+/* Language Picker */
+.sk-lang-picker {
+   position: relative;
+}
+
+.sk-lang-btn {
+   display: flex;
+   align-items: center;
+   gap: 4px;
+   background: none;
+   border: none;
+   color: var(--color-text-secondary);
+   cursor: pointer;
+   padding: 6px 8px;
+   border-radius: var(--radius, 6px);
+   font-size: 0.85rem;
+   font-weight: 600;
+   transition: color 0.2s, background 0.2s;
+}
+
+.sk-lang-btn:hover {
+   color: var(--color-text);
+   background: var(--color-bg-alt);
+}
+
+.sk-lang-btn i {
+   font-size: 1rem;
+}
+
+.sk-lang-current {
+   font-size: 0.75rem;
+   letter-spacing: 0.03em;
+}
+
+.sk-lang-menu {
+   display: none;
+   position: absolute;
+   top: 100%;
+   right: 0;
+   margin-top: 4px;
+   background: var(--color-bg-card);
+   border: 1px solid var(--color-border);
+   border-radius: var(--radius, 6px);
+   box-shadow: 0 4px 12px var(--color-shadow);
+   min-width: 120px;
+   z-index: 100;
+   overflow: hidden;
+}
+
+.sk-lang-open .sk-lang-menu {
+   display: block;
+}
+
+.sk-lang-option {
+   display: block;
+   padding: 8px 14px;
+   color: var(--color-text);
+   text-decoration: none;
+   font-size: 0.9rem;
+   transition: background 0.15s;
+}
+
+.sk-lang-option:hover {
+   background: var(--color-bg-alt);
+}
+
+.sk-lang-option.sk-lang-active {
+   font-weight: 600;
+   color: var(--color-accent);
+}

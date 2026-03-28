@@ -42,6 +42,59 @@ document.addEventListener('DOMContentLoaded', function () {
       });
    }
 
+   // Language picker
+   var langPicker = document.querySelector('.sk-lang-picker');
+   if (langPicker) {
+      var langBtn = langPicker.querySelector('.sk-lang-btn');
+      var langMenu = langPicker.querySelector('.sk-lang-menu');
+      var langs = [
+         { code: 'en', label: 'English', path: '/' },
+         { code: 'ja', label: '日本語', path: '/ja/' }
+      ];
+
+      // Build menu items
+      var currentPath = location.pathname;
+      langs.forEach(function(lang) {
+         var a = document.createElement('a');
+         a.className = 'sk-lang-option';
+         a.textContent = lang.label;
+         // Build the equivalent URL for this language
+         var targetPath;
+         if (lang.code === 'en') {
+            // Strip /ja/ prefix if present
+            targetPath = currentPath.replace(/^\/ja(\/|$)/, '/');
+         } else {
+            // Add /ja/ prefix if not present
+            if (currentPath.indexOf('/' + lang.code + '/') === 0) {
+               targetPath = currentPath;
+            } else {
+               targetPath = '/' + lang.code + currentPath;
+            }
+         }
+         a.href = targetPath;
+         a.addEventListener('click', function() {
+            try { localStorage.setItem('preferredLang', lang.code); } catch(e) {}
+         });
+         // Mark current language
+         var currentLang = currentPath.indexOf('/ja/') === 0 ? 'ja' : 'en';
+         if (lang.code === currentLang) {
+            a.classList.add('sk-lang-active');
+         }
+         langMenu.appendChild(a);
+      });
+
+      // Toggle menu
+      langBtn.addEventListener('click', function(e) {
+         e.stopPropagation();
+         langPicker.classList.toggle('sk-lang-open');
+      });
+
+      // Close on outside click
+      document.addEventListener('click', function() {
+         langPicker.classList.remove('sk-lang-open');
+      });
+   }
+
    // Mobile nav toggle
    var navToggle = document.querySelector('.sk-nav-toggle');
    var navList = document.querySelector('.sk-nav-list');
