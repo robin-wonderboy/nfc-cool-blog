@@ -1,7 +1,7 @@
 ---
 id: nfc-blog-012
 title: "Share Your Digital Business Card Without Making Anyone Download an App"
-date: 2026-03-29
+date: 2026-03-30
 tags: [digital-business-cards, app-clips, networking]
 summary: "Your digital business card should work instantly for the person receiving it — no downloads, no friction. Here's how App Clips and instant web profiles make that happen."
 metaTitle: "Share Your Digital Business Card Without Making Anyone Download an App"
