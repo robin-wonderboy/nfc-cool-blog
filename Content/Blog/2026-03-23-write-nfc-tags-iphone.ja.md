@@ -1,6 +1,5 @@
 ---
 id: nfc-blog-010
-slug: "how-to-write-nfc-tags-with-your-iphone"
 title: "iPhoneでNFCタグに書き込む方法"
 date: 2026-03-23
 tags: [nfc-tech, iphone, automation]

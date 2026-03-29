@@ -1,6 +1,5 @@
 ---
 id: nfc-blog-003
-slug: "nfc-business-card-vs-qr-code-which-is-better-for-networking"
 title: "NFCデジタル名刺 vs QRコード：ネットワーキングに最適なのはどっち？"
 date: 2026-03-23
 tags: [digital-business-cards, comparison, qr-code]

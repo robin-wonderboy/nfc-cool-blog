@@ -1,6 +1,5 @@
 ---
 id: nfc-blog-008
-slug: "eu-digital-product-passport-what-you-need-to-know-in-2026"
 title: "EUデジタル製品パスポート：2026年に知っておくべきこと"
 date: 2026-03-23
 tags: [nfc-tech, eu-regulation, supply-chain]

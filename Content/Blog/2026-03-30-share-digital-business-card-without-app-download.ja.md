@@ -1,6 +1,5 @@
 ---
 id: nfc-blog-012
-slug: "share-your-digital-business-card-without-making-anyone-download-an-app"
 title: "アプリをダウンロードさせずにデジタル名刺を共有する方法"
 date: 2026-03-30
 tags: [digital-business-cards, app-clips, networking]

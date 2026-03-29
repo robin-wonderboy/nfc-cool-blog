@@ -1,6 +1,5 @@
 ---
 id: nfc-blog-011
-slug: "openprinttag-how-to-read-and-write-smart-3d-printing-spools-with-your-phone"
 title: "OpenPrintTag：スマホで3Dプリンターのスマートスプールを読み書きする方法"
 date: 2026-03-29
 tags: [nfc-tech, 3d-printing, openprinttag]

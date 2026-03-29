@@ -1,6 +1,5 @@
 ---
 id: nfc-blog-006
-slug: "digital-business-cards-for-consultants-freelancers-why-they-re-your-best-networking-investment"
 title: "コンサルタント＆フリーランサーのためのデジタル名刺：最高のネットワーキング投資"
 date: 2026-03-23
 tags: [digital-business-cards, consultants, freelancers]
