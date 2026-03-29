@@ -36,7 +36,7 @@ jobs:
         run: swift run Site build 2>&1 || swift run -c release Site build
 
       - name: Add Japanese sitemap to robots.txt
-        run: echo "Sitemap: https://blog.nfc.cool/ja/sitemap.xml" >> _Site/robots.txt
+        run: 'echo "Sitemap: https://blog.nfc.cool/ja/sitemap.xml" >> _Site/robots.txt'
 
       - name: Copy favicons to site root
         run: |
@@ -51,7 +51,6 @@ jobs:
             with open(f, "r") as fh:
               content = fh.read()
             original = content
-            # Fix empty sk-post-link anchors
             def add_aria(m):
               tag = m.group(0)
               rest = content[m.end():m.end()+500]
@@ -62,10 +61,8 @@ jobs:
                 return tag.replace('class="sk-post-link"', f'class="sk-post-link" aria-label="Read: {title}"')
               return tag
             content = re.sub(r'<a class="sk-post-link" href="[^"]*"></a>', add_aria, content)
-            # Fix logo link
             if 'sk-site-logo' in content and 'aria-label' not in content.split('sk-site-logo')[0][-50:]:
               content = content.replace('class="sk-site-logo"', 'class="sk-site-logo" aria-label="NFC.cool Blog Home"')
-
             if content != original:
               with open(f, "w") as fh:
                 fh.write(content)
