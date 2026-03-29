@@ -124,8 +124,7 @@ OpenPrintTag is still young, but momentum is building:
 
 - **Prusament** ships with OpenPrintTag NFC tags on every spool
 - **Prusa printers** are adding native NFC readers
-- **SimplyPrint** supports reading and writing across web, iOS, and Android
-- **SpoolSense** and other open-source hardware readers are emerging from the community
+- **Open-source hardware readers** like SpoolSense (ESP32-based) are emerging from the community
 - **22+ companies** have joined the initiative
 - **NFC.cool** is the only general-purpose NFC app with full OpenPrintTag support on both iOS and Android
 
