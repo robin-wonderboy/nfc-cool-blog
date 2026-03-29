@@ -71,7 +71,7 @@ Why NFC-V? A printer's built-in NFC reader needs to detect the spool regardless 
 
 **What about regular NTAG stickers?** The OpenPrintTag data format is NDEF-based, so a phone app like NFC.cool can technically read and write OpenPrintTag data on any NFC tag — including NTAG213/215/216. However, **printer hardware and apps like Prusa's only recognize NFC-V tags**. If you want your tagged spools to work with built-in printer readers, use ICODE SLIX2 tags.
 
-If you're buying blank tags, look for **ICODE SLIX2** or **ISO 15693** specifically. You can find compatible tags on [Amazon US](https://amzn.to/3LTh1fT) or [Amazon Europe](https://amzn.to/4oJpQr4).
+If you're buying blank tags, look for **ICODE SLIX2** or **ISO 15693** specifically. You can find compatible tags on [Amazon US](https://amzn.to/3LTh1fT) or [Amazon Europe](https://amzn.to/4oJpQr4) (affiliate links).
 
 ## How to Read and Write OpenPrintTag with Your Phone
 
@@ -135,7 +135,7 @@ The 3D printing industry has needed an open standard for smart spools for years.
 **What you need:**
 - iPhone 7 or later, or an Android phone with NFC
 - NFC.cool Tools ([App Store](https://apps.apple.com/app/apple-store/id1249686798?pt=106913804&ct=BlogOpenPrintTag&mt=8) / [Google Play](https://play.google.com/store/apps/details?id=cool.nfc&referrer=utm_source%3Dblog-openprinttag)) — free, OpenPrintTag included
-- Blank ICODE SLIX2 / ISO 15693 NFC tags ([Amazon US](https://amzn.to/3LTh1fT) / [Amazon Europe](https://amzn.to/4oJpQr4))
+- Blank ICODE SLIX2 / ISO 15693 NFC tags ([Amazon US](https://amzn.to/3LTh1fT) / [Amazon Europe](https://amzn.to/4oJpQr4) — affiliate links)
 - Some filament spools to tag
 
 That's it. Five minutes from now, your first spool could be smart.
