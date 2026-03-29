@@ -65,13 +65,13 @@ The spec even covers resin-specific fields like `last_stir_time` — when the re
 
 ## The Tag: Not Your Usual NFC Sticker
 
-Here's an important technical detail: **OpenPrintTag uses ISO 15693 (NFC-V) tags, not the NTAG213/215/216 tags** you might be familiar with from other NFC projects.
+Here's an important technical detail: **OpenPrintTag is designed for ISO 15693 (NFC-V) tags**, specifically **NXP ICODE SLIX and ICODE SLIX2** chips. These are NFC Forum Type 5 tags with a significantly longer read range than standard NFC-A tags — up to 1.5 meters with a dedicated reader.
 
-Specifically, the standard is built around **NXP ICODE SLIX and ICODE SLIX2** chips. These are NFC Forum Type 5 tags with a significantly longer read range than standard NFC-A tags — up to 1.5 meters with a dedicated reader.
+Why NFC-V? A printer's built-in NFC reader needs to detect the spool regardless of its rotation. The longer range of NFC-V makes this possible without requiring precise tag alignment.
 
-Why does this matter? A printer's built-in NFC reader needs to detect the spool regardless of its rotation. The longer range of NFC-V makes this possible without requiring precise tag alignment. It's also why **regular NTAG stickers won't work with OpenPrintTag** — they use a completely different protocol.
+**What about regular NTAG stickers?** The OpenPrintTag data format is NDEF-based, so a phone app like NFC.cool can technically read and write OpenPrintTag data on any NFC tag — including NTAG213/215/216. However, **printer hardware and apps like Prusa's only recognize NFC-V tags**. If you want your tagged spools to work with built-in printer readers, use ICODE SLIX2 tags.
 
-If you're buying blank tags to stick on your own spools, look for tags labeled **ICODE SLIX2** or **ISO 15693**. Prusa also sells [pre-formatted blank OpenPrintTag 10-packs](https://www.prusa3d.com/product/original-prusa-blank-openprinttag-10-tags/) if you want a hassle-free option.
+If you're buying blank tags, look for **ICODE SLIX2** or **ISO 15693** specifically. Prusa also sells [pre-formatted blank OpenPrintTag 10-packs](https://www.prusa3d.com/product/original-prusa-blank-openprinttag-10-tags/) if you want a hassle-free option.
 
 ## How to Read and Write OpenPrintTag with Your Phone
 
