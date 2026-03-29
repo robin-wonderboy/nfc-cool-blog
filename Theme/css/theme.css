@@ -1226,6 +1226,11 @@ mark.sk-search-highlight {
    border-color: var(--color-accent);
 }
 
+/* Push nav action buttons to trailing edge */
+.sk-search-btn {
+   margin-left: auto;
+}
+
 /* Normalize all nav action buttons to identical size and spacing */
 .sk-search-btn,
 .sk-lang-btn,
@@ -1235,6 +1240,10 @@ mark.sk-search-highlight {
    justify-content: center;
    font-size: 1rem;
    line-height: 1;
+}
+
+.sk-lang-btn,
+.sk-theme-toggle {
    margin-left: 0.5rem;
 }
 

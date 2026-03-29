@@ -35,6 +35,9 @@ jobs:
       - name: Build site
         run: swift run Site build 2>&1 || swift run -c release Site build
 
+      - name: Add Japanese sitemap to robots.txt
+        run: echo "Sitemap: https://blog.nfc.cool/ja/sitemap.xml" >> _Site/robots.txt
+
       - name: Copy favicons to site root
         run: |
           cp Content/Assets/favicon-32x32.png _Site/favicon-32x32.png
