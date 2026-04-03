@@ -17,7 +17,6 @@ localization:
       homePage:
         title: "NFC.cool ブログ"
         subtitle: "NFCテクノロジーとデジタル名刺に関するガイド、比較、インサイト"
-        recentPostsCount: 10
       description: "NFCテクノロジーとデジタル名刺に関するガイド、比較、インサイト"
       footer:
         links:
@@ -38,6 +37,8 @@ author:
 navigation:
   logo:
     image: "/assets/logo-black.png"
+    imageWidth: 120
+    imageHeight: 30
     text: ""
   items: []
   showSearch: true

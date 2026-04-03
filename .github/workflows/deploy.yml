@@ -35,40 +35,11 @@ jobs:
       - name: Build site
         run: swift run Site build 2>&1 || swift run -c release Site build
 
-      - name: Add Japanese sitemap to robots.txt
-        run: 'echo "Sitemap: https://blog.nfc.cool/ja/sitemap.xml" >> _Site/robots.txt'
-
       - name: Generate favicon PNGs (sips not available on Linux)
         run: |
           apt-get list --installed 2>/dev/null | grep imagemagick || sudo apt-get install -y imagemagick
           convert Theme/images/favicon.png -resize 180x180 _Site/apple-touch-icon.png
           convert Theme/images/favicon.png -resize 32x32 _Site/favicon-32x32.png
-
-      - name: SEO fix — add aria-labels to empty anchor tags
-        run: |
-          python3 << 'PYEOF'
-          import re, glob, html as htmlmod
-          for f in glob.glob("_Site/**/*.html", recursive=True):
-            with open(f, "r") as fh:
-              content = fh.read()
-            original = content
-            def add_aria(m):
-              tag = m.group(0)
-              rest = content[m.end():m.end()+500]
-              title_m = re.search(r'<h2[^>]*>(.*?)</h2>', rest, re.DOTALL)
-              if title_m:
-                title = re.sub(r'<[^>]+>', '', title_m.group(1)).strip()
-                title = htmlmod.escape(title)
-                return tag.replace('class="sk-post-link"', f'class="sk-post-link" aria-label="Read: {title}"')
-              return tag
-            content = re.sub(r'<a class="sk-post-link" href="[^"]*"></a>', add_aria, content)
-            if 'sk-site-logo' in content and 'aria-label' not in content.split('sk-site-logo')[0][-50:]:
-              content = content.replace('class="sk-site-logo"', 'class="sk-site-logo" aria-label="NFC.cool Blog Home"')
-            if content != original:
-              with open(f, "w") as fh:
-                fh.write(content)
-              print(f"Fixed: {f}")
-          PYEOF
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
