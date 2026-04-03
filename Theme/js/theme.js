@@ -381,7 +381,6 @@ document.addEventListener('DOMContentLoaded', function () {
          });
       }
    }
-});
 
    // Language picker — reads hreflang tags for correct cross-language URLs
    var langPicker = document.querySelector('.sk-lang-picker');
@@ -421,3 +420,5 @@ document.addEventListener('DOMContentLoaded', function () {
          langPicker.classList.remove('sk-lang-open');
       });
    }
+
+});
