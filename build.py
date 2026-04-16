@@ -11,7 +11,7 @@ import yaml
 import markdown
 
 # Paths
-ROOT = Path("/tmp/nfc-cool-blog")
+ROOT = Path(__file__).parent
 BLOG_DIR = ROOT / "Content" / "Blog"
 PAGES_DIR = ROOT / "Content" / "Pages"
 OUT = ROOT / "_Site"
