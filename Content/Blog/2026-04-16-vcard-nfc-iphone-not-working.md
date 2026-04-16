@@ -36,10 +36,10 @@ The first time I saw this happen at a conference, the person tapping looked at m
 
 According to Apple's developer documentation, background NFC tag reading on iPhone only supports specific data types:
 
-- [x] Web URLs (http:// and https://)
-- [x] Phone numbers (tel:)
-- [x] SMS links (sms:)
-- [ ] vCard contact files - **not supported**
+- ✓ Web URLs (http:// and https://)
+- ✓ Phone numbers (tel:)
+- ✓ SMS links (sms:)
+- ✗ vCard contact files - **not supported**
 
 When your iPhone detects an NFC tag with vCard data, it simply ignores it. No fallback. No helpful error. Just nothing.
 
@@ -75,9 +75,9 @@ That's exactly what [NFC.cool Business Card](https://apps.apple.com/app/nfc-cool
 
 **When someone taps your card:**
 
-- iPhone -> Link opens -> Beautiful profile loads -> One-tap save contact
-- Android -> Same experience -> Works perfectly
-- Any smartphone -> Universal compatibility
+- iPhone → Link opens → Beautiful profile loads → One-tap save contact
+- Android → Same experience → Works perfectly
+- Any smartphone → Universal compatibility
 
 No app required for the person receiving your card. No tutorials. No friction.
 
@@ -93,23 +93,23 @@ Then I realized: this approach is genuinely *better* than vCards ever were.
 
 **What a URL-based digital profile gives you:**
 
-**>> All Your Links in One Place**
+**▸ All Your Links in One Place**
 LinkedIn, Twitter, Instagram, your portfolio, your Calendly booking link - all accessible from one tap.
 
-**>> Smart Networking Features**
+**▸ Smart Networking Features**
 You know how you meet someone, save their contact, and two weeks later you're staring at "John - Conference" with zero memory of who John is?
 
 NFC.cool lets you capture the context: where you met, what you discussed, follow-up notes. It's like a CRM that doesn't cost $50/month.
 
-**>> Apple Wallet Integration**
+**▸ Apple Wallet Integration**
 Your digital business card lives in Apple Wallet. Left your physical NFC card at home? Just show your phone.
 
-**>> Update Anytime**
+**▸ Update Anytime**
 Changed jobs? New phone number? Update your profile once - everyone who has your link sees the new info instantly. No reprinting cards. No reprogramming tags.
 
 vCards can't do any of this. They're frozen in time the moment you write them.
 
-**>> Works on Every Phone**
+**▸ Works on Every Phone**
 Unlike vCard, a URL-based profile works on every smartphone - iPhone, Android, even older devices with just a browser. The [NFC.cool Business Card app](https://apps.apple.com/app/nfc-cool-business-card/id6447094657) on iOS uses an [App Clip](https://apps.apple.com/app/nfc-cool-business-card/id6447094657) so recipients don't even need to install anything. On Android, [NFC.cool Business Card](https://play.google.com/store/apps/details?id=cool.nfc.businesscard) opens a web profile instantly.
 
 ## FAQ: vCard NFC and iPhone Compatibility
