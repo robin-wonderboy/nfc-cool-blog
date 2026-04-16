@@ -185,7 +185,7 @@ Some platforms charge monthly subscriptions ($5-$15/month) for features that sho
 
 Full disclosure: this is our blog, so of course we're going to mention our own solution. But we think it's genuinely relevant here.
 
-[NFC.cool Business Card](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572) was built from the start to support **both NFC and QR code sharing** - not as separate products, but as two sides of the same card:
+[NFC.cool Business Card](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572?pt=106913804&ct=BlogNfcVsQr&mt=8) was built from the start to support **both NFC and QR code sharing** - not as separate products, but as two sides of the same card:
 
 - **NFC tap** - Write your business card to any standard NFC tag (stickers, cards, keychains - your choice) and share with a tap. No proprietary hardware required.
 - **QR code** - Generate a scannable code directly in the app. Display it on your phone or print it.
@@ -199,7 +199,7 @@ A few things that set it apart:
 - **Open NFC** - Works with any standard NFC tag - NFC.cool doesn't sell proprietary hardware
 - **Affordable** - Personal plan at €20/year, Small Business at €50/year (10 cards), Business at €100/year (100 cards)
 
-➡️ **Try NFC.cool Business Card:** [App Store](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572) · [Android (inside NFC.cool Tools)](https://android.nfc.cool)
+➡️ **Try NFC.cool Business Card:** [App Store](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572?pt=106913804&ct=BlogNfcVsQr&mt=8) · [Android (inside NFC.cool Tools)](https://play.google.com/store/apps/details?id=cool.nfc&referrer=utm_source%3Dblog-nfc-vs-qr)
 
 ---
 

@@ -94,7 +94,7 @@ NFC.coolの名刺を受け取った時：
 ## はじめ方
 
 **カードオーナーとして：**
-- NFC.cool Business Cardをダウンロード（[App Store](https://apps.apple.com/app/nfc-cool-business-card/id6502926572?pt=106913804&ct=BlogAppClip&mt=8) / [Google Play](https://play.google.com/store/apps/details?id=cool.nfc&referrer=utm_source%3Dblog-appclip)）
+- NFC.cool Business Cardをダウンロード（[App Store](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572?pt=106913804&ct=BlogAppClip&mt=8) / [Google Play](https://play.google.com/store/apps/details?id=cool.nfc&referrer=utm_source%3Dblog-appclip)）
 - 詳細、写真、SNSリンクを入力してカードを作成
 - NFCタグ、QRコード、またはダイレクトリンクで共有
 
