@@ -108,7 +108,7 @@ Neuer Job? Neue Telefonnummer? Aktualisiere dein Profil einmal - alle, die deine
 vCards können nichts davon. du sind im Moment des Schreibens eingefroren.
 
 ▸ **Funktioniert auf jedem Handy**
-Im Gegensatz zu vCard funktioniert ein URL-basiertes Profil auf jedem Smartphone - iPhone, Android, selbst ältere Geräte mit nur einem Browser. Die [NFC.cool Business Card App](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572) auf iOS nutzt einen [App Clip](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572), sodass Empfänger nicht mal etwas installieren müssen. Auf Android öffnet [NFC.cool Business Card](https://play.google.com/store/apps/details?id=cool.nfc.businesscard) sofort ein Web-Profil.
+Im Gegensatz zu vCard funktioniert ein URL-basiertes Profil auf jedem Smartphone - iPhone, Android, selbst ältere Geräte mit nur einem Browser. Die [NFC.cool Business Card App](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572) auf iOS nutzt einen [App Clip](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572), sodass Empfänger nicht mal etwas installieren müssen. Auf Android öffnet [NFC.cool Business Card](https://android.nfc.cool) (in NFC.cool Tools) sofort ein Web-Profil.
 
 ---
 
@@ -154,4 +154,4 @@ Ich tippe. du speichern. Wir machen beide weiter mit unserem Leben.
 
 ---
 
-*NFC.cool Business Card ist im [App Store](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572) und auf [Google Play](https://play.google.com/store/apps/details?id=cool.nfc.businesscard) verfügbar. NFC.cool Tools (Tag-Reader und Writer) ist im [App Store](https://apps.apple.com/app/apple-store/id1249686798) und auf [Google Play](https://play.google.com/store/apps/details?id=cool.nfc) verfügbar.*
+*NFC.cool Business Card ist im [App Store](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572) und auf [Android (in NFC.cool Tools)](https://android.nfc.cool) verfügbar. NFC.cool Tools (Tag-Reader und Writer) ist im [App Store](https://apps.apple.com/app/apple-store/id1249686798) und auf [Google Play](https://play.google.com/store/apps/details?id=cool.nfc) verfügbar.*

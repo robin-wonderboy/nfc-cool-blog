@@ -62,7 +62,7 @@ Wenn du noch keine hast, suche nach diesen konferenzspezifischen Features:
 - **Keine App für Empfänger erforderlich** - Die Person, die du triffst, sollte nichts herunterladen müssen. Wenn deine Karte verlangt, dass die andere Person eine App installiert, bevor sie deine Infos sehen kann, hast du sie schon verloren.
 - **Mehrsprachige Unterstützung** - Bei internationalen Konferenzen ist deine Karte in der Sprache des Empfängers verfügbar ein echter Differenzierer.
 
-[NFC.cool Business Card](https://apps.apple.com/app/nfc-cool-business-card/id6463106055) deckt all das ab - NFC + QR + Link-Sharing, mehrere Kartenprofile, keine App für Empfänger nötig (App Clip auf iOS, Website auf Android), und die App-UI und der App Clip unterstützen 35 Sprachen. Das ist, was wir empfehlen würden, aber was auch immer du wählst, stell sicher, dass es diese Kriterien trifft.
+[NFC.cool Business Card](https://apps.apple.com/app/nfc-cool-business-card/id6502926572) deckt all das ab - NFC + QR + Link-Sharing, mehrere Kartenprofile, keine App für Empfänger nötig (App Clip auf iOS, Website auf Android), und die App-UI und der App Clip unterstützen 35 Sprachen. Das ist, was wir empfehlen würden, aber was auch immer du wählst, stell sicher, dass es diese Kriterien trifft.
 
 #### Erstelle eine event-spezifische Karte (oder aktualisiere deine bestehende)
 
@@ -179,7 +179,7 @@ Und wenn jemand wirklich auf Papier besteht, kannst du immer sagen "Ich bin digi
 
 Hier ist alles, was du tun musst, in der Reihenfolge:
 
-- [ ] **Lade eine digitale Visitenkarten-App** (wir empfehlen [NFC.cool Business Card](https://apps.apple.com/app/nfc-cool-business-card/id6463106055) - gratis auf [iOS](https://apps.apple.com/app/nfc-cool-business-card/id6463106055) und [Android](https://play.google.com/store/apps/details?id=cool.nfc.businesscard))
+- [ ] **Lade eine digitale Visitenkarten-App** (wir empfehlen [NFC.cool Business Card](https://apps.apple.com/app/nfc-cool-business-card/id6502926572) - gratis auf [iOS](https://apps.apple.com/app/nfc-cool-business-card/id6502926572) und [Android (in NFC.cool Tools)](https://android.nfc.cool))
 - [ ] **Erstelle deine Karte** mit Name, Titel, Firma, Kontaktdaten und Links
 - [ ] **Füge dein Foto hinzu** - es hilft Leuten, sich nach dem Event an dich zu erinnern
 - [ ] **Speichere deinen QR-Code in Apple Wallet (iOS)** für schnellen Sperrbildschirm-Zugang
@@ -228,4 +228,4 @@ Deine nächste Konferenz kommt. Diesmal lass das Papier zu Hause.
 
 ---
 
-*NFC.cool Business Card ist gratis auf [iOS](https://apps.apple.com/app/nfc-cool-business-card/id6463106055) und auf [Android in NFC.cool Tools](https://android.nfc.cool) verfügbar. Erstelle deine erste Karte in unter einer Minute.*
+*NFC.cool Business Card ist gratis auf [iOS](https://apps.apple.com/app/nfc-cool-business-card/id6502926572) und auf [Android in NFC.cool Tools](https://android.nfc.cool) verfügbar. Erstelle deine erste Karte in unter einer Minute.*

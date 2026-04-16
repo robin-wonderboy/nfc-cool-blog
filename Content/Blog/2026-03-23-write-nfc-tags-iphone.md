@@ -334,4 +334,4 @@ And if you want to turn NFC tags into professional digital business cards, **[NF
 
 **Download NFC.cool Tools:** [App Store](https://apps.apple.com/app/id1249686798) | [Google Play](https://play.google.com/store/apps/details?id=cool.nfc.tagwriter)
 
-**Download NFC.cool Business Card:** [App Store](https://apps.apple.com/app/id6502926572) | [Google Play](https://play.google.com/store/apps/details?id=cool.nfc.businesscard)
+**Download NFC.cool Business Card:** [App Store](https://apps.apple.com/app/id6502926572) | [Android (in NFC.cool Tools)](https://android.nfc.cool)

@@ -199,7 +199,7 @@ A few things that set it apart:
 - **Open NFC** - Works with any standard NFC tag - NFC.cool doesn't sell proprietary hardware
 - **Affordable** - Personal plan at €20/year, Small Business at €50/year (10 cards), Business at €100/year (100 cards)
 
-➡️ **Try NFC.cool Business Card:** [App Store](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572) · [Google Play](https://play.google.com/store/apps/details?id=cool.nfc.businesscard)
+➡️ **Try NFC.cool Business Card:** [App Store](https://apps.apple.com/app/nfc-cool-business-card-maker/id6502926572) · [Android (inside NFC.cool Tools)](https://android.nfc.cool)
 
 ---
 
