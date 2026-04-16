@@ -1,5 +1,6 @@
 ---
 title: "Über uns"
+slug: "about"
 ---
 
 NFC.cool Blog bringt dir Anleitungen, Vergleiche und Einblicke zu NFC-Technologie und digitalen Visitenkarten - direkt von den Entwicklern der [NFC.cool](https://nfc.cool) Apps.
