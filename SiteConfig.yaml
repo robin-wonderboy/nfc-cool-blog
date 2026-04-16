@@ -5,12 +5,25 @@ language: "en"
 
 localization:
   defaultLanguage: "en"
-  languages: ["ja"]
+  languages: ["de", "ja"]
   translationMode: "manual"
   translationNotice:
     enabled: true
-    verifiedLanguages: ["en"]
+    verifiedLanguages: ["en", "de"]
   localeOverrides:
+    de:
+      navigation:
+        items: []
+      homePage:
+        title: "NFC.cool Blog"
+        subtitle: "Anleitungen, Vergleiche und Einblicke zu NFC-Technologie und digitalen Visitenkarten"
+      description: "Anleitungen, Vergleiche und Einblicke zu NFC-Technologie und digitalen Visitenkarten"
+      footer:
+        links:
+          - title: "Über uns"
+            url: "/about/"
+          - title: "nfc.cool"
+            url: "https://nfc.cool"
     ja:
       navigation:
         items: []

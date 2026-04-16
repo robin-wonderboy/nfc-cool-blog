@@ -396,9 +396,11 @@ document.addEventListener('DOMContentLoaded', function () {
          }
       });
 
-      var labels = { en: 'English', ja: '日本語' };
+      var labels = { en: 'English', de: 'Deutsch', ja: '日本語' };
       var currentPath = location.pathname;
-      var currentLang = currentPath.indexOf('/ja/') === 0 ? 'ja' : 'en';
+      var currentLang = 'en';
+      if (currentPath.indexOf('/de/') === 0) currentLang = 'de';
+      else if (currentPath.indexOf('/ja/') === 0) currentLang = 'ja';
 
       Object.keys(hreflangMap).forEach(function(lang) {
          var a = document.createElement('a');
