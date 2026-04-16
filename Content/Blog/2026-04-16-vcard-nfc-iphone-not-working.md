@@ -3,16 +3,16 @@ id: nfc-blog-013
 title: "Why vCard NFC Tags Don't Work on iPhone (And What Actually Does)"
 date: 2026-04-16
 tags: [nfc, iphone, vcard, digital-business-cards, troubleshooting]
-summary: "Your vCard NFC business card works on Android but not iPhone? Here's why iOS ignores vCard data — and the simple fix that works on every phone."
+summary: "Your vCard NFC business card works on Android but not iPhone? Here's why iOS ignores vCard data - and the simple fix that works on every phone."
 metaTitle: "Why vCard NFC Tags Don't Work on iPhone | NFC.cool"
-metaDescription: "Your vCard NFC business card works on Android but not iPhone? Here's why iOS ignores vCard data — and the simple fix that works on every phone."
+metaDescription: "Your vCard NFC business card works on Android but not iPhone? Here's why iOS ignores vCard data - and the simple fix that works on every phone."
 ogTitle: "Why vCard NFC Tags Don't Work on iPhone"
-ogDescription: "iPhones silently ignore vCard data on NFC tags. Here's why — and what actually works instead."
+ogDescription: "iPhones silently ignore vCard data on NFC tags. Here's why - and what actually works instead."
 ---
 
 # Why vCard NFC Tags Don't Work on iPhone (And What Actually Does)
 
-I've been building NFC apps for years. And every single week — without fail — someone emails me some version of this:
+I've been building NFC apps for years. And every single week - without fail - someone emails me some version of this:
 
 > "Hey, I bought an NFC business card. Programmed my vCard on it. Works great on my friend's Android. But when I tap it to my iPhone? Nothing happens. Is my card broken?"
 
@@ -20,7 +20,7 @@ Your card isn't broken.
 
 Your iPhone just doesn't support vCard on NFC tags. And it probably never will.
 
-Let me explain why — and what actually works instead.
+Let me explain why - and what actually works instead.
 
 ## Why vCard NFC Tags Don't Work on iPhone
 
@@ -36,10 +36,10 @@ The first time I saw this happen at a conference, the person tapping looked at m
 
 According to Apple's developer documentation, background NFC tag reading on iPhone only supports specific data types:
 
-- ✅ Web URLs (http:// and https://)
-- ✅ Phone numbers (tel:)
-- ✅ SMS links (sms:)
-- ❌ vCard contact files — **not supported**
+- [x] Web URLs (http:// and https://)
+- [x] Phone numbers (tel:)
+- [x] SMS links (sms:)
+- [ ] vCard contact files - **not supported**
 
 When your iPhone detects an NFC tag with vCard data, it simply ignores it. No fallback. No helpful error. Just nothing.
 
@@ -71,13 +71,13 @@ Here's the thing nobody tells you when you buy an NFC business card:
 
 Instead, store a URL that points to a digital profile.
 
-That's exactly what **NFC.cool Business Card** does. Instead of cramming vCard data onto the tag (where iPhones ignore it), we store a smart link to your digital profile.
+That's exactly what [NFC.cool Business Card](https://apps.apple.com/app/nfc-cool-business-card/id6447094657) does. Instead of cramming vCard data onto the tag (where iPhones ignore it), we store a smart link to your digital profile.
 
 **When someone taps your card:**
 
-- iPhone → Link opens → Beautiful profile loads → One-tap save contact
-- Android → Same experience → Works perfectly
-- Any smartphone → Universal compatibility
+- iPhone -> Link opens -> Beautiful profile loads -> One-tap save contact
+- Android -> Same experience -> Works perfectly
+- Any smartphone -> Universal compatibility
 
 No app required for the person receiving your card. No tutorials. No friction.
 
@@ -93,21 +93,24 @@ Then I realized: this approach is genuinely *better* than vCards ever were.
 
 **What a URL-based digital profile gives you:**
 
-**🔗 All Your Links in One Place**
-LinkedIn, Twitter, Instagram, your portfolio, your Calendly booking link, even Venmo — all accessible from one tap.
+**>> All Your Links in One Place**
+LinkedIn, Twitter, Instagram, your portfolio, your Calendly booking link - all accessible from one tap.
 
-**📝 Smart Networking Features**
+**>> Smart Networking Features**
 You know how you meet someone, save their contact, and two weeks later you're staring at "John - Conference" with zero memory of who John is?
 
 NFC.cool lets you capture the context: where you met, what you discussed, follow-up notes. It's like a CRM that doesn't cost $50/month.
 
-**📱 Apple Wallet Integration**
+**>> Apple Wallet Integration**
 Your digital business card lives in Apple Wallet. Left your physical NFC card at home? Just show your phone.
 
-**🔄 Update Anytime**
-Changed jobs? New phone number? Update your profile once — everyone who has your link sees the new info instantly. No reprinting cards. No reprogramming tags.
+**>> Update Anytime**
+Changed jobs? New phone number? Update your profile once - everyone who has your link sees the new info instantly. No reprinting cards. No reprogramming tags.
 
 vCards can't do any of this. They're frozen in time the moment you write them.
+
+**>> Works on Every Phone**
+Unlike vCard, a URL-based profile works on every smartphone - iPhone, Android, even older devices with just a browser. The [NFC.cool Business Card app](https://apps.apple.com/app/nfc-cool-business-card/id6447094657) on iOS uses an [App Clip](https://apps.apple.com/app/nfc-cool-business-card/id6447094657) so recipients don't even need to install anything. On Android, [NFC.cool Business Card](https://play.google.com/store/apps/details?id=cool.nfc.businesscard) opens a web profile instantly.
 
 ## FAQ: vCard NFC and iPhone Compatibility
 
@@ -118,16 +121,19 @@ A: It's been years and Apple hasn't changed this behavior. Background NFC readin
 A: Yes. Every iPhone with background NFC reading (iPhone XS and newer, running iOS 13+) ignores vCard data on NFC tags.
 
 **Q: Can I use an NFC reader app to scan vCard tags on iPhone?**
-A: Yes, but the person scanning needs to have an app installed first. That adds friction and defeats the purpose of a quick contactless exchange.
+A: Yes, but the person scanning needs to have an app installed first. That adds friction and defeats the purpose of a quick contactless exchange. Apps like [NFC.cool Tools](https://apps.apple.com/app/nfc-cool-tools-tag-reader/id1440356375) can read raw tag data, but the recipient experience is nowhere near as smooth as a URL-based card.
 
 **Q: What NFC tags work best for digital business cards?**
 A: Any NTAG213 or NTAG215 tag works great. The data stored is just a URL, so you don't need much memory.
+
+**Q: Can I write NFC tags with my iPhone?**
+A: Yes - [NFC.cool Tools](https://apps.apple.com/app/nfc-cool-tools-tag-reader/id1440356375) lets you write URLs and other data to NFC tags directly on iPhone. It supports all common NDEF record types and works with any NTAG tag.
 
 ## The Bottom Line
 
 If your NFC business card uses vCard data, it's invisible to half your audience. iPhones won't read it. Period.
 
-The solution isn't a workaround — it's a fundamentally better approach:
+The solution isn't a workaround - it's a fundamentally better approach:
 
 1. Store a URL instead of contact data
 2. Point that URL to a rich digital profile
@@ -138,3 +144,7 @@ That's what NFC.cool Business Card does. It's what I use at every conference, me
 I tap. They save. We both move on with our lives.
 
 **That's how it should work.**
+
+---
+
+*NFC.cool Business Card is available on the [App Store](https://apps.apple.com/app/nfc-cool-business-card/id6447094657) and [Google Play](https://play.google.com/store/apps/details?id=cool.nfc.businesscard). NFC.cool Tools (tag reader and writer) is available on the [App Store](https://apps.apple.com/app/nfc-cool-tools-tag-reader/id1440356375) and [Google Play](https://play.google.com/store/apps/details?id=cool.nfc).*
