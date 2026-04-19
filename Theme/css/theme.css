@@ -544,6 +544,10 @@ strong { font-weight: 600; }
    color: var(--color-text-muted);
 }
 
+.sk-back-link {
+   margin-top: 2rem;
+}
+
 .sk-article-byline {
    display: flex;
    align-items: center;
@@ -585,7 +589,7 @@ a.sk-article-author:hover {
 }
 
 .sk-article-read-time::before {
-   content: " \00b7  ";
+   content: "\00a0\00b7\00a0";
 }
 
 .sk-article-body {

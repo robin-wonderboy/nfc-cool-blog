@@ -98,7 +98,7 @@ You can also use Expert Mode to inspect raw NDEF records if you need to debug a 
 
 ## Why Use Your Phone?
 
-Prusa printers are getting built-in NFC readers, and projects like [SpoolSense](https://www.reddit.com/r/3Dprinting/) (an open-source ESP32 reader) are adding dedicated hardware options. So why bother with your phone?
+Prusa printers are getting built-in NFC readers, and projects like [SpoolSense](https://github.com/SpoolSense) (an open-source ESP32 reader) are adding dedicated hardware options. So why bother with your phone?
 
 - **Works with any printer** — Voron, Bambu Lab, Creality, Ender, whatever you use
 - **Write tags for any filament** — Prusament comes pre-tagged, but you can tag Fillamentum, eSUN, Hatchbox, or any brand yourself

@@ -98,7 +98,7 @@ Du kannst auch den Expertenmodus nutzen, um rohe NDEF-Datensätze zu inspizieren
 
 ## Warum das Handy nutzen?
 
-Prusa-Drucker bekommen eingebaute NFC-Reader, und Projekte wie [SpoolSense](https://www.reddit.com/r/3Dprinting/) (ein Open-Source-ESP32-Reader) fügen dedizierte Hardware-Optionen hinzu. Warum also das Handy?
+Prusa-Drucker bekommen eingebaute NFC-Reader, und Projekte wie [SpoolSense](https://github.com/SpoolSense) (ein Open-Source-ESP32-Reader) fügen dedizierte Hardware-Optionen hinzu. Warum also das Handy?
 
 - **Funktioniert mit jedem Drucker** - Voron, Bambu Lab, Creality, Ender, was auch immer du nutzt
 - **Tags für jedes Filament schreiben** - Prusament kommt vorgetaggt, aber du kannst Fillamentum, eSUN, Hatchbox oder jede Marke selbst taggen

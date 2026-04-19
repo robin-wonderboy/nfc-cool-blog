@@ -98,7 +98,7 @@ NFC.cool Toolsは[iOS](https://apps.apple.com/app/apple-store/id1249686798?pt=10
 
 ## なぜスマートフォンを使うのか？
 
-Prusaプリンターには内蔵NFCリーダーが搭載されつつあり、[SpoolSense](https://www.reddit.com/r/3Dprinting/)（オープンソースのESP32リーダー）のようなプロジェクトも専用ハードウェアの選択肢を提供しています。では、なぜスマートフォンを使うのでしょうか？
+Prusaプリンターには内蔵NFCリーダーが搭載されつつあり、[SpoolSense](https://github.com/SpoolSense)（オープンソースのESP32リーダー）のようなプロジェクトも専用ハードウェアの選択肢を提供しています。では、なぜスマートフォンを使うのでしょうか？
 
 - **あらゆるプリンターで動作** — Voron、Bambu Lab、Creality、Enderなど、お使いのプリンターを選ばない
 - **あらゆるフィラメントにタグ付け** — Prusamentはプレタグ済みだが、Fillamentum、eSUN、Hatchboxなど他ブランドも自分でタグ付け可能
