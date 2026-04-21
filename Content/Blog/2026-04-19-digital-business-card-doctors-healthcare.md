@@ -9,9 +9,6 @@ metaDescription: "Why doctors, dentists, and healthcare professionals are switch
 ogTitle: "The Doctor's Digital Business Card"
 ogDescription: "Why healthcare professionals are trading paper cards for tap-to-share, and what to look for in a medical business card app."
 ---
-
-# The Doctor's Digital Business Card: Why Healthcare Professionals Are Going Contactless
-
 A cardiologist at a university hospital carries three business cards. Not by choice - one has her direct line, another has the cardiac cath lab's scheduling number, and a third has the department fax for referral letters. She keeps them in different coat pockets because handing a patient the wrong one means a missed referral.
 
 She's not unusual. Ask any physician in a hospital or multi-specialty practice: the contact information they need to share is rarely just their own. It's the department phone, the nurse triage line, the after-hours answering service, the lab results portal, the referral coordinator's email. A single paper card, 3.5 by 2 inches with one phone number, was never designed for this.

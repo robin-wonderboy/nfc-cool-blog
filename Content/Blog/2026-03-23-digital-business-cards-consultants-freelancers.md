@@ -9,9 +9,6 @@ metaDescription: "The solo professional's guide to digital business cards. Learn
 ogTitle: "Digital Business Cards for Consultants & Freelancers"
 ogDescription: "How independent professionals use digital business cards to level up their networking game - without the enterprise price tag."
 ---
-
-# Digital Business Cards for Consultants & Freelancers
-
 When you're an independent consultant or freelancer, you don't have a marketing department. You don't have a receptionist ordering new business cards when your title changes. You don't have a corporate brand doing the heavy lifting. You *are* the brand.
 
 That makes networking both your most important activity and your most personal one. Every interaction reflects directly on you - and the way you share your contact information is part of that first impression.

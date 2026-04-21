@@ -9,9 +9,6 @@ metaDescription: "Lerne, wie du OpenPrintTag nutzt, um deine 3D-Druck-Filament-S
 ogTitle: "OpenPrintTag: Smarte 3D-Druck-Spulen mit NFC"
 ogDescription: "Der komplette Guide zum Lesen und Beschreiben von OpenPrintTag-NFC-Spulen mit dem Handy. Funktioniert mit jedem Drucker, jeder Filament-Marke."
 ---
-
-# OpenPrintTag: Smarte 3D-Druck-Spulen mit dem Handy lesen & beschreiben
-
 Wenn du 3D druckst, warst du wahrscheinlich schon da: ein Regal voller halb verbrauchter Spulen, keine Ahnung, wie viel Filament noch drauf ist, und diese eine unbeschriftete Spule, die PETG oder PLA sein könnte - keine Möglichkeit, es ohne einen Testdruck herauszufinden.
 
 OpenPrintTag löst das. Es ist ein Open-Source-NFC-Standard, der von [Prusa Research](https://www.prusa3d.com) erstellt wurde und jeden kompatiblen NFC-Tag in ein smartes Label für deine Filament-Spule verwandelt. Materialtyp, Marke, Farbe, verbleibendes Gewicht - alles direkt auf der Spule gespeichert und mit einem kurzen Tippen des Handys lesbar.

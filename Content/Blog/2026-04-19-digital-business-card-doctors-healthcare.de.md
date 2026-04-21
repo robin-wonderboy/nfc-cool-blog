@@ -9,9 +9,6 @@ metaDescription: "Warum Ärzte, Zahnärzte und medizinisches Fachpersonal auf di
 ogTitle: "Die digitale Visitenkarte für Ärzte"
 ogDescription: "Warum medizinisches Fachpersonal Papierkarten gegen Tap-to-Share eintauscht – und worauf du bei einer Visitenkarten-App für den medizinischen Bereich achten solltest."
 ---
-
-# Die digitale Visitenkarte für Ärzte: Warum das Gesundheitswesen auf kontaktlos setzt
-
 Eine Kardiologin an einem Universitätsklinikum trägt drei Visitenkarten mit sich. Nicht freiwillig – auf einer steht ihre Durchwahl, auf einer anderen die Nummer des Herzkatheter-Labors, auf der dritten die Faxnummer der Abteilung für Zuweisungsschreiben. Sie verteilt sie auf verschiedene Kitteltaschen, denn wenn sie einer Patientin die falsche gibt, geht eine Zuweisung ins Leere.
 
 Sie ist damit keine Ausnahme. Frag irgendwen in einem Krankenhaus oder einer Praxis mit mehreren Fachgebieten: Die Kontaktinformationen, die sie weitergeben müssen, sind selten nur ihre eigenen. Es ist die Abteilungsdurchwahl, die Triage-Hotline der Pflege, der Bereitschaftsdienst, das Portal für Laborergebnisse, die E-Mail der Zuweisungskoordination. Eine einzelne Papierkarte, 8,5 mal 5,5 Zentimeter mit einer Telefonnummer, wurde dafür nie gemacht.

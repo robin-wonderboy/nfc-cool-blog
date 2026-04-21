@@ -9,9 +9,6 @@ metaDescription: "Der Guide für Solo-Professionals zu digitalen Visitenkarten. 
 ogTitle: "Digitale Visitenkarten für Berater & Freelancer"
 ogDescription: "Wie unabhängige Professionals digitale Visitenkarten nutzen, um ihr Networking-Level zu heben - ohne den Enterprise-Preis."
 ---
-
-# Digitale Visitenkarten für Berater & Freelancer
-
 Wenn du unabhängiger Berater oder Freelancer bist, hast du keine Marketingabteilung. Du hast keine Empfangsdame, die neue Visitenkarten bestellt, wenn sich dein Titel ändert. Du hast keine Unternehmensmarke, die die Schwerarbeit macht. Du *bist* die Marke.
 
 Das macht Networking zu deiner wichtigsten Tätigkeit und gleichzeitig zu deiner persönlichsten. Jede Interaktion spiegelt sich direkt in dir wider - und die Art, wie du deine Kontaktdaten teilst, ist Teil dieses ersten Eindrucks.

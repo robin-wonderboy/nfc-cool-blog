@@ -9,9 +9,6 @@ metaDescription: "Your vCard NFC business card works on Android but not iPhone? 
 ogTitle: "Why vCard NFC Tags Don't Work on iPhone"
 ogDescription: "iPhones silently ignore vCard data on NFC tags. Here's why - and what actually works instead."
 ---
-
-# Why vCard NFC Tags Don't Work on iPhone (And What Actually Does)
-
 I've been building NFC apps for years. And every single week - without fail - someone emails me some version of this:
 
 > "Hey, I bought an NFC business card. Programmed my vCard on it. Works great on my friend's Android. But when I tap it to my iPhone? Nothing happens. Is my card broken?"

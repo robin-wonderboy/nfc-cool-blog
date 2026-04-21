@@ -9,9 +9,6 @@ metaDescription: "Learn how to use OpenPrintTag to manage your 3D printing filam
 ogTitle: "OpenPrintTag: Smart 3D Printing Spools with NFC"
 ogDescription: "The complete guide to reading and writing OpenPrintTag NFC spools with your phone. Works with any printer, any filament brand."
 ---
-
-# OpenPrintTag: How to Read & Write Smart 3D Printing Spools with Your Phone
-
 If you 3D print, you've probably been there: a shelf full of half-used spools, no idea how much filament is left on any of them, and that one unlabeled spool that might be PETG or might be PLA, with no way to tell without a test print.
 
 OpenPrintTag solves this. It's an open-source NFC standard created by [Prusa Research](https://www.prusa3d.com) that turns any compatible NFC tag into a smart label for your filament spool. Material type, brand, color, remaining weight: all stored directly on the spool and readable with a quick tap of your phone.

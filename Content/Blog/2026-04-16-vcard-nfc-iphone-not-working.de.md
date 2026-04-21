@@ -9,9 +9,6 @@ metaDescription: "Deine vCard-NFC-Visitenkarte funktioniert auf Android, aber ni
 ogTitle: "Warum vCard-NFC-Tags auf dem iPhone nicht funktionieren"
 ogDescription: "iPhones ignorieren vCard-Daten auf NFC-Tags stillschweigend. Hier ist der Grund - und was stattdessen wirklich funktioniert."
 ---
-
-# Warum vCard-NFC-Tags auf dem iPhone nicht funktionieren (und was wirklich geht)
-
 Ich baue seit Jahren NFC-Apps. Und jede einzelne Woche - ohne Ausnahme - schreibt mir jemand eine Variante von:
 
 > "Hey, ich hab eine NFC-Visitenkarte gekauft. Meine vCard drauf programmiert. Funktioniert super auf dem Android meines Kollegen. Aber wenn ich sie an mein iPhone tippe? Passiert nichts. Ist meine Karte kaputt?"
