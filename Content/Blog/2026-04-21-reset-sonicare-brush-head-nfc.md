@@ -1,16 +1,16 @@
 ---
 id: nfc-blog-015
-title: "How to Reset Your Philips Sonicare Brush Head Counter with NFC"
+title: "How to Check and Reset Your Philips Sonicare Brush Head Counter with NFC"
 date: 2026-04-21
 tags: [nfc-tech, sonicare, guides]
-summary: "Your Sonicare toothbrush tracks brush head usage on an NFC chip inside every head. When it says 'replace me,' that's the chip talking - not the bristles. Here's how the counter works, why you might want to reset it, and how to do it safely with NFC.cool Tools."
-metaTitle: "Reset Philips Sonicare Brush Head Counter with NFC (2026)"
-metaDescription: "Your Sonicare brush head has an NFC chip that tracks usage. Learn how it works, when resetting makes sense, and how to reset the counter with NFC.cool Tools - no special hardware needed."
-ogTitle: "How to Reset Your Sonicare Brush Head Counter"
-ogDescription: "Every Sonicare brush head has an NFC chip tracking your usage. Here's how it works and how to reset it."
+summary: "Your Sonicare toothbrush tracks brush head usage on an NFC chip inside every head. See exactly how much life your brush head has left, and reset the counter if you want to - here's how it works with NFC.cool Tools."
+metaTitle: "Check and Reset Philips Sonicare Brush Head Counter with NFC (2026)"
+metaDescription: "Your Sonicare brush head has an NFC chip that tracks usage. See the percentage left, check how long you've been using it, and reset the counter with NFC.cool Tools."
+ogTitle: "How to Check and Reset Your Sonicare Brush Head Counter"
+ogDescription: "Every Sonicare brush head has an NFC chip tracking your usage. See how much life is left and reset the counter if you want to."
 ---
 
-# How to Reset Your Philips Sonicare Brush Head Counter with NFC
+# How to Check and Reset Your Philips Sonicare Brush Head Counter with NFC
 
 If you own a Philips Sonicare toothbrush, you've seen the amber light. After three months of brushing, the handle blinks to remind you to replace the brush head. But that reminder doesn't come from inspecting the bristles. It comes from a tiny NFC chip embedded in the base of every replacement head.
 
@@ -47,9 +47,9 @@ Here's the important part: **the password is derived from the tag's unique 7-byt
 
 ⚠️ **Critical warning:** The NTAG213 has an anti-tamper mechanism. After **three failed password attempts**, the chip permanently locks all write access. Not even the toothbrush can write to it anymore. If you enter the wrong password three times, that brush head becomes read-only forever. There is no recovery.
 
-## How to Reset with NFC.cool Tools
+## How to Check and Reset with NFC.cool Tools
 
-NFC.cool Tools now includes built-in support for resetting Sonicare brush head counters. You don't need a separate app, a web calculator, or to manually send hex commands. The app generates the correct password automatically.
+NFC.cool Tools now includes built-in support for reading and resetting Sonicare brush head counters. You don't need a separate app, a web calculator, or to manually send hex commands. The app generates the correct password automatically.
 
 **Steps:**
 
@@ -57,7 +57,8 @@ NFC.cool Tools now includes built-in support for resetting Sonicare brush head c
 2. Go to **Toothbrush Head Reset**
 3. Tap **Read NFC** and hold the brush head against your phone
 4. Enter the MFG code printed on the bottom of the brush head (e.g. `221214 12K`)
-5. Tap **Reset Timer** to set the usage counter back to zero
+5. The app shows a **percentage gauge** of how much life the head has used, with used and remaining time displayed below
+6. Tap **Reset Timer** to set the usage counter back to zero, or scan another head
 
 The app handles password generation and authentication in the background. One tap, done.
 
@@ -67,6 +68,7 @@ The Sonicare reset feature is available now on [iPhone](https://apps.apple.com/a
 
 - Password is computed from the tag UID and the printed MFG code - no manual password entry, no risk of typos
 - The app authenticates before writing, so it never sends a wrong password
+- Usage is shown before resetting, so you can make an informed decision
 
 ## What You're Actually Resetting
 
