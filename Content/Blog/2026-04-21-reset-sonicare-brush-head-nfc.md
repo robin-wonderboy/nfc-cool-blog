@@ -24,10 +24,10 @@ NFC.cool Tools can now read that chip, show you exactly how much life your brush
 
 Cyrill Künzi [tore down the protocol](https://kuenzi.dev/toothbrush/) and mbirth [mapped every byte](https://blog.mbirth.uk/2026/03/29/sonicare-brush-head-nfc-data.html). Here's what the NTAG213 in your brush head stores:
 
-- **Brush head type and color** - a single byte at address `0x1F` that identifies the model (Premium All-in-One, Gum Care, DiamondClean, etc.) and its color ([mbirth's memory map](https://blog.mbirth.uk/2026/03/29/sonicare-brush-head-nfc-data.html) lists 22 known types)
+- **Brush head type and color** - a single byte at page `0x1F` that identifies the model (Premium All-in-One, Gum Care, DiamondClean, etc.) and its color ([mbirth's memory map](https://blog.mbirth.uk/2026/03/29/sonicare-brush-head-nfc-data.html) lists 22 known types)
 - **Target lifetime** - at `0x21`, usually `0x5460` = 21,600 seconds, which is 180 two-minute brushing sessions, or three months of twice-daily use
 - **Manufacturing code** - at `0x21-0x23`, the production date and line as ASCII, like `241206 31K` (manufactured December 6, 2024, on line 31K). Also printed on the stem
-- **Accumulated brush time** - at `0x24`, the total seconds the head has been in use. A brand-new head starts at `00:00:02:00` (2 seconds)
+- **Accumulated brush time** - the first two bytes at page `0x24` store the total seconds the head has been in use as a 16-bit value. When it reaches `0xFFFF` (65,535 seconds, about 18 hours of continuous brushing), the counter stops. A brand-new head starts at `00:00:02:00` - the first two bytes are zero (no usage), the meaning of the last two bytes is currently unknown
 - **Last intensity and mode** - at `0x24` as well: Low/Med/High and Clean/White+/Gum Health/Deep Clean+
 - **A URL** - pointing to `philips.com/cfcbrushheadtap`, which opens if you tap the head with a generic NFC reader
 
@@ -61,7 +61,7 @@ Available now on [iPhone](https://apps.apple.com/app/apple-store/id1249686798?pt
 
 ## What the Reset Actually Does
 
-When you reset, you're writing `00:00:02:00` to address `0x24` - the same value a brand-new brush head ships with. It only resets the elapsed time counter. The brush head type, manufacturing code, target lifetime, and NDEF URL all stay unchanged.
+When you reset, you're writing `00:00:02:00` to page `0x24` - the same value a brand-new brush head ships with. Only the first two bytes (the usage counter) are changed back to zero. The meaning of the last two bytes is unknown, so the app preserves them.
 
 The toothbrush starts counting from zero again, and the amber light comes back after another three months. At which point you can check your bristles and decide for yourself.
 
