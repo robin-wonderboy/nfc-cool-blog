@@ -29,7 +29,7 @@ Cyrill Künzi [tore down the protocol](https://kuenzi.dev/toothbrush/) and mbirt
 - **Manufacturing code** - at `0x21-0x23`, the production date and line as ASCII, like `241206 31K` (manufactured December 6, 2024, on line 31K). Also printed on the stem
 - **Accumulated brush time** - the first two bytes at page `0x24` store the total seconds the head has been in use as a 16-bit value. When it reaches `0xFFFF` (65,535 seconds, about 18 hours of continuous brushing), the counter stops. A brand-new head starts at `00:00:02:00` - the first two bytes are zero (no usage), the meaning of the last two bytes is currently unknown
 - **Last intensity and mode** - at `0x24` as well: Low/Med/High and Clean/White+/Gum Health/Deep Clean+
-- **A URL** - pointing to `philips.com/cfcbrushheadtap`, which opens if you tap the head with a generic NFC reader
+- **A URL** - pointing to `philips.com/nfcbrushheadtap`, which opens if you tap the head with a generic NFC reader
 
 When the accumulated time exceeds the target (21,600 seconds), the handle blinks its amber LED. That's the chip talking, not the bristles.
 
