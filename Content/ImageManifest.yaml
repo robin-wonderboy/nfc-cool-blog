@@ -1,0 +1,15 @@
+roles:
+  - name: article-hero
+    selector: "figure.sk-article-hero > img"
+    desktopWidth: 720
+    mobileWidth: 390
+  - name: phone-screenshot
+    selector: "figure.sk-phone-screenshot > img"
+    desktopWidth: 350
+    mobileWidth: 300
+  - name: default
+    selector: "img"
+    desktopWidth: 720
+    mobileWidth: 390
+
+mobileBreakpoint: 768

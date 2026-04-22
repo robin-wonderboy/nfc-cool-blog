@@ -49,6 +49,12 @@ The password is computed from two inputs: the tag's 7-byte UID and the manufactu
 
 ## How to Check and Reset with NFC.cool Tools
 
+Here's how it looks in the app:
+
+<figure class="sk-phone-screenshot">
+  <img src="/assets/sonicare-reset-screen.jpg" alt="NFC.cool Tools showing a Sonicare brush head at 80% usage with Reset Timer button" />
+</figure>
+
 NFC.cool Tools handles the whole process: reading the tag, computing the password, and showing you the stats. No hex commands, no web calculators, no SDR.
 
 1. Open **NFC.cool Tools** on your iPhone

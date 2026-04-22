@@ -1300,3 +1300,16 @@ mark.sk-search-highlight {
 
 .sk-lang-option:hover { background: var(--color-bg-alt); }
 .sk-lang-option.sk-lang-active { font-weight: 600; color: var(--color-accent); }
+
+/* Phone screenshot - compact centered image for app screens */
+figure.sk-phone-screenshot {
+  margin: 2rem auto;
+  text-align: center;
+}
+figure.sk-phone-screenshot img {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg, 12px);
+  box-shadow: var(--color-shadow, rgba(33,37,41,0.08)) 0 2px 12px;
+}
