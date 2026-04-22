@@ -35,6 +35,12 @@ jobs:
       - name: Build site
         run: swift run Site build 2>&1 || swift run -c release Site build
 
+      - name: Generate favicon PNGs (sips not available on Linux)
+        run: |
+          apt-get list --installed 2>/dev/null | grep imagemagick || sudo apt-get install -y imagemagick
+          convert Theme/images/favicon.png -resize 180x180 _Site/apple-touch-icon.png
+          convert Theme/images/favicon.png -resize 32x32 _Site/favicon-32x32.png
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
