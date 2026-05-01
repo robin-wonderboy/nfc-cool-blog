@@ -84,7 +84,7 @@ NFC.cool Toolsは[iOS](https://apps.apple.com/app/apple-store/id1249686798?pt=10
 
 **タグに書き込む：**
 1. ブランクのICODE SLIX2タグをスプールに貼る
-2. NFC.cool → NFCエキスパートセクション → OpenPrintTagを開く
+2. NFC.cool → NFC Appsセクション → OpenPrintTagを開く
 3. 素材の詳細を入力：タイプ、ブランド、色、重量、長さ
 4. タップして書き込み
 

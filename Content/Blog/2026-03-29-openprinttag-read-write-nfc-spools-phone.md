@@ -84,7 +84,7 @@ NFC.cool Tools supports OpenPrintTag natively on both [iOS](https://apps.apple.c
 
 **Writing a tag:**
 1. Stick a blank ICODE SLIX2 tag on your spool
-2. Open NFC.cool → NFC Expert section → OpenPrintTag
+2. Open NFC.cool → NFC Apps section → OpenPrintTag
 3. Fill in the material details: type, brand, color, weight, length
 4. Tap to write
 

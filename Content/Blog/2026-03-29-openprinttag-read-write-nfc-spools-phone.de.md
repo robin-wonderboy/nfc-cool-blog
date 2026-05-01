@@ -84,7 +84,7 @@ NFC.cool Tools unterstützt OpenPrintTag nativ auf [iOS](https://apps.apple.com/
 
 **Einen Tag schreiben:**
 1. Klebe einen leeren ICODE SLIX2-Tag auf deine Spule
-2. Öffne NFC.cool → NFC-Experte-Bereich → OpenPrintTag
+2. Öffne NFC.cool → NFC-Apps-Bereich → OpenPrintTag
 3. Fülle die Materialdetails ein: Typ, Marke, Farbe, Gewicht, Länge
 4. Tippe zum Schreiben
 
