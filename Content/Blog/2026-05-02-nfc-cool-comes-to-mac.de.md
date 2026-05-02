@@ -37,7 +37,7 @@ Alles mit einem Tap (oder Klick) erreichbar. Die Seitenleiste passt sich auch au
 
 <div style="text-align: center;">
 
-![Mac-App mit Seitenleiste und 3D-Modell-Ansicht](/assets/blog/mac-sidebar-nfc.png)
+![NFC-Nachrichten in der Seitenleiste](/assets/blog/mac-sidebar-nfc.png)
 
 </div>
 
@@ -61,7 +61,7 @@ Deine Daten folgen dir über alle Geräte, weil sie in deinem iCloud-Konto liege
 
 <div style="text-align: center;">
 
-![Liste der 3D-Modelle, synchronisiert vom iPhone auf den Mac](/assets/blog/mac-3d-models.png)
+![Gespeicherte 3D-Modelle, synchronisiert über iCloud](/assets/blog/mac-3d-models.png)
 
 </div>
 
@@ -99,7 +99,7 @@ Aber mal ehrlich: Du brauchst sie auf dem Mac wahrscheinlich auch nicht. Du scan
 
 <div style="text-align: center;">
 
-![3D-Modell-Ansicht auf dem Mac](/assets/blog/mac-3d-detail.png)
+![Gespeicherte 3D-Modelle - Detailansicht auf dem Mac](/assets/blog/mac-3d-detail.png)
 
 </div>
 

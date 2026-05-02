@@ -37,7 +37,7 @@ Everything is one tap (or click) away. The sidebar also adapts to iPad - same ex
 
 <div style="text-align: center;">
 
-![Mac app showing sidebar with 3D model detail view](/assets/blog/mac-sidebar-nfc.png)
+![My NFC Messages in the sidebar](/assets/blog/mac-sidebar-nfc.png)
 
 </div>
 
@@ -61,7 +61,7 @@ Your data follows you across devices because it lives in your iCloud account. Sa
 
 <div style="text-align: center;">
 
-![List of 3D models synced from iPhone to Mac](/assets/blog/mac-3d-models.png)
+![Saved 3D Models synced via iCloud](/assets/blog/mac-3d-models.png)
 
 </div>
 
@@ -77,7 +77,7 @@ Useful for quickly looking up a product barcode while you're working, or scannin
 
 <div style="text-align: center;">
 
-![QR code scanning with Mac camera](/assets/blog/mac-qr-scan.png)
+![QR Code scanning with Mac camera](/assets/blog/mac-qr-scan.png)
 
 </div>
 
@@ -99,7 +99,7 @@ But here's the thing: you probably don't need them on your Mac. You scan with yo
 
 <div style="text-align: center;">
 
-![3D model detail view on Mac](/assets/blog/mac-3d-detail.png)
+![Saved 3D Models detail view on Mac](/assets/blog/mac-3d-detail.png)
 
 </div>
 
