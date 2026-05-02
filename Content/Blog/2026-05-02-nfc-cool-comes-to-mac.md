@@ -37,7 +37,7 @@ Everything is one tap (or click) away. The sidebar also adapts to iPad - same ex
 
 <div style="text-align: center;">
 
-![My NFC Messages in the sidebar](/assets/blog/mac-sidebar-nfc.png)
+![My NFC Messages in the sidebar](/assets/blog/mac-nfc-list.png)
 
 </div>
 
@@ -61,7 +61,7 @@ Your data follows you across devices because it lives in your iCloud account. Sa
 
 <div style="text-align: center;">
 
-![Saved 3D Models synced via iCloud](/assets/blog/mac-3d-models.png)
+![Saved 3D Models synced via iCloud](/assets/blog/mac-3d-model-list.png)
 
 </div>
 

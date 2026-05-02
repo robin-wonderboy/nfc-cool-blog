@@ -37,7 +37,7 @@ Alles mit einem Tap (oder Klick) erreichbar. Die Seitenleiste passt sich auch au
 
 <div style="text-align: center;">
 
-![NFC-Nachrichten in der Seitenleiste](/assets/blog/mac-sidebar-nfc.png)
+![NFC-Nachrichten in der Seitenleiste](/assets/blog/mac-nfc-list.png)
 
 </div>
 
@@ -61,7 +61,7 @@ Deine Daten folgen dir über alle Geräte, weil sie in deinem iCloud-Konto liege
 
 <div style="text-align: center;">
 
-![Gespeicherte 3D-Modelle, synchronisiert über iCloud](/assets/blog/mac-3d-models.png)
+![Gespeicherte 3D-Modelle, synchronisiert über iCloud](/assets/blog/mac-3d-model-list.png)
 
 </div>
 
