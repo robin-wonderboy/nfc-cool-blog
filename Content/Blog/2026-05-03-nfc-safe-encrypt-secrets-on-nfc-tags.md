@@ -18,6 +18,8 @@ What if your backup couldn't rot, couldn't degrade, and looked like nothing to a
 
 That's what NFC Safe does. It encrypts any text - seed phrases, passwords, recovery codes, whatever you need to keep secret - onto an NFC tag with 256-bit AES encryption. The tag is self-contained. No cloud. No server. No account. To read the secret, you need the physical tag *and* the passphrase. Without both, the tag is just a tiny piece of plastic with some gibberish on it.
 
+The encryption format is [fully documented and open](https://github.com/NickAtGit/nfc.cool-nfc-safe-format), including a reference Python decoder. Your secrets don't depend on the app existing - if NFC.cool ever disappears, you can still recover your data with a standard NFC reader and the spec.
+
 I built NFC Safe because I wanted my own passphrases stored redundantly on physical tags I could distribute across different locations. If something happens to one location, another tag survives. If someone finds a tag, they can't read it. It's the simplest redundant secret storage I could think of.
 
 ## The Problem with Storing Secrets
