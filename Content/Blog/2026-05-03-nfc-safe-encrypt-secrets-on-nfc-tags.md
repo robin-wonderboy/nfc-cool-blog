@@ -25,7 +25,7 @@ I built NFC Safe because I wanted my own passphrases stored redundantly on physi
 Every method of storing a secret has a weakness:
 
 - **Paper** burns, floods, degrades, gets lost
-- **USB drives** have connectors that corrode, filesystems that corrupt, batteries in some cases
+- **USB drives** have connectors that corrode, filesystems that corrupt
 - **Cloud password managers** are great until the service goes down, gets breached, or you lose access to your account
 - **Hardware wallets** are excellent for crypto but don't store arbitrary text like recovery codes or passphrases for other services
 - **Your brain** forgets, and you can't easily pass a secret to someone else
@@ -41,7 +41,7 @@ NFC tags hit all five. They have no battery, no moving parts, and the NTAG216 ch
 
 ## How NFC Safe Works
 
-NFC Safe uses a custom NDEF record format (`urn:nfc:ext:crypto`) to store encrypted data directly on the tag. Here's what that means in practice:
+NFC Safe uses a custom NDEF record format (`urn:nfc:ext:crypto`) to store encrypted data directly on the tag. The format is [fully documented and open](https://github.com/NickAtGit/nfc.cool-nfc-safe-format) - you can recover your data without the app. Here's what happens under the hood:
 
 1. **You type your secret** - a seed phrase, a password, a recovery code, anything up to the tag's storage capacity
 2. **You set a passphrase** - this becomes the encryption key. NFC.cool suggests 20+ characters for real security, but the minimum is whatever you choose
@@ -54,7 +54,9 @@ To decrypt:
 3. Enter your passphrase
 4. Your secret is revealed
 
-If someone else taps the tag, they see the NFC.cool custom format and a blob of encrypted data. Without the passphrase, that's all they ever see. There's no hint about what's stored, no metadata about the content, no way to brute-force a 20-character passphrase in any reasonable timeframe.
+If someone else taps the tag, they see the NDEF type `urn:nfc:ext:crypto` and a blob of encrypted data. Yes - the type field does reveal that this tag contains encrypted data. It doesn't reveal *what* is encrypted, but it flags the tag as worth attacking to a determined adversary. The security of your data rests entirely on passphrase strength, not on obscurity about what the tag contains.
+
+The encryption is AES-256-GCM with a key derived from your passphrase using PBKDF2 (HMAC-SHA-256, 100,000 iterations, 16-byte random salt). The 100k PBKDF2 iterations slow down brute-force attempts significantly, but they're not a substitute for a strong passphrase. A 20-character passphrase drawn from a large character space (mixed case, digits, symbols) is effectively uncrackable. A 20-character passphrase that's a memorable English sentence is not - its entropy is closer to 40 bits, which a modern GPU can brute-force in days. Use a randomly generated passphrase for real security.
 
 ## The Redundancy Strategy
 
@@ -109,7 +111,7 @@ Practical use cases:
 
 A few things worth being honest about:
 
-- **Your passphrase is the key.** 256-bit AES is effectively unbreakable. Your 6-character password is not. Use a long, random passphrase. The app suggests 20+ characters because that's where brute force becomes impractical.
+- **Your passphrase is everything.** 256-bit AES is effectively unbreakable. Your 6-character password is not. The app suggests 20+ characters, but length alone isn't security - entropy is. `correcthorsebatterystaple` is 28 characters but only ~44 bits of entropy. A 20-character randomly generated string (mixed case, digits, symbols) is ~120 bits. NFC Safe uses PBKDF2 with 100,000 iterations to slow down brute-force, but that's a speed bump, not a wall. Use a randomly generated passphrase for real security.
 - **NFC range is short.** NFC works at ~4 cm. Nobody is scanning your tags from across the room. But if someone has physical access to the tag and the right app, they can attempt decryption. A strong passphrase makes this irrelevant.
 - **No remote wipe.** If a tag is lost, you can't erase it remotely. This is a feature, not a bug - the tag has no network connection. If you're worried about a specific tag being compromised, destroy it physically. Scissors work on most tags. Tin snips work on all of them.
 - **Passphrase recovery.** There is none. If you forget your passphrase, the data is gone. This is by design - no backdoor means no backdoor for anyone else either. Write your passphrase down somewhere separate from the tags, or use a pattern you'll remember.
@@ -118,7 +120,9 @@ A few things worth being honest about:
 
 NFC tags are becoming the storage medium for things that matter. The EU Digital Product Passport will require NFC tags on consumer products. Philips puts them in toothbrush heads. Hotels use them for room keys. They're cheap, durable, and universally readable by the device already in your pocket.
 
-NFC Safe takes that durability and adds encryption. The result is a backup that outlasts paper, can't be read by anyone who finds it, and costs less than a cup of coffee. No single tag needs to survive everything - that's what redundancy is for. No subscriptions, no cloud dependency, no vendor lock-in. Just a physical object and a passphrase you memorize.
+NFC Safe takes that durability and adds encryption. The result is a backup that outlasts paper, can't be read by anyone who finds it, and costs less than a cup of coffee. No single tag needs to survive everything - that's what redundancy is for.
+
+No subscriptions, no cloud dependency. And no vendor lock-in either - the [encryption format is fully documented](https://github.com/NickAtGit/nfc.cool-nfc-safe-format) with a reference Python decoder. If NFC.cool disappears in 15 years, you can still recover your data with a standard NFC reader and a 30-line Python script. Your secrets don't depend on our servers, our app, or our company existing.
 
 Sometimes the best technology is the kind that disappears into the background and just works for decades. That's an NFC tag with your secret on it, buried under a floorboard, waiting until the day you need it.
 
