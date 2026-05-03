@@ -60,6 +60,13 @@ NFC Safe lives inside NFC.cool Tools under the NFC Apps section. You choose betw
 
 **To decrypt a tag and read your secret:**
 
+1. Open **NFC.cool Tools** and go to **NFC Apps > NFC Safe**
+2. Switch to the **Decrypt** tab
+3. Enter your passphrase
+4. Tap **Decrypt**
+5. Hold the tag to your phone
+6. Your secret is revealed on screen
+
 Under the hood, NFC Safe uses AES-256-GCM encryption with a key derived from your passphrase via PBKDF2 (HMAC-SHA-256, 100,000 iterations, 16-byte random salt). The data is stored on the tag using a custom NDEF record format (`urn:nfc:ext:crypto`). The format is [fully documented and open](https://github.com/NickAtGit/nfc.cool-nfc-safe-format) - if NFC.cool disappears in 15 years, you can still recover your data with a standard NFC reader and a 30-line Python script.
 
 A note on the NDEF type: `urn:nfc:ext:crypto` does reveal that a tag contains encrypted data. It doesn't reveal *what* is encrypted, but it flags the tag as worth attacking to a determined adversary. Your security rests on passphrase strength, not on format obscurity.
