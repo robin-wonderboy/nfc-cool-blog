@@ -54,9 +54,13 @@ NFC Safe lives inside NFC.cool Tools under the NFC Apps section. You choose betw
 5. Tap **Encrypt**
 6. Hold an NFC tag to your phone - the app writes the encrypted data to the tag
 
+
+
 <figure class="sk-screenshot">
   <img src="/assets/blog/nfc-safe-flow.png" alt="NFC Safe encrypt and decrypt workflow: enter secret and passphrase, scan tag to encrypt, then switch to decrypt mode, enter passphrase, scan tag to reveal the secret" />
 </figure>
+
+
 
 **To decrypt a tag and read your secret:**
 
