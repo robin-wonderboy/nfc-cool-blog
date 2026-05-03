@@ -1,24 +1,24 @@
 ---
 id: nfc-blog-018
-title: "NFC Safe: Store Encrypted Secrets on Indestructible NFC Tags"
+title: "NFC Safe: Store Encrypted Secrets on Durable NFC Tags"
 date: 2026-05-03
 tags: [nfc-tech, security, encryption, privacy]
-summary: "Your seed phrase is on paper. Paper burns. NFC Safe uses 256-bit AES encryption on epoxy-coated NFC tags that survive fire, water, and decades of neglect. No cloud, no server, no account. Just a physical tag and a passphrase."
-metaTitle: "NFC Safe: Encrypted Secrets on NFC Tags That Survive Everything (2026)"
-metaDescription: "Store encrypted passwords, seed phrases, and recovery codes on NFC tags with 256-bit AES encryption. No cloud, no account, no battery. Epoxy-coated tags survive fire and water."
-ogTitle: "NFC Safe: Encrypted Secrets on Indestructible NFC Tags"
-ogDescription: "Your seed phrase is on a piece of paper. What happens when the paper burns? NFC Safe encrypts secrets onto NFC tags that survive fire, water, and decades."
+summary: "Your seed phrase is on paper. Paper degrades. NFC Safe uses 256-bit AES encryption on epoxy-coated NFC tags that are water-resistant, impact-proof, and last for decades. No cloud, no server, no account. Just a physical tag and a passphrase."
+metaTitle: "NFC Safe: Encrypted Secrets on Durable NFC Tags (2026)"
+metaDescription: "Store encrypted passwords, seed phrases, and recovery codes on NFC tags with 256-bit AES encryption. No cloud, no account, no battery. Epoxy-coated tags are water-resistant and durable."
+ogTitle: "NFC Safe: Encrypted Secrets on Durable NFC Tags"
+ogDescription: "Your seed phrase is on a piece of paper. Paper degrades. NFC Safe encrypts secrets onto durable NFC tags that last for decades."
 ---
 
 Your seed phrase is on a piece of paper.
 
 Maybe it's in a safe. Maybe under a floorboard. Maybe split across three locations because someone on Reddit said that's what "serious" crypto people do. But it's still paper. Paper burns. Paper floods. Paper gets lost.
 
-What if your backup couldn't burn, couldn't rot, and looked like nothing to anyone who found it?
+What if your backup couldn't rot, couldn't degrade, and looked like nothing to anyone who found it?
 
 That's what NFC Safe does. It encrypts any text - seed phrases, passwords, recovery codes, whatever you need to keep secret - onto an NFC tag with 256-bit AES encryption. The tag is self-contained. No cloud. No server. No account. To read the secret, you need the physical tag *and* the passphrase. Without both, the tag is just a tiny piece of plastic with some gibberish on it.
 
-I built NFC Safe because I wanted my own passphrases stored redundantly on physical tags I could distribute across different locations. If my house burns down, one of those tags survives. If someone finds a tag, they can't read it. It's the simplest disaster-proof secret storage I could think of.
+I built NFC Safe because I wanted my own passphrases stored redundantly on physical tags I could distribute across different locations. If something happens to one location, another tag survives. If someone finds a tag, they can't read it. It's the simplest redundant secret storage I could think of.
 
 ## The Problem with Storing Secrets
 
@@ -31,13 +31,13 @@ Every method of storing a secret has a weakness:
 - **Your brain** forgets, and you can't easily pass a secret to someone else
 
 The ideal backup would be:
-1. **Physically durable** - survives fire, water, impact
+1. **Physically durable** - survives water, impact, and decades of neglect
 2. **Encrypted** - useless to anyone who finds it
 3. **Self-contained** - no dependency on a service, app, or account
 4. **Redundant** - cheap enough to put in multiple locations
 5. **Long-lasting** - no battery to die, no disk to degrade
 
-NFC tags hit all five. They have no battery, no moving parts, and the NTAG216 chip inside them retains data for 10-50 years. Epoxy-coated variants are waterproof, heat-resistant to well above what a house fire produces at ground level, and tough enough to survive being stepped on, dropped, or buried.
+NFC tags hit all five. They have no battery, no moving parts, and the NTAG216 chip inside them retains data for 10-50 years. Epoxy-coated variants are water-resistant, handle impact well, and are tough enough to survive being stepped on, dropped, or buried. They won't survive a house fire - no small plastic object will - but by distributing tags across multiple locations, you don't need any single tag to be indestructible.
 
 ## How NFC Safe Works
 
@@ -79,7 +79,7 @@ NFC tags have specific advantages for secret storage:
 - **No filesystem** - there's nothing to corrupt. The data is written directly to memory pages on the chip.
 - **No driver** - every smartphone can read NFC. No cable, no adapter, no driver install.
 - **Small and cheap** - an NTAG216 tag is about the size of a coin and costs under a dollar in quantity. You can put them anywhere.
-- **Durable** - epoxy-coated variants survive water, heat, impact, and UV exposure. They're the cockroaches of storage media, and that's a compliment.
+- **Durable** - epoxy-coated variants resist water, impact, and UV exposure. They're not indestructible - fire will melt them - but they're remarkably tough for something the size of a coin.
 
 The main limitation is storage capacity. An NTAG216 holds 888 bytes of user memory. After the encryption overhead and NDEF formatting, you can store roughly 500-700 bytes of plaintext depending on your passphrase length. That's plenty for a seed phrase (typically 24 words, ~200 bytes), a long password, or a few recovery codes. It's not enough for a full password database - use a password manager for that, and put the master password on an NFC tag.
 
@@ -118,7 +118,7 @@ A few things worth being honest about:
 
 NFC tags are becoming the storage medium for things that matter. The EU Digital Product Passport will require NFC tags on consumer products. Philips puts them in toothbrush heads. Hotels use them for room keys. They're cheap, durable, and universally readable by the device already in your pocket.
 
-NFC Safe takes that reliability and adds encryption. The result is a backup that survives your house burning down, can't be read by anyone who finds it, and costs less than a cup of coffee. No subscriptions, no cloud dependency, no vendor lock-in. Just a physical object and a passphrase you memorize.
+NFC Safe takes that durability and adds encryption. The result is a backup that outlasts paper, can't be read by anyone who finds it, and costs less than a cup of coffee. No single tag needs to survive everything - that's what redundancy is for. No subscriptions, no cloud dependency, no vendor lock-in. Just a physical object and a passphrase you memorize.
 
 Sometimes the best technology is the kind that disappears into the background and just works for decades. That's an NFC tag with your secret on it, buried under a floorboard, waiting until the day you need it.
 
