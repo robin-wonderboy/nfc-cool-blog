@@ -95,27 +95,25 @@ Not everyone sees the same data. Access is structured by stakeholder:
 
 ---
 
-## NFC's Role in Digital Product Passports
+## Data Carriers in Digital Product Passports
 
-This is where NFC technology moves from "handy consumer tool" to "critical infrastructure."
+The ESPR defines a "data carrier" as any automatic identification and capture medium. Three technologies are approved:
 
-The ESPR mandates standardized data carriers for product passports. The three approved technologies are:
-
-1. **QR codes** - Printed on products or packaging. Universal, cheap, but static and easily damaged.
+1. **QR codes** - Printed on products or packaging. Universal, cheap, and have emerged as the dominant DPP data carrier. The first hard mandate, the Battery Passport from February 2027, will be retrievable via QR code.
 2. **RFID tags** - Used in logistics and warehousing. Longer range but require specialized readers.
 3. **NFC tags** - Embedded in products or attached to packaging. Scannable with any modern smartphone.
 
-For consumer-facing products, **NFC is emerging as the premium choice** - and for good reasons:
+QR codes are the default for consumer products because they cost nothing to add to existing packaging. NFC and RFID offer additional capabilities - tap-to-access without line of sight, dynamic URLs, cryptographic locking - but their per-unit cost is significantly higher. Most implementations will use QR as the primary carrier, with NFC as an optional premium layer for products where it adds value.
 
-### Why NFC Fits DPP Better Than QR
+### Why NFC Still Matters for DPP
+
+For products where NFC makes sense, it offers real advantages over QR:
 
 - **Durability** - NFC tags can be embedded inside products (clothing labels, battery housings, electronic casings). They survive washing, wear, and years of use. QR codes on packaging get thrown away.
 - **Tamper resistance** - NFC chips can be cryptographically locked, making it harder to forge or duplicate passport data. QR codes can be printed by anyone.
 - **Updateable links** - NFC tags can point to dynamic URLs, ensuring the passport data stays current throughout the product's lifecycle.
 - **No line-of-sight needed** - You don't need to find and frame a QR code. Just tap your phone near the product.
 - **Higher-value positioning** - For premium products (luxury textiles, electronics, furniture), NFC signals quality and modernity.
-
-That said, QR codes remain essential as a **fallback and cost-effective option** for mass-produced, low-cost items. Most implementations will likely use both: NFC embedded in the product itself, QR printed on the packaging.
 
 ### Writing NFC Tags for DPP Compliance
 

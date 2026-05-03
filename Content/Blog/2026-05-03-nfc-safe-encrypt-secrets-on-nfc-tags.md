@@ -120,7 +120,7 @@ A few things worth being honest about:
 
 ## The Bigger Picture
 
-NFC tags are becoming the storage medium for things that matter. The [EU Digital Product Passport](/blog/eu-digital-product-passport-2026/) will require NFC tags on consumer products. Philips [puts them in toothbrush heads](/blog/reset-sonicare-brush-head-nfc/) to track replacement cycles. Hotels use them for room keys. They're cheap, durable, and universally readable by the device already in your pocket.
+NFC tags are becoming the storage medium for things that matter. The [EU Digital Product Passport](/blog/eu-digital-product-passport-2026/) allows NFC as one of several data carriers, alongside QR codes and RFID. Philips [puts them in toothbrush heads](/blog/reset-sonicare-brush-head-nfc/) to track replacement cycles. Hotels use them for room keys. They're cheap, durable, and universally readable by the device already in your pocket.
 
 NFC Safe takes that durability and adds encryption. The result is a backup that outlasts paper, can't be read by anyone who finds it, and costs less than a cup of coffee. No single tag needs to survive everything - that's what redundancy is for.
 
