@@ -37,26 +37,33 @@ The ideal backup would be:
 4. **Redundant** - cheap enough to put in multiple locations
 5. **Long-lasting** - no battery to die, no disk to degrade
 
-NFC tags hit all five. They have no battery, no moving parts, and the NTAG216 chip inside them retains data for 10-50 years. Epoxy-coated variants are water-resistant, handle impact well, and are tough enough to survive being stepped on, dropped, or buried. They won't survive a house fire - no small plastic object will - but by distributing tags across multiple locations, you don't need any single tag to be indestructible.
+NFC tags hit all five. They have no battery, no moving parts, and the NTAG216 chip inside them is rated by the manufacturer for 10 years of data retention - though in practice, at normal room temperature, that's likely much longer. Epoxy-coated variants are water-resistant, handle impact well, and are tough enough to survive being stepped on, dropped, or buried. They won't survive a house fire - no small plastic object will - but by distributing tags across multiple locations, you don't need any single tag to be indestructible.
 
-## How NFC Safe Works
+## How to Use NFC Safe
 
-NFC Safe uses a custom NDEF record format (`urn:nfc:ext:crypto`) to store encrypted data directly on the tag. The format is [fully documented and open](https://github.com/NickAtGit/nfc.cool-nfc-safe-format) - you can recover your data without the app. Here's what happens under the hood:
+NFC Safe lives inside NFC.cool Tools under the NFC Apps section. You choose between Encrypt and Decrypt with a segmented control at the top.
 
-1. **You type your secret** - a seed phrase, a password, a recovery code, anything up to the tag's storage capacity
-2. **You set a passphrase** - this becomes the encryption key. NFC.cool suggests 20+ characters for real security, but the minimum is whatever you choose
-3. **You tap an NFC tag** - the app encrypts your text with 256-bit AES and writes it to the tag using the custom NDEF format
-4. **The tag now contains** - an encrypted blob that looks like random data to any NFC reader
+**To encrypt a secret onto a tag:**
 
-To decrypt:
-1. Tap the tag with NFC.cool Tools
-2. The app recognizes the `urn:nfc:ext:crypto` record
+1. Open **NFC.cool Tools** and go to **NFC Apps > NFC Safe**
+2. Make sure the **Encrypt** tab is selected
+3. Type or paste your secret text
+4. Set a passphrase - use a long, randomly generated one for real security (see [Security Considerations](#security-considerations) below)
+5. Tap **Encrypt**
+6. Hold an NFC tag to your phone - the app writes the encrypted data to the tag
+
+**To decrypt a tag and read your secret:**
+
+1. Open **NFC.cool Tools** and go to **NFC Apps > NFC Safe**
+2. Switch to the **Decrypt** tab
 3. Enter your passphrase
-4. Your secret is revealed
+4. Tap **Decrypt**
+5. Hold the tag to your phone
+6. Your secret is revealed on screen
 
-If someone else taps the tag, they see the NDEF type `urn:nfc:ext:crypto` and a blob of encrypted data. Yes - the type field does reveal that this tag contains encrypted data. It doesn't reveal *what* is encrypted, but it flags the tag as worth attacking to a determined adversary. The security of your data rests entirely on passphrase strength, not on obscurity about what the tag contains.
+Under the hood, NFC Safe uses AES-256-GCM encryption with a key derived from your passphrase via PBKDF2 (HMAC-SHA-256, 100,000 iterations, 16-byte random salt). The data is stored on the tag using a custom NDEF record format (`urn:nfc:ext:crypto`). The format is [fully documented and open](https://github.com/NickAtGit/nfc.cool-nfc-safe-format) - if NFC.cool disappears in 15 years, you can still recover your data with a standard NFC reader and a 30-line Python script.
 
-The encryption is AES-256-GCM with a key derived from your passphrase using PBKDF2 (HMAC-SHA-256, 100,000 iterations, 16-byte random salt). The 100k PBKDF2 iterations slow down brute-force attempts significantly, but they're not a substitute for a strong passphrase. A 20-character passphrase drawn from a large character space (mixed case, digits, symbols) is effectively uncrackable. A 20-character passphrase that's a memorable English sentence is not - its entropy is closer to 40 bits, which a modern GPU can brute-force in days. Use a randomly generated passphrase for real security.
+A note on the NDEF type: `urn:nfc:ext:crypto` does reveal that a tag contains encrypted data. It doesn't reveal *what* is encrypted, but it flags the tag as worth attacking to a determined adversary. Your security rests on passphrase strength, not on format obscurity.
 
 ## The Redundancy Strategy
 
@@ -96,16 +103,11 @@ Practical use cases:
 - **Emergency contact info** - encrypted next-of-kin details, medical information, insurance numbers
 - **Dead man's switch** - a secret you want someone to find only if they know to look for it *and* have the passphrase you gave them
 
-## How to Set It Up
+## What You Need
 
-1. **Get epoxy-coated NTAG216 tags** - the 216 variant (888 bytes) gives you the most storage. Epoxy coating makes them water-resistant and durable. [Amazon US](https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_tl?ie=UTF8&tag=1337420050185-20&keywords=ntag216&index=aps&camp=1789&creative=9325&linkCode=ur2&linkId=a65cf3348c895e55dc070ca310ff04bd) | [Amazon Europe](https://www.amazon.de/gp/search/ref=as_li_qf_sp_sr_tl?ie=UTF8&tag=1337420050185-21&keywords=ntag%20216&index=aps&camp=1638&creative=6742&linkCode=ur2&linkId=e0129c686012578ed3d03d0b7fd73894) (affiliate links).
-2. **Open NFC.cool Tools** on your iPhone
-3. **Go to NFC Safe**
-4. **Type or paste your secret text**
-5. **Set a passphrase** - use 20+ characters for real security
-6. **Tap your tag** to write the encrypted data
-7. **Verify** - tap the tag again, enter your passphrase, confirm the decryption works
-8. **Repeat** with additional tags for redundancy, then distribute them
+1. **Epoxy-coated NTAG216 tags** - the 216 variant (888 bytes) gives you the most storage. Epoxy coating makes them water-resistant and durable. [Amazon US](https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_tl?ie=UTF8&tag=1337420050185-20&keywords=ntag216&index=aps&camp=1789&creative=9325&linkCode=ur2&linkId=a65cf3348c895e55dc070ca310ff04bd) | [Amazon Europe](https://www.amazon.de/gp/search/ref=as_li_qf_sp_sr_tl?ie=UTF8&tag=1337420050185-21&keywords=ntag%20216&index=aps&camp=1638&creative=6742&linkCode=ur2&linkId=e0129c686012578ed3d03d0b7fd73894) (affiliate links)
+2. **NFC.cool Tools** on [iPhone](https://apps.apple.com/app/apple-store/id1249686798?pt=106913804&ct=BlogNfcSafe&mt=8) (Android coming soon)
+3. **A strong, randomly generated passphrase** - see Security Considerations below
 
 ## Security Considerations
 
@@ -118,11 +120,11 @@ A few things worth being honest about:
 
 ## The Bigger Picture
 
-NFC tags are becoming the storage medium for things that matter. The EU Digital Product Passport will require NFC tags on consumer products. Philips puts them in toothbrush heads. Hotels use them for room keys. They're cheap, durable, and universally readable by the device already in your pocket.
+NFC tags are becoming the storage medium for things that matter. The [EU Digital Product Passport](/blog/eu-digital-product-passport-2026/) will require NFC tags on consumer products. Philips [puts them in toothbrush heads](/blog/reset-sonicare-brush-head-nfc/) to track replacement cycles. Hotels use them for room keys. They're cheap, durable, and universally readable by the device already in your pocket.
 
 NFC Safe takes that durability and adds encryption. The result is a backup that outlasts paper, can't be read by anyone who finds it, and costs less than a cup of coffee. No single tag needs to survive everything - that's what redundancy is for.
 
-No subscriptions, no cloud dependency. And no vendor lock-in either - the [encryption format is fully documented](https://github.com/NickAtGit/nfc.cool-nfc-safe-format) with a reference Python decoder. If NFC.cool disappears in 15 years, you can still recover your data with a standard NFC reader and a 30-line Python script. Your secrets don't depend on our servers, our app, or our company existing.
+No subscriptions, no cloud dependency. And no vendor lock-in either - the [encryption format is fully documented](https://github.com/NickAtGit/nfc.cool-nfc-safe-format) with a reference Python decoder. Your secrets don't depend on our servers, our app, or our company existing.
 
 Sometimes the best technology is the kind that disappears into the background and just works for decades. That's an NFC tag with your secret on it, buried under a floorboard, waiting until the day you need it.
 
