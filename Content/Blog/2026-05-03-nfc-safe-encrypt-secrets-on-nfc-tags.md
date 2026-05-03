@@ -22,6 +22,8 @@ The encryption format is [fully documented and open](https://github.com/NickAtGi
 
 I built NFC Safe because I wanted my own passphrases stored redundantly on physical tags I could distribute across different locations. If something happens to one location, another tag survives. If someone finds a tag, they can't read it. It's the simplest redundant secret storage I could think of.
 
+---
+
 ## The Problem with Storing Secrets
 
 Every method of storing a secret has a weakness:
@@ -41,6 +43,8 @@ The ideal backup would be:
 
 NFC tags hit all five. They have no battery, no moving parts, and the NTAG216 chip inside them is rated by the manufacturer for 10 years of data retention - though in practice, at normal room temperature, that's likely much longer. Epoxy-coated variants are water-resistant, handle impact well, and are tough enough to survive being stepped on, dropped, or buried. They won't survive a house fire - no small plastic object will - but by distributing tags across multiple locations, you don't need any single tag to be indestructible.
 
+---
+
 ## How to Use NFC Safe
 
 NFC Safe lives inside NFC.cool Tools under the NFC Apps section. You choose between Encrypt and Decrypt with a segmented control at the top.
@@ -54,11 +58,11 @@ NFC Safe lives inside NFC.cool Tools under the NFC Apps section. You choose betw
 5. Tap **Encrypt**
 6. Hold an NFC tag to your phone - the app writes the encrypted data to the tag
 
----
+<div style="text-align: center;">
 
 ![NFC Safe encrypt and decrypt workflow: enter secret and passphrase, scan tag to encrypt, then switch to decrypt mode, enter passphrase, scan tag to reveal the secret](/assets/blog/nfc-safe-flow.png)
 
----
+</div>
 
 **To decrypt a tag and read your secret:**
 
@@ -72,6 +76,8 @@ NFC Safe lives inside NFC.cool Tools under the NFC Apps section. You choose betw
 Under the hood, NFC Safe uses AES-256-GCM encryption with a key derived from your passphrase via PBKDF2 (HMAC-SHA-256, 100,000 iterations, 16-byte random salt). The data is stored on the tag using a custom NDEF record format (`urn:nfc:ext:crypto`). The format is [fully documented and open](https://github.com/NickAtGit/nfc.cool-nfc-safe-format) - if NFC.cool disappears in 15 years, you can still recover your data with a standard NFC reader and a 30-line Python script.
 
 A note on the NDEF type: `urn:nfc:ext:crypto` does reveal that a tag contains encrypted data. It doesn't reveal *what* is encrypted, but it flags the tag as worth attacking to a determined adversary. Your security rests on passphrase strength, not on format obscurity.
+
+---
 
 ## The Redundancy Strategy
 
@@ -87,6 +93,8 @@ Each tag alone is meaningless without the passphrase. Someone breaks into your o
 
 This is the same principle as a hardware wallet's seed phrase backup, but applied to any secret, and without the $100+ hardware.
 
+---
+
 ## Why NFC, Not USB or SD Card
 
 NFC tags have specific advantages for secret storage:
@@ -100,6 +108,8 @@ NFC tags have specific advantages for secret storage:
 
 The main limitation is storage capacity. An NTAG216 holds 888 bytes of user memory. After the encryption overhead and NDEF formatting, you can store roughly 500-700 bytes of plaintext depending on your passphrase length. That's plenty for a seed phrase (typically 24 words, ~200 bytes), a long password, or a few recovery codes. It's not enough for a full password database - use a password manager for that, and put the master password on an NFC tag.
 
+---
+
 ## What to Store on an NFC Safe Tag
 
 Practical use cases:
@@ -111,11 +121,15 @@ Practical use cases:
 - **Emergency contact info** - encrypted next-of-kin details, medical information, insurance numbers
 - **Dead man's switch** - a secret you want someone to find only if they know to look for it *and* have the passphrase you gave them
 
+---
+
 ## What You Need
 
 1. **Epoxy-coated NTAG216 tags** - the 216 variant (888 bytes) gives you the most storage. Epoxy coating makes them water-resistant and durable. [Amazon US](https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_tl?ie=UTF8&tag=1337420050185-20&keywords=ntag216&index=aps&camp=1789&creative=9325&linkCode=ur2&linkId=a65cf3348c895e55dc070ca310ff04bd) | [Amazon Europe](https://www.amazon.de/gp/search/ref=as_li_qf_sp_sr_tl?ie=UTF8&tag=1337420050185-21&keywords=ntag%20216&index=aps&camp=1638&creative=6742&linkCode=ur2&linkId=e0129c686012578ed3d03d0b7fd73894) (affiliate links)
 2. **NFC.cool Tools** on [iPhone](https://apps.apple.com/app/apple-store/id1249686798?pt=106913804&ct=BlogNfcSafe&mt=8) (Android coming soon)
 3. **A strong, randomly generated passphrase** - see Security Considerations below
+
+---
 
 ## Security Considerations
 
@@ -125,6 +139,8 @@ A few things worth being honest about:
 - **NFC range is short.** NFC works at ~4 cm. Nobody is scanning your tags from across the room. But if someone has physical access to the tag and the right app, they can attempt decryption. A strong passphrase makes this irrelevant.
 - **No remote wipe.** If a tag is lost, you can't erase it remotely. This is a feature, not a bug - the tag has no network connection. If you're worried about a specific tag being compromised, destroy it physically. Scissors work on most tags. Tin snips work on all of them.
 - **Passphrase recovery.** There is none. If you forget your passphrase, the data is gone. This is by design - no backdoor means no backdoor for anyone else either. Write your passphrase down somewhere separate from the tags, or use a pattern you'll remember.
+
+---
 
 ## The Bigger Picture
 
