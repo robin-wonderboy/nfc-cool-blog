@@ -24,6 +24,8 @@ localization:
             url: "/about/"
           - title: "nfc.cool"
             url: "https://nfc.cool"
+          - title: "Archiv"
+            url: "https://nfc.cool/blog"
     ja:
       navigation:
         items: []
@@ -37,6 +39,8 @@ localization:
             url: "/about/"
           - title: "nfc.cool"
             url: "https://nfc.cool"
+          - title: "アーカイブ"
+            url: "https://nfc.cool/blog"
 contentDirectory: "Content"
 outputDirectory: "_Site"
 assetsDirectory: "Content/Assets"
@@ -78,3 +82,5 @@ footer:
       url: "/about/"
     - title: "nfc.cool"
       url: "https://nfc.cool"
+    - title: "Archive guides"
+      url: "https://nfc.cool/blog"
